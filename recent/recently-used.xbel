@@ -1,0 +1,2638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/TP1_INF1070_A2020/missions/06_tp1_mdp/goal.txt" added="2022-09-21T22:57:11.323728Z" modified="2022-09-21T22:57:11.323752Z" visited="2023-09-21T22:57:11.323731Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-21T22:57:11.323741Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H21_TP1/missions/11_tp1_couper_coller/goal.txt" added="2022-09-21T23:03:48.623175Z" modified="2022-09-21T23:03:48.623184Z" visited="2023-09-21T23:03:48.623176Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-21T23:03:48.623180Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H21_TP1/missions/06_tp1_moutons/goal.txt" added="2022-09-21T23:13:12.298554Z" modified="2022-09-21T23:13:12.298564Z" visited="2023-09-21T23:13:12.298556Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-21T23:13:12.298560Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/TPs/TP1/TP1/missions/06_tp1_super_size_me/goal.md" added="2022-09-21T23:13:52.627896Z" modified="2022-09-21T23:13:52.627921Z" visited="2023-09-21T23:13:52.627899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-21T23:13:52.627910Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/12_tp1_quest42/goal.txt" added="2022-09-22T01:03:11.304741Z" modified="2022-09-22T01:03:11.304748Z" visited="2023-09-22T01:03:11.304742Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T01:03:11.304745Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/11_tp1_permissions/goal.txt" added="2022-09-22T01:03:35.559108Z" modified="2022-09-22T01:03:35.559129Z" visited="2023-09-22T01:03:35.559111Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T01:03:35.559119Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/10_tp1_motMystere/goal.txt" added="2022-09-22T01:05:20.652695Z" modified="2022-09-22T01:05:20.652720Z" visited="2023-09-22T01:05:20.652698Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T01:05:20.652709Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/09_tp1_deplacerLigne/goal.txt" added="2022-09-22T01:06:03.718790Z" modified="2022-09-22T01:06:03.718815Z" visited="2023-09-22T01:06:03.718792Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T01:06:03.718804Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/08_tp1_symlink/goal.txt" added="2022-09-22T01:06:39.335428Z" modified="2022-09-22T01:06:39.335450Z" visited="2023-09-22T01:06:39.335430Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T01:06:39.335440Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070_H20_TP1/missions/08_tp1_symlink/check.sh" added="2022-09-22T01:07:25.962134Z" modified="2022-09-22T01:07:25.962166Z" visited="2023-09-22T01:07:25.962138Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;vim %F&apos;" modified="2022-09-22T01:07:25.962155Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/Solutions" added="2022-09-22T03:10:22.977434Z" modified="2022-09-28T01:58:51.857033Z" visited="2023-09-22T03:10:22.977436Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-28T01:58:51.857027Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/solutions_missions.txt" added="2022-09-22T03:10:38.420299Z" modified="2022-09-22T03:10:38.420321Z" visited="2023-09-22T03:10:38.420302Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T03:10:38.420310Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/TP1_INF1070_A2020/missions/14_tp1_permissions/goal.txt" added="2022-09-22T03:12:14.098125Z" modified="2022-09-22T03:12:14.098139Z" visited="2023-09-22T03:12:14.098127Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T03:12:14.098132Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/TP1_INF1070_A2020/missions/14_tp1_permissions/perm" added="2022-09-22T03:13:08.603028Z" modified="2022-09-22T03:13:08.603036Z" visited="2023-09-22T03:13:08.603029Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T03:13:08.603031Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/TP1_INF1070_A2020/missions/14_tp1_permissions/check.sh" added="2022-09-22T03:13:21.141312Z" modified="2022-09-22T03:13:21.141317Z" visited="2023-09-22T03:13:21.141312Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;vim %F&apos;" modified="2022-09-22T03:13:21.141315Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/solutions.md" added="2022-09-22T03:15:21.744425Z" modified="2022-09-22T03:15:21.744446Z" visited="2023-09-22T03:15:21.744427Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-22T03:15:21.744436Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/TPs/tp1-solutions/README.md" added="2022-09-22T03:34:34.329591Z" modified="2022-09-30T18:29:51.629168Z" visited="2023-09-22T03:34:34.329593Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-09-30T18:29:51.629163Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-catalog.pdf" added="2022-09-23T18:49:10.474460Z" modified="2022-09-23T18:49:10.946728Z" visited="2023-09-23T18:49:10.474461Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-23T18:49:10.474463Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-23T18:49:10.946724Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-23T18:49:22.779816Z" modified="2022-09-26T22:50:34.701122Z" visited="2023-09-23T18:49:22.779819Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T22:50:34.241838Z" count="6"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T22:50:34.701120Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Diapositives/all.pdf" added="2022-09-23T19:00:59.746613Z" modified="2022-09-23T19:00:59.746619Z" visited="2023-09-23T19:00:59.746614Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-23T19:00:59.746616Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-23T19:35:20.875717Z" modified="2022-09-26T21:30:49.769013Z" visited="2023-09-23T19:35:20.875718Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T21:30:49.128536Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T21:30:49.769010Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(2)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-23T19:47:24.531216Z" modified="2022-09-23T19:47:24.531220Z" visited="2023-09-23T19:47:24.531216Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-23T19:47:24.531218Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Documents/3552309.pdf" added="2022-09-23T20:27:32.529114Z" modified="2022-09-23T20:27:32.774815Z" visited="2023-09-23T20:27:32.529117Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-09-23T20:27:32.774806Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Documents/A_Comparative_Analysis_of_Container_Orchestration_Tools_in_Cloud_Computing.pdf" added="2022-09-23T20:28:58.659989Z" modified="2022-09-23T20:28:58.911054Z" visited="2023-09-23T20:28:58.659990Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-09-23T20:28:58.911047Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Documents/Overview_of_Docker_container_orchestration_tools.pdf" added="2022-09-23T20:33:28.564592Z" modified="2022-09-23T20:33:28.815422Z" visited="2023-09-23T20:33:28.564594Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-09-23T20:33:28.815415Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Documents/document.pdf" added="2022-09-23T20:44:20.599077Z" modified="2022-09-23T20:44:20.849010Z" visited="2023-09-23T20:44:20.599081Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-09-23T20:44:20.849005Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/onizuka/Lexar/222-final-inf3173-sujet.pdf" added="2022-09-26T01:24:06.647466Z" modified="2022-09-26T01:24:07.108211Z" visited="2023-09-26T01:24:06.647467Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T01:24:06.647469Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T01:24:07.108208Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Diapositives/03-fichiers.pdf" added="2022-09-26T13:28:04.957392Z" modified="2022-10-17T13:21:59.228787Z" visited="2023-09-26T13:28:04.957394Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-17T13:21:58.639025Z" count="5"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-17T13:21:59.228785Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/cat.pdf" added="2022-09-26T14:58:21.748787Z" modified="2022-10-03T15:25:25.540118Z" visited="2023-09-26T14:58:21.748787Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-03T15:25:25.540116Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T14:59:07.376727Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/ciel.jpg" added="2022-09-26T15:00:02.734461Z" modified="2022-09-26T15:00:02.734467Z" visited="2023-09-26T15:00:02.734462Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-09-26T15:00:02.734465Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/evaluations/231-quiz2-inf3105-010/231-quiz2-inf3105-010-sujet.pdf" added="2022-09-26T21:32:05.257963Z" modified="2022-09-26T21:32:05.846565Z" visited="2023-09-26T21:32:05.257964Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T21:32:05.257966Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T21:32:05.846562Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-corrige.pdf" added="2022-09-26T21:32:31.695847Z" modified="2022-09-26T21:32:32.234163Z" visited="2023-09-26T21:32:31.695848Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T21:32:31.695852Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T21:32:32.234160Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/evaluations/221-quiz1-inf3173/221-quiz1-inf3173-sujet.pdf" added="2022-09-26T21:32:51.447817Z" modified="2022-09-26T21:32:52.110299Z" visited="2023-09-26T21:32:51.447819Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-26T21:32:51.447824Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-26T21:32:52.110296Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/quiz-INF1070_T643-quiz1UneBonneReponse-20230926-1715.xml" added="2022-09-26T22:50:18.422631Z" modified="2022-09-26T22:50:18.422643Z" visited="2023-09-26T22:50:18.422632Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-09-26T22:50:18.422638Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/slides/example.handout.pdf" added="2022-09-27T00:19:43.980995Z" modified="2022-09-27T00:19:44.418772Z" visited="2023-09-27T00:19:43.980997Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T00:19:43.981001Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T00:19:44.418770Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/slides/example.pdf" added="2022-09-27T00:24:43.103556Z" modified="2022-09-27T00:24:43.103562Z" visited="2023-09-27T00:24:43.103557Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T00:24:43.103558Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070-183-quiz1-g1-corrige.pdf" added="2022-09-27T00:58:11.328492Z" modified="2022-09-27T00:58:11.768953Z" visited="2023-09-27T00:58:11.328493Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T00:58:11.328496Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T00:58:11.768949Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(3)/slides/example.pdf" added="2022-09-27T01:05:24.036369Z" modified="2022-09-27T01:05:24.491024Z" visited="2023-09-27T01:05:24.036372Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:05:24.036381Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:05:24.491020Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Algo1.pdf" added="2022-09-27T01:43:48.254235Z" modified="2022-09-27T01:43:48.726314Z" visited="2023-09-27T01:43:48.254236Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:43:48.254244Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:43:48.726312Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Algo2.pdf" added="2022-09-27T01:44:16.668451Z" modified="2022-09-27T01:44:17.098531Z" visited="2023-09-27T01:44:16.668453Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:44:16.668456Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:44:17.098528Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Algo3.pdf" added="2022-09-27T01:44:47.207049Z" modified="2022-09-27T01:44:47.640681Z" visited="2023-09-27T01:44:47.207050Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:44:47.207054Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:44:47.640678Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Algo4.pdf" added="2022-09-27T01:45:56.809939Z" modified="2022-09-27T01:45:57.241401Z" visited="2023-09-27T01:45:56.809940Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:45:56.809944Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:45:57.241399Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Comparaisons.pdf" added="2022-09-27T01:48:06.586462Z" modified="2022-09-27T01:48:07.033910Z" visited="2023-09-27T01:48:06.586463Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:48:06.586467Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:48:07.033907Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/inf5130_devoir1-solution.pdf" added="2022-09-27T01:48:35.822644Z" modified="2022-09-27T01:54:59.685239Z" visited="2023-09-27T01:48:35.822645Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:54:59.685237Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:54:59.235956Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_A22.pdf" added="2022-09-27T01:48:49.408302Z" modified="2022-09-27T01:48:49.408307Z" visited="2023-09-27T01:48:49.408303Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:48:49.408305Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_H23.pdf" added="2022-09-27T01:50:26.629198Z" modified="2022-09-27T01:50:26.629202Z" visited="2023-09-27T01:50:26.629199Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:50:26.629200Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_SOL_A22.pdf" added="2022-09-27T01:51:42.857012Z" modified="2022-09-27T01:51:43.377749Z" visited="2023-09-27T01:51:42.857014Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:51:42.857018Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:51:43.377746Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_SOL_H22.pdf" added="2022-09-27T01:51:57.053699Z" modified="2022-09-27T01:51:57.472122Z" visited="2023-09-27T01:51:57.053700Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:51:57.053704Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:51:57.472120Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_SOL_H23.pdf" added="2022-09-27T01:52:08.555544Z" modified="2022-09-27T01:52:09.006401Z" visited="2023-09-27T01:52:08.555545Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:52:08.555548Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:52:09.006398Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir1_Solution_22.pdf" added="2022-09-27T01:52:15.720312Z" modified="2022-09-27T01:52:15.720317Z" visited="2023-09-27T01:52:15.720312Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:52:15.720314Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Devoir_1_A21.pdf" added="2022-09-27T01:52:23.452622Z" modified="2022-09-27T01:52:23.452627Z" visited="2023-09-27T01:52:23.452623Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:52:23.452624Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/devoir1.pdf" added="2022-09-27T01:52:30.661897Z" modified="2022-09-27T01:52:31.128639Z" visited="2023-09-27T01:52:30.661899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:52:30.661902Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:52:31.128636Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Exercices_Chap1.pdf" added="2022-09-27T01:53:42.739053Z" modified="2022-09-27T01:53:42.739058Z" visited="2023-09-27T01:53:42.739054Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:53:42.739055Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Exercices_Chap2.pdf" added="2022-09-27T01:54:08.428120Z" modified="2022-09-27T01:54:08.898390Z" visited="2023-09-27T01:54:08.428121Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:54:08.428126Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:54:08.898387Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Exercices_Chap3.pdf" added="2022-09-27T01:54:28.311024Z" modified="2022-09-27T01:54:28.791591Z" visited="2023-09-27T01:54:28.311025Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:54:28.311029Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:54:28.791588Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF5130/Exercices_Chap4.pdf" added="2022-09-27T01:54:44.913751Z" modified="2022-09-27T01:54:45.395417Z" visited="2023-09-27T01:54:44.913753Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-27T01:54:44.913756Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-27T01:54:45.395414Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/TPs/back" added="2022-09-28T23:56:53.208989Z" modified="2022-09-28T23:56:53.209026Z" visited="2023-09-28T23:56:53.208990Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-09-28T23:56:53.208993Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(4)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-30T20:43:26.961727Z" modified="2022-09-30T21:16:23.669542Z" visited="2023-09-30T20:43:26.961728Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-30T21:16:23.233512Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-30T21:16:23.669539Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(5)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-30T21:15:19.652035Z" modified="2022-09-30T21:15:19.652040Z" visited="2023-09-30T21:15:19.652036Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-30T21:15:19.652038Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(6)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-09-30T21:33:53.117848Z" modified="2022-09-30T21:33:53.552730Z" visited="2023-09-30T21:33:53.117849Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-30T21:33:53.117851Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-30T21:33:53.552728Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/onizuka/Lexar/233-quiz1-inf1070-sujet.pdf" added="2022-10-02T01:54:09.901850Z" modified="2022-10-02T01:54:10.354429Z" visited="2023-10-02T01:54:09.901851Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-02T01:54:09.901853Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-02T01:54:10.354426Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/onizuka/Lexar/quiz1-inf1070-sujet.pdf" added="2022-10-02T01:54:56.729257Z" modified="2022-10-02T01:55:15.704435Z" visited="2023-10-02T01:54:56.729258Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-02T01:54:56.729261Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-02T01:55:15.704433Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/debian" added="2022-10-02T21:07:41.393611Z" modified="2022-10-02T21:07:41.393617Z" visited="2023-10-02T21:07:41.393612Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-02T21:07:41.393614Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/secret.inconnu" added="2022-10-02T21:11:57.196050Z" modified="2022-10-02T21:11:57.196056Z" visited="2023-10-02T21:11:57.196051Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-02T21:11:57.196054Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/debian.png" added="2022-10-03T14:10:03.873976Z" modified="2022-10-03T14:10:03.873980Z" visited="2023-10-03T14:10:03.873976Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-03T14:10:03.873979Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/debian.svg" added="2022-10-03T14:23:25.594282Z" modified="2022-10-03T14:23:25.594289Z" visited="2023-10-03T14:23:25.594283Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-03T14:23:25.594286Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(8)/evaluations/233-quiz1-inf1070/233-quiz1-inf1070-sujet.pdf" added="2022-10-03T15:06:11.256147Z" modified="2022-10-03T15:06:11.739745Z" visited="2023-10-03T15:06:11.256148Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-03T15:06:11.256151Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-03T15:06:11.739741Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/data/media/cat" added="2022-10-03T15:25:45.077268Z" modified="2022-10-03T15:25:45.077272Z" visited="2023-10-03T15:25:45.077268Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-03T15:25:45.077270Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/TP1/enonce/solutions-tp1.md" added="2022-10-03T16:22:26.538278Z" modified="2022-10-03T16:22:26.538291Z" visited="2023-10-03T16:22:26.538280Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-03T16:22:26.538284Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/solutions-tp1.md" added="2022-10-03T16:22:45.393980Z" modified="2022-10-03T16:22:45.393987Z" visited="2023-10-03T16:22:45.393981Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-03T16:22:45.393983Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Captures%20d%E2%80%99%C3%A9cran/Capture%20d%E2%80%99%C3%A9cran%20du%202023-10-03%2019-24-20.png" added="2022-10-03T23:24:20.512249Z" modified="2022-10-03T23:24:20.512255Z" visited="2023-10-03T23:24:20.512250Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gio open %u&apos;" modified="2022-10-03T23:24:20.512251Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Intra" added="2022-10-05T22:31:17.001320Z" modified="2022-10-05T22:31:17.001341Z" visited="2023-10-05T22:31:17.001323Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-05T22:31:17.001329Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled.pdf" added="2022-10-05T22:48:40.764765Z" modified="2022-10-05T23:02:13.890203Z" visited="2023-10-05T22:48:40.764766Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-05T23:02:13.890201Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-05T23:02:13.395413Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled.amc" added="2022-10-05T23:01:49.976999Z" modified="2022-10-05T23:01:49.977017Z" visited="2023-10-05T23:01:49.977001Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-05T23:01:49.977010Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled.aux" added="2022-10-05T23:02:04.201674Z" modified="2022-10-05T23:02:04.201695Z" visited="2023-10-05T23:02:04.201677Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-05T23:02:04.201687Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled.log" added="2022-10-05T23:02:06.960441Z" modified="2022-10-05T23:02:06.960713Z" visited="2023-10-05T23:02:06.960443Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-log"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-05T23:02:06.960701Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled.xy" added="2022-10-05T23:02:17.148878Z" modified="2022-10-05T23:02:17.148889Z" visited="2023-10-05T23:02:17.148879Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-10-05T23:02:17.148884Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/DOC-sujet.pdf" added="2022-10-06T00:09:24.857811Z" modified="2022-10-06T00:11:15.762062Z" visited="2023-08-21T00:09:24.857812Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:11:15.762060Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-06T00:11:15.250832Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/DOC-catalog.pdf" added="2022-10-06T00:10:08.939232Z" modified="2022-10-06T00:10:08.939238Z" visited="2023-08-21T00:10:08.939233Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:10:08.939235Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/DOC-corrige.pdf" added="2022-10-06T00:10:12.656638Z" modified="2022-10-06T00:10:12.656643Z" visited="2023-08-21T00:10:12.656639Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:10:12.656641Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/DOC-indiv-solution.pdf" added="2022-10-06T00:10:18.289257Z" modified="2022-10-06T00:11:28.334976Z" visited="2023-08-21T00:10:18.289258Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:11:28.334973Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/liste.csv" added="2022-10-06T00:10:40.746536Z" modified="2022-10-06T00:10:40.746547Z" visited="2023-08-21T00:10:40.746537Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2022-10-06T00:10:40.746541Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/intra/amc-compiled-config.tex" added="2022-10-06T00:11:07.037006Z" modified="2022-10-06T00:11:07.037029Z" visited="2023-08-21T00:11:07.037008Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;vim %F&apos;" modified="2022-10-06T00:11:07.037018Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/archive/DOC-sujet.pdf" added="2022-10-06T00:37:48.725584Z" modified="2022-10-06T00:42:11.400937Z" visited="2023-08-21T00:37:48.725585Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:42:11.400935Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-06T00:42:10.901797Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/archive/DOC-corrige.pdf" added="2022-10-06T00:38:55.404868Z" modified="2022-10-06T00:41:59.707641Z" visited="2023-08-21T00:38:55.404869Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:41:59.707638Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-06T00:41:59.231013Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/archive/options.xml" added="2022-10-06T00:40:49.742098Z" modified="2022-10-06T00:41:25.436739Z" visited="2023-08-21T00:40:49.742099Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-10-06T00:41:25.436734Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/archive/DOC-indiv-solution.pdf" added="2022-10-06T00:41:47.129522Z" modified="2022-10-06T00:41:47.623275Z" visited="2023-08-21T00:41:47.129523Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-06T00:41:47.129526Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:41:47.623272Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/examen/archive/DOC-catalog.pdf" added="2022-10-06T00:42:03.648448Z" modified="2022-10-06T00:42:04.086090Z" visited="2023-08-21T00:42:03.648449Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-06T00:42:03.648451Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-06T00:42:04.086086Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Documents/OpenShift-Technical-Overview.pdf" added="2022-10-10T00:14:09.052672Z" modified="2022-10-10T22:28:20.528913Z" visited="2023-10-10T00:14:09.052674Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-10-10T00:14:09.291666Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-10T22:28:19.953943Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-10T22:28:20.528910Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/summit-openshift-on-openstack.pptx" added="2022-10-10T00:16:51.488668Z" modified="2022-10-10T00:16:54.079643Z" visited="2023-10-10T00:16:51.488669Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-10T00:16:54.079641Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/Openshift%20%20Presentation.pptx" added="2022-10-10T00:19:27.123452Z" modified="2022-10-10T00:19:28.014119Z" visited="2023-10-10T00:19:27.123454Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-10T00:19:28.014117Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/SVS201-S-143968-Session-Presentation.424b7a4afa29fe3edbdba0d5975e8f2024dd2105.pptx" added="2022-10-10T00:19:58.347523Z" modified="2022-10-10T00:19:59.924128Z" visited="2023-10-10T00:19:58.347524Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-10T00:19:59.924126Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/Pierre-Marc%20Labbe%20Descoteaux%20-%20Evaluation%20Linux%20et%20Docker.png" added="2022-10-12T23:15:17.685723Z" modified="2022-10-12T23:15:17.685732Z" visited="2023-10-12T23:15:17.685725Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-12T23:15:17.685729Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/INF1070.xls" added="2022-10-12T23:20:44.513946Z" modified="2022-10-13T00:01:23.806030Z" visited="2023-10-12T23:20:44.513949Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.ms-excel"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2022-10-12T23:20:44.513965Z" count="1"/>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-13T00:01:23.806029Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-13T00:43:28.234076Z" modified="2022-10-13T00:43:28.750649Z" visited="2023-10-13T00:43:28.234078Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-13T00:43:28.234083Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-13T00:43:28.750646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(1)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-14T21:18:36.243215Z" modified="2022-10-14T21:18:36.697035Z" visited="2023-03-14T21:18:36.243216Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-14T21:18:36.243218Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T21:18:36.697032Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(2)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-14T21:55:42.120696Z" modified="2022-10-14T21:55:42.120701Z" visited="2023-03-14T21:55:42.120697Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T21:55:42.120698Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(3)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-14T21:59:13.750129Z" modified="2022-10-14T21:59:13.750134Z" visited="2023-03-14T21:59:13.750129Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T21:59:13.750131Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(4)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T22:34:56.575469Z" modified="2022-10-14T22:34:57.024984Z" visited="2023-03-14T22:34:56.575470Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-14T22:34:56.575474Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T22:34:57.024982Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(5)%20(1)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T22:39:45.603882Z" modified="2022-10-14T22:39:46.054491Z" visited="2023-03-14T22:39:45.603884Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-14T22:39:45.603890Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T22:39:46.054488Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(6)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T22:45:29.002864Z" modified="2022-10-14T22:45:29.002948Z" visited="2023-03-14T22:45:29.002864Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T22:45:29.002891Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(7)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T22:50:59.174715Z" modified="2022-10-14T22:50:59.635565Z" visited="2023-03-14T22:50:59.174716Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-14T22:50:59.174717Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T22:50:59.635562Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(8)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T23:05:25.674908Z" modified="2022-10-14T23:05:25.674913Z" visited="2023-03-14T23:05:25.674908Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T23:05:25.674910Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(9)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-14T23:16:08.857288Z" modified="2022-10-14T23:16:08.857293Z" visited="2023-03-14T23:16:08.857289Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T23:16:08.857290Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(10)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-14T23:22:01.902949Z" modified="2022-10-14T23:22:01.902954Z" visited="2023-03-14T23:22:01.902950Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-14T23:22:01.902951Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(11)/evaluations/233-intra-inf1070/233-intra-inf1070-corrige.pdf" added="2022-10-15T00:22:08.739272Z" modified="2022-10-15T00:22:09.253561Z" visited="2023-10-15T00:22:08.739274Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-15T00:22:08.739284Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-15T00:22:09.253558Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(12)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-15T00:24:08.128855Z" modified="2022-10-15T00:24:08.630689Z" visited="2023-10-15T00:24:08.128857Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-15T00:24:08.128863Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-15T00:24:08.630686Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(13)/evaluations/233-intra-inf1070/233-intra-inf1070-sujet.pdf" added="2022-10-15T00:26:20.748747Z" modified="2022-10-15T00:26:21.239086Z" visited="2023-10-15T00:26:20.748750Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-15T00:26:20.748759Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-15T00:26:21.239082Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Diapositives/04-regex.pdf" added="2022-10-17T15:45:52.743602Z" modified="2022-10-31T13:30:10.358030Z" visited="2023-10-17T15:45:52.743603Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-31T13:30:09.885818Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-31T13:30:10.358028Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Enregistrements/2023-10-17%2009-32-50.mkv" added="2022-10-17T22:31:21.963562Z" modified="2022-10-17T22:31:21.963566Z" visited="2023-10-17T22:31:21.963562Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/vlc --started-from-file %U&apos;" modified="2022-10-17T22:31:21.963564Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Enregistrements/chap3-002.mkv" added="2022-10-17T22:37:09.733473Z" modified="2022-10-17T22:38:20.944358Z" visited="2023-10-17T22:37:09.733475Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/vlc --started-from-file %U&apos;" modified="2022-10-17T22:38:20.944352Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Enregistrements/chapitre3.mkv" added="2022-10-17T22:56:15.953700Z" modified="2022-10-17T22:56:15.953708Z" visited="2023-10-17T22:56:15.953701Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/vlc --started-from-file %U&apos;" modified="2022-10-17T22:56:15.953704Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/1-Formulaire%20de%20demande%20de%20s%C3%A9lection%20permanente%20(Programme%20de%20l%E2%80%99exp%C3%A9rience%20qu%C3%A9b%C3%A9coise%20(PEQ)%20%E2%80%93%20Dipl%C3%B4m%C3%A9%20du%20Qu%C3%A9bec).pdf" added="2022-10-21T16:37:52.038630Z" modified="2022-10-21T16:37:52.273122Z" visited="2023-06-07T16:37:52.038632Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-10-21T16:37:52.273116Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/2-Formulaire%20de%20demande%20de%20s%C3%A9lection%20permanente%20(Programme%20de%20l%E2%80%99exp%C3%A9rience%20qu%C3%A9b%C3%A9coise%20(PEQ)%20%E2%80%93%20Dipl%C3%B4m%C3%A9%20du%20Qu%C3%A9bec).pdf" added="2022-10-21T16:38:47.749483Z" modified="2022-10-21T16:47:11.917842Z" visited="2023-06-07T16:38:47.749485Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-10-21T16:38:47.999813Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-21T16:47:11.449371Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-21T16:47:11.917839Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Formulaire%20de%20deamnde%20de%20s%C3%A9lection%20permanente%20(Programme%20de%20l&apos;exp%C3%A9rience%20qu%C3%A9becoise%20(PEQ)%20-%20Dipl%C3%B4me%20du%20Qu%C3%A9bec)).pdf" added="2022-10-21T16:41:11.075850Z" modified="2022-10-21T16:41:11.537588Z" visited="2023-06-07T16:41:11.075850Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-21T16:41:11.075852Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-21T16:41:11.537585Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/FO_demande_selectionQC_diplome%CC%81s_A0520GF_Maria%20Jose%20Moreno%20Correia.pdf" added="2022-10-21T16:44:27.101631Z" modified="2022-10-21T16:44:27.560530Z" visited="2023-06-07T16:44:27.101632Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-21T16:44:27.101635Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-21T16:44:27.560527Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-3.PNG" added="2022-10-26T22:21:49.375731Z" modified="2022-10-26T22:21:49.375736Z" visited="2023-05-17T22:21:49.375732Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:49.375734Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-4.PNG" added="2022-10-26T22:21:51.831175Z" modified="2022-10-26T22:21:51.831184Z" visited="2023-05-17T22:21:51.831176Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:51.831181Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-5.PNG" added="2022-10-26T22:21:52.533529Z" modified="2022-10-26T22:21:52.533532Z" visited="2023-05-17T22:21:52.533529Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:52.533530Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-6.PNG" added="2022-10-26T22:21:53.686777Z" modified="2022-10-26T22:21:53.686783Z" visited="2023-05-17T22:21:53.686778Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:53.686780Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-7.PNG" added="2022-10-26T22:21:55.556963Z" modified="2022-10-26T22:21:55.556969Z" visited="2023-05-17T22:21:55.556964Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:55.556966Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-8.PNG" added="2022-10-26T22:21:56.507692Z" modified="2022-10-26T22:21:56.507699Z" visited="2023-05-17T22:21:56.507693Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:21:56.507696Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-all.PNG" added="2022-10-26T22:22:00.391067Z" modified="2022-10-26T22:22:00.391070Z" visited="2023-05-17T22:22:00.391067Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:00.391069Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-service.PNG" added="2022-10-26T22:22:01.238421Z" modified="2022-10-26T22:22:01.238428Z" visited="2023-05-17T22:22:01.238422Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:01.238425Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-service-1.PNG" added="2022-10-26T22:22:03.323507Z" modified="2022-10-26T22:22:03.323514Z" visited="2023-05-17T22:22:03.323508Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:03.323511Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-service-route.PNG" added="2022-10-26T22:22:04.842940Z" modified="2022-10-26T22:22:04.842947Z" visited="2023-05-17T22:22:04.842941Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:04.842943Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/openshift-service-route-1.PNG" added="2022-10-26T22:22:09.162531Z" modified="2022-10-26T22:22:09.162538Z" visited="2023-05-17T22:22:09.162532Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:09.162536Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/OpenShift%20(1)/pod.png" added="2022-10-26T22:22:12.386932Z" modified="2022-10-26T22:22:12.386935Z" visited="2023-05-17T22:22:12.386932Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-26T22:22:12.386934Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Machine_Config_Pools.svg" added="2022-10-27T00:10:03.553537Z" modified="2022-10-27T00:10:03.915604Z" visited="2023-10-27T00:10:03.553539Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="org.inkscape.Inkscape" exec="&apos;org.inkscape.Inkscape %u&apos;" modified="2022-10-27T00:10:03.915602Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Machine_Config_Pools.png" added="2022-10-27T00:12:15.245018Z" modified="2022-10-27T00:12:22.864180Z" visited="2023-10-27T00:12:15.245019Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.inkscape.Inkscape" exec="&apos;org.inkscape.Inkscape %u&apos;" modified="2022-10-27T00:12:15.245021Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;eog %U&apos;" modified="2022-10-27T00:12:22.299283Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-10-27T00:12:22.864178Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Projects.svg" added="2022-10-27T00:23:01.552441Z" modified="2022-10-27T00:23:01.902621Z" visited="2023-10-27T00:23:01.552441Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="org.inkscape.Inkscape" exec="&apos;org.inkscape.Inkscape %u&apos;" modified="2022-10-27T00:23:01.902619Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Projects.png" added="2022-10-27T00:23:14.534128Z" modified="2022-10-27T00:23:14.534133Z" visited="2023-10-27T00:23:14.534129Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="org.inkscape.Inkscape" exec="&apos;org.inkscape.Inkscape %u&apos;" modified="2022-10-27T00:23:14.534131Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/storage.png" added="2022-10-27T01:05:25.022662Z" modified="2022-10-27T01:05:25.259618Z" visited="2023-10-27T01:05:25.022664Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-10-27T01:05:25.259612Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/pod-all.png" added="2022-10-27T01:40:53.739112Z" modified="2022-10-27T01:40:53.739119Z" visited="2023-10-27T01:40:53.739113Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="org.inkscape.Inkscape" exec="&apos;org.inkscape.Inkscape %u&apos;" modified="2022-10-27T01:40:53.739116Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0031.pdf" added="2022-10-29T02:53:38.017034Z" modified="2022-10-29T22:41:20.972789Z" visited="2023-04-16T02:53:38.017034Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T22:41:20.439341Z" count="7"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T22:41:20.972787Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0111.pdf" added="2022-10-29T02:54:09.359799Z" modified="2022-10-29T18:48:21.298634Z" visited="2023-04-16T02:54:09.359800Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:48:20.779265Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:48:21.298631Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0073.pdf" added="2022-10-29T02:59:19.710019Z" modified="2022-10-29T18:38:16.465367Z" visited="2023-04-16T02:59:19.710020Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:38:15.914140Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:38:16.465365Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0116.pdf" added="2022-10-29T02:59:46.203563Z" modified="2022-10-29T18:49:39.334627Z" visited="2023-04-16T02:59:46.203564Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:49:38.832648Z" count="3"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:49:39.334625Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0062.pdf" added="2022-10-29T03:04:10.678711Z" modified="2022-10-29T18:34:42.194837Z" visited="2023-04-16T03:04:10.678713Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:34:41.682132Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:34:42.194835Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0068.pdf" added="2022-10-29T03:04:29.155627Z" modified="2022-10-29T18:36:51.026766Z" visited="2023-04-16T03:04:29.155628Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:36:50.492122Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:36:51.026764Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0076.pdf" added="2022-10-29T03:04:47.554875Z" modified="2022-10-29T18:39:36.754998Z" visited="2023-04-16T03:04:47.554878Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:39:36.191324Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:39:36.754995Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0084.pdf" added="2022-10-29T03:05:08.654612Z" modified="2022-10-29T18:42:14.614671Z" visited="2023-04-16T03:05:08.654614Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:42:14.039328Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:42:14.614669Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0088.pdf" added="2022-10-29T03:05:21.650139Z" modified="2022-10-29T18:43:04.033866Z" visited="2023-04-16T03:05:21.650141Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:43:03.505157Z" count="3"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:43:04.033864Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0092.pdf" added="2022-10-29T03:05:52.483766Z" modified="2022-10-29T18:44:10.757690Z" visited="2023-04-16T03:05:52.483768Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:44:10.244705Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:44:10.757688Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0098.pdf" added="2022-10-29T03:06:08.430048Z" modified="2022-10-29T18:45:56.905975Z" visited="2023-04-16T03:06:08.430050Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:45:56.390392Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:45:56.905973Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0101.pdf" added="2022-10-29T03:06:19.659398Z" modified="2022-10-29T18:46:39.192017Z" visited="2023-04-16T03:06:19.659400Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:46:38.692033Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:46:39.192015Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0103.pdf" added="2022-10-29T03:06:29.475495Z" modified="2022-10-29T18:47:15.711082Z" visited="2023-04-16T03:06:29.475496Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:47:15.129789Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:47:15.711081Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0117.pdf" added="2022-10-29T03:06:52.989643Z" modified="2022-10-29T18:49:53.159104Z" visited="2023-04-16T03:06:52.989644Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:49:52.633937Z" count="5"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:49:53.159102Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0080.pdf" added="2022-10-29T17:34:50.383631Z" modified="2022-10-29T18:41:06.100368Z" visited="2023-04-16T17:34:50.383632Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:41:05.601200Z" count="3"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:41:06.100366Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0055.pdf" added="2022-10-29T17:38:42.468616Z" modified="2022-10-29T18:31:51.737742Z" visited="2023-04-16T17:38:42.468618Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:31:51.190608Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:31:51.737739Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0032.pdf" added="2022-10-29T17:42:40.430125Z" modified="2022-10-29T18:19:12.996285Z" visited="2023-04-16T17:42:40.430127Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:19:12.511338Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:19:12.996283Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0102.pdf" added="2022-10-29T17:46:13.835804Z" modified="2022-10-29T18:46:54.632041Z" visited="2023-04-16T17:46:13.835805Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:46:54.098159Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:46:54.632039Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0033.pdf" added="2022-10-29T17:47:17.661533Z" modified="2022-10-29T18:19:38.127013Z" visited="2023-04-16T17:47:17.661534Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:19:37.595069Z" count="3"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:19:38.127011Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0049.pdf" added="2022-10-29T18:11:24.371893Z" modified="2022-10-29T18:28:06.202398Z" visited="2023-04-16T18:11:24.371895Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:28:05.698184Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:28:06.202395Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0034.pdf" added="2022-10-29T18:20:07.323589Z" modified="2022-10-29T22:29:54.508866Z" visited="2023-04-16T18:20:07.323590Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T22:29:53.972508Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T22:29:54.508864Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0035.pdf" added="2022-10-29T18:20:53.689963Z" modified="2022-10-29T18:20:54.200020Z" visited="2023-04-16T18:20:53.689964Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:20:53.689966Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:20:54.200017Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0036.pdf" added="2022-10-29T18:21:09.754220Z" modified="2022-10-29T18:21:10.296222Z" visited="2023-04-16T18:21:09.754221Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:21:09.754223Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:21:10.296219Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0042.pdf" added="2022-10-29T18:21:23.722544Z" modified="2022-10-29T18:21:24.277797Z" visited="2023-04-16T18:21:23.722544Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:21:23.722546Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:21:24.277795Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0043.pdf" added="2022-10-29T18:22:19.651266Z" modified="2022-10-29T18:22:20.185489Z" visited="2023-04-16T18:22:19.651267Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:22:19.651271Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:22:20.185486Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0044.pdf" added="2022-10-29T18:23:03.930957Z" modified="2022-10-29T18:23:04.441392Z" visited="2023-04-16T18:23:03.930958Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:23:03.930961Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:23:04.441372Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0045.pdf" added="2022-10-29T18:23:33.934624Z" modified="2022-10-29T18:23:34.440605Z" visited="2023-04-16T18:23:33.934624Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:23:33.934627Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:23:34.440603Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0046.pdf" added="2022-10-29T18:25:13.334514Z" modified="2022-10-29T18:25:13.887928Z" visited="2023-04-16T18:25:13.334515Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:25:13.334519Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:25:13.887925Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0047.pdf" added="2022-10-29T18:26:04.911790Z" modified="2022-10-29T18:26:05.462659Z" visited="2023-04-16T18:26:04.911791Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:26:04.911793Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:26:05.462656Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0048.pdf" added="2022-10-29T18:26:52.453138Z" modified="2022-10-29T18:26:52.949912Z" visited="2023-04-16T18:26:52.453139Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:26:52.453142Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:26:52.949909Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0050.pdf" added="2022-10-29T18:28:23.062201Z" modified="2022-10-29T18:28:23.558195Z" visited="2023-04-16T18:28:23.062202Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:28:23.062206Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:28:23.558193Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0051.pdf" added="2022-10-29T18:29:43.852207Z" modified="2022-10-29T18:29:44.382503Z" visited="2023-04-16T18:29:43.852208Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:29:43.852210Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:29:44.382501Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0052.pdf" added="2022-10-29T18:30:19.777407Z" modified="2022-10-29T18:30:20.309070Z" visited="2023-04-16T18:30:19.777408Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:30:19.777412Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:30:20.309068Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0053.pdf" added="2022-10-29T18:31:05.283003Z" modified="2022-10-29T18:31:05.819922Z" visited="2023-04-16T18:31:05.283004Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:31:05.283006Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:31:05.819920Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0054.pdf" added="2022-10-29T18:31:20.934193Z" modified="2022-10-29T18:31:21.435745Z" visited="2023-04-16T18:31:20.934194Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:31:20.934198Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:31:21.435742Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0056.pdf" added="2022-10-29T18:32:14.308300Z" modified="2022-10-29T18:32:14.849498Z" visited="2023-04-16T18:32:14.308301Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:32:14.308304Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:32:14.849495Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0057.pdf" added="2022-10-29T18:32:29.105017Z" modified="2022-10-29T18:32:29.634839Z" visited="2023-04-16T18:32:29.105020Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:32:29.105038Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:32:29.634837Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0058.pdf" added="2022-10-29T18:33:07.123708Z" modified="2022-10-29T18:33:07.624628Z" visited="2023-04-16T18:33:07.123709Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:33:07.123711Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:33:07.624626Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0059.pdf" added="2022-10-29T18:33:32.063074Z" modified="2022-10-29T18:33:32.597010Z" visited="2023-04-16T18:33:32.063075Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:33:32.063078Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:33:32.597007Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0060.pdf" added="2022-10-29T18:34:02.822941Z" modified="2022-10-29T18:34:03.405348Z" visited="2023-04-16T18:34:02.822942Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:34:02.822945Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:34:03.405346Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0061.pdf" added="2022-10-29T18:34:23.810744Z" modified="2022-10-29T18:34:24.358020Z" visited="2023-04-16T18:34:23.810744Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:34:23.810748Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:34:24.358018Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0063.pdf" added="2022-10-29T18:34:55.374753Z" modified="2022-10-29T18:34:55.901583Z" visited="2023-04-16T18:34:55.374754Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:34:55.374756Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:34:55.901580Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0065.pdf" added="2022-10-29T18:35:06.876745Z" modified="2022-10-29T18:35:07.452633Z" visited="2023-04-16T18:35:06.876746Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:35:06.876749Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:35:07.452630Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0066.pdf" added="2022-10-29T18:35:29.855359Z" modified="2022-10-29T18:35:30.364025Z" visited="2023-04-16T18:35:29.855360Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:35:29.855364Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:35:30.364023Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0067.pdf" added="2022-10-29T18:35:46.126982Z" modified="2022-10-29T18:35:46.634931Z" visited="2023-04-16T18:35:46.126983Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:35:46.126985Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:35:46.634928Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0069.pdf" added="2022-10-29T18:37:09.567352Z" modified="2022-10-29T18:37:10.099548Z" visited="2023-04-16T18:37:09.567353Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:37:09.567357Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:37:10.099546Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0070.pdf" added="2022-10-29T18:37:21.646179Z" modified="2022-10-29T18:37:22.204399Z" visited="2023-04-16T18:37:21.646180Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:37:21.646182Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:37:22.204396Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0071.pdf" added="2022-10-29T18:37:37.850610Z" modified="2022-10-29T18:37:38.383930Z" visited="2023-04-16T18:37:37.850611Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:37:37.850613Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:37:38.383927Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0072.pdf" added="2022-10-29T18:37:51.275707Z" modified="2022-10-29T18:37:51.832438Z" visited="2023-04-16T18:37:51.275708Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:37:51.275709Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:37:51.832436Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0074.pdf" added="2022-10-29T18:38:27.434589Z" modified="2022-10-29T18:38:27.990049Z" visited="2023-04-16T18:38:27.434590Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:38:27.434592Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:38:27.990047Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0075.pdf" added="2022-10-29T18:39:23.395448Z" modified="2022-10-29T18:39:23.978032Z" visited="2023-04-16T18:39:23.395449Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:39:23.395452Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:39:23.978030Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0078.pdf" added="2022-10-29T18:39:49.816484Z" modified="2022-10-29T18:39:50.333419Z" visited="2023-04-16T18:39:49.816485Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:39:49.816487Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:39:50.333416Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0079.pdf" added="2022-10-29T18:40:06.200965Z" modified="2022-10-29T18:40:06.676097Z" visited="2023-04-16T18:40:06.200966Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:40:06.200968Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:40:06.676094Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0081.pdf" added="2022-10-29T18:41:30.256107Z" modified="2022-10-29T18:41:30.770227Z" visited="2023-04-16T18:41:30.256108Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:41:30.256110Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:41:30.770224Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0082.pdf" added="2022-10-29T18:41:47.502966Z" modified="2022-10-29T18:41:48.005482Z" visited="2023-04-16T18:41:47.502967Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:41:47.502969Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:41:48.005480Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0083.pdf" added="2022-10-29T18:42:00.749766Z" modified="2022-10-29T18:42:01.290406Z" visited="2023-04-16T18:42:00.749767Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:42:00.749769Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:42:01.290403Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0086.pdf" added="2022-10-29T18:42:32.333045Z" modified="2022-10-29T18:42:32.849711Z" visited="2023-04-16T18:42:32.333046Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:42:32.333050Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:42:32.849707Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0087.pdf" added="2022-10-29T18:42:48.403530Z" modified="2022-10-29T18:42:48.902907Z" visited="2023-04-16T18:42:48.403531Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:42:48.403534Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:42:48.902905Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0089.pdf" added="2022-10-29T18:43:20.872144Z" modified="2022-10-29T18:43:21.385234Z" visited="2023-04-16T18:43:20.872145Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:43:20.872147Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:43:21.385231Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0090.pdf" added="2022-10-29T18:43:37.842500Z" modified="2022-10-29T18:43:38.408114Z" visited="2023-04-16T18:43:37.842502Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:43:37.842506Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:43:38.408112Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0091.pdf" added="2022-10-29T18:43:51.123187Z" modified="2022-10-29T18:43:51.670649Z" visited="2023-04-16T18:43:51.123188Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:43:51.123190Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:43:51.670646Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0093.pdf" added="2022-10-29T18:44:27.229618Z" modified="2022-10-29T18:44:27.744405Z" visited="2023-04-16T18:44:27.229620Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:44:27.229623Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:44:27.744402Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0094.pdf" added="2022-10-29T18:44:43.112192Z" modified="2022-10-29T18:44:43.634422Z" visited="2023-04-16T18:44:43.112193Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:44:43.112195Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:44:43.634419Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0095.pdf" added="2022-10-29T18:45:00.604513Z" modified="2022-10-29T18:45:01.140646Z" visited="2023-04-16T18:45:00.604514Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:45:00.604517Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:45:01.140643Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/233-intra%203/233-intra/scans/Scan2023-10-29_134444_000.pdf" added="2022-10-29T23:55:12.348869Z" modified="2022-10-29T23:55:12.928490Z" visited="2023-04-16T23:55:12.348869Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T23:55:12.348873Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T23:55:12.928486Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/233-intra%203./scan" added="2022-10-30T00:01:25.383418Z" modified="2022-10-30T00:01:25.383423Z" visited="2023-10-30T00:01:25.383419Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-30T00:01:25.383421Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/233-intra%203./233-intra/cr/corrections/pdf/0118.pdf" added="2022-10-30T00:08:15.197930Z" modified="2022-10-30T00:08:16.160708Z" visited="2023-10-30T00:08:15.197930Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-30T00:08:15.197932Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-30T00:08:16.160705Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/233-intra%203./233-intra/cr/corrections/pdf/0141.pdf" added="2022-10-30T00:08:25.024665Z" modified="2022-10-30T00:08:25.656503Z" visited="2023-10-30T00:08:25.024666Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-30T00:08:25.024671Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-30T00:08:25.656500Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/233-intra%203./233-intra/cr/corrections/pdf/0150.pdf" added="2022-10-30T00:08:30.950969Z" modified="2022-10-30T00:08:31.567141Z" visited="2023-10-30T00:08:30.950971Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-30T00:08:30.950973Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-30T00:08:31.567137Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Enseignement/INF1070/Enregistrements/2023-10-29%2020-01-02.mkv" added="2022-10-30T00:10:25.733943Z" modified="2022-10-30T00:10:25.733958Z" visited="2023-10-30T00:10:25.733945Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/vlc --started-from-file %U&apos;" modified="2022-10-30T00:10:25.733951Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/233-intra%203./233-intra/cr/corrections/pdf/0142.pdf" added="2022-10-30T00:39:47.707865Z" modified="2022-10-30T00:39:48.265927Z" visited="2023-10-30T00:39:47.707865Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-30T00:39:47.707867Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-30T00:39:48.265923Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/DOC-sujet.pdf" added="2022-10-31T15:28:40.637969Z" modified="2022-10-31T16:22:43.153835Z" visited="2023-10-31T15:28:40.637972Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-31T15:28:40.637977Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-31T16:22:43.153833Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/DOC-indiv-solution.pdf" added="2022-10-31T16:02:11.120380Z" modified="2022-10-31T16:02:11.819638Z" visited="2023-10-31T16:02:11.120381Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-31T16:02:11.120384Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-31T16:02:11.819636Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0001.pdf" added="2022-11-03T01:11:19.213566Z" modified="2022-11-03T01:11:19.770392Z" visited="2023-11-03T01:11:19.213567Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-11-03T01:11:19.213569Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-11-03T01:11:19.770389Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Captures%20d%E2%80%99%C3%A9cran/Capture%20d%E2%80%99%C3%A9cran%20du%202023-11-02%2021-18-21.png" added="2022-11-03T01:18:21.737544Z" modified="2022-11-03T01:18:21.737547Z" visited="2023-11-03T01:18:21.737545Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gio open %u&apos;" modified="2022-11-03T01:18:21.737545Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Captures%20d%E2%80%99%C3%A9cran/Capture%20d%E2%80%99%C3%A9cran%20du%202023-11-02%2021-19-38.png" added="2022-11-03T01:19:38.761244Z" modified="2022-11-03T01:19:38.761251Z" visited="2023-11-03T01:19:38.761245Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gnome-shell" exec="&apos;gio open %u&apos;" modified="2022-11-03T01:19:38.761248Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Captures%20d%E2%80%99%C3%A9cran/d.png" added="2022-11-03T01:21:02.947855Z" modified="2022-11-03T01:21:02.953335Z" visited="2023-11-03T01:21:02.947857Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-03T01:21:02.953328Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/Corrections_INF1070.pdf" added="2022-08-26T18:38:37.880714Z" modified="2022-09-28T01:58:42.930154Z" visited="2023-08-26T18:38:37.880717Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-09-28T01:58:42.455748Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-09-28T01:58:42.930152Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/papier.pdf" added="2022-08-26T18:53:40.729098Z" modified="2022-08-26T18:53:41.169529Z" visited="2023-08-26T18:53:40.729099Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-08-26T18:53:40.729103Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-08-26T18:53:41.169527Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/article/paper.tex" added="2022-08-26T21:24:02.498736Z" modified="2022-08-26T21:24:02.498755Z" visited="2023-08-26T21:24:02.498738Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;gnome-text-editor %U&apos;" modified="2022-08-26T21:24:02.498746Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/article/paper.pdf" added="2022-08-26T21:28:00.013844Z" modified="2022-08-26T21:28:00.013849Z" visited="2023-08-26T21:28:00.013845Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-08-26T21:28:00.013846Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/article/papier.pdf" added="2022-08-26T21:35:23.043608Z" modified="2022-08-28T21:17:27.273785Z" visited="2023-08-26T21:35:23.043609Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-08-28T21:17:26.815343Z" count="2"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-08-28T21:17:27.273783Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Automobile-chassis.png" added="2022-08-31T01:06:56.672389Z" modified="2022-09-12T16:32:27.564991Z" visited="2023-08-31T01:06:56.672391Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-08-31T01:06:56.922300Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;eog %U&apos;" modified="2022-09-12T16:32:27.079188Z" count="2"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-09-12T16:32:27.564990Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0096.pdf" added="2022-10-29T18:45:27.609329Z" modified="2022-10-29T18:45:28.174662Z" visited="2023-04-16T18:45:27.609331Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:45:27.609335Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:45:28.174659Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0097.pdf" added="2022-10-29T18:45:43.390135Z" modified="2022-10-29T18:45:43.949666Z" visited="2023-04-16T18:45:43.390136Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:45:43.390138Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:45:43.949664Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0099.pdf" added="2022-10-29T18:46:11.115915Z" modified="2022-10-29T18:46:11.634296Z" visited="2023-04-16T18:46:11.115916Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:46:11.115918Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:46:11.634294Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0100.pdf" added="2022-10-29T18:46:26.572636Z" modified="2022-10-29T18:46:27.094850Z" visited="2023-04-16T18:46:26.572637Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:46:26.572640Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:46:27.094847Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0104.pdf" added="2022-10-29T18:47:33.524590Z" modified="2022-10-29T18:47:33.996105Z" visited="2023-04-16T18:47:33.524591Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:47:33.524594Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:47:33.996102Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0105.pdf" added="2022-10-29T18:47:47.803173Z" modified="2022-10-29T18:47:48.367057Z" visited="2023-04-16T18:47:47.803174Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:47:47.803177Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:47:48.367054Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0106.pdf" added="2022-10-29T18:48:05.473443Z" modified="2022-10-29T18:48:06.048560Z" visited="2023-04-16T18:48:05.473444Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:48:05.473447Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:48:06.048557Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0112.pdf" added="2022-10-29T18:48:36.453268Z" modified="2022-10-29T18:48:36.936745Z" visited="2023-04-16T18:48:36.453269Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:48:36.453273Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:48:36.936742Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0113.pdf" added="2022-10-29T18:48:48.238454Z" modified="2022-10-29T18:48:48.748954Z" visited="2023-04-16T18:48:48.238455Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:48:48.238457Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:48:48.748952Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0114.pdf" added="2022-10-29T18:49:00.718489Z" modified="2022-10-29T18:49:01.248694Z" visited="2023-04-16T18:49:00.718490Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:49:00.718493Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:49:01.248692Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/cr/corrections/pdf/0115.pdf" added="2022-10-29T18:49:20.638439Z" modified="2022-10-29T18:49:21.167686Z" visited="2023-04-16T18:49:20.638440Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T18:49:20.638443Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T18:49:21.167683Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-020" added="2022-10-29T18:50:30.711572Z" modified="2022-10-29T18:50:30.711577Z" visited="2023-04-16T18:50:30.711573Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-29T18:50:30.711575Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-020.csv" added="2022-10-29T18:50:36.144277Z" modified="2022-10-29T18:53:40.260106Z" visited="2023-04-16T18:50:36.144277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-29T18:53:40.260105Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/ACDS%20Planning%20Meeting%20(HPCO)%202023-11.pptx" added="2022-10-29T19:30:49.626268Z" modified="2022-10-29T22:21:07.139398Z" visited="2023-04-16T19:30:49.626268Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-29T22:21:07.139397Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070-intra/options.xml" added="2022-10-29T22:36:13.634321Z" modified="2022-10-29T22:36:13.634466Z" visited="2023-04-16T22:36:13.634324Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/xml"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;/usr/bin/google-chrome-stable %U&apos;" modified="2022-10-29T22:36:13.634449Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Correction" added="2022-10-29T22:42:11.807623Z" modified="2022-10-29T22:42:11.807637Z" visited="2023-04-16T22:42:11.807625Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-29T22:42:11.807631Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/Correction/Envoye" added="2022-10-29T22:42:18.988128Z" modified="2022-10-29T22:42:18.988233Z" visited="2023-04-16T22:42:18.988131Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-10-29T22:42:18.988139Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/Drew00h_20231029%2018_43_31.xls" added="2022-10-29T22:43:36.980689Z" modified="2022-10-29T22:43:38.006874Z" visited="2023-04-16T22:43:36.980690Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.ms-excel"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-29T22:43:38.006873Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/artifacts%20(19)/slides/overview.pdf" added="2022-10-29T23:35:27.780186Z" modified="2022-10-29T23:35:28.266890Z" visited="2023-04-16T23:35:27.780188Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;evince %U&apos;" modified="2022-10-29T23:35:27.780193Z" count="1"/>
+          <bookmark:application name="Visionneur de documents" exec="&apos;evince %u&apos;" modified="2022-10-29T23:35:28.266887Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/T%C3%A9l%C3%A9chargements/ACDS%20Planning%20Meeting%20(OpenShift).pptx" added="2022-10-29T23:42:06.790689Z" modified="2022-10-29T23:44:30.264118Z" visited="2023-04-16T23:42:06.790692Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;libreoffice --impress %U&apos;" modified="2022-10-29T23:42:06.790702Z" count="1"/>
+          <bookmark:application name="LibreOffice 7.5" exec="&apos;soffice %u&apos;" modified="2022-10-29T23:44:30.264118Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/pieces-auto.png" added="2022-08-31T01:08:44.612452Z" modified="2022-09-12T16:32:35.273925Z" visited="2023-08-31T01:08:44.612453Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-08-31T01:08:44.851274Z" count="2"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;eog %U&apos;" modified="2022-08-31T01:10:59.938471Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-09-12T16:32:35.273923Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/tolle.jpeg" added="2022-08-31T01:09:51.112592Z" modified="2022-08-31T01:11:08.841781Z" visited="2023-08-31T01:09:51.112595Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;gio open %u&apos;" modified="2022-08-31T01:09:51.352124Z" count="2"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2022-08-31T01:11:08.841778Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070" added="2022-08-31T21:47:21.455672Z" modified="2022-08-31T21:47:21.455682Z" visited="2023-08-31T21:47:21.455673Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-08-31T21:47:21.455677Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Bureau/INF1070/Enregistrements" added="2022-08-31T21:47:56.796042Z" modified="2022-08-31T21:49:02.311788Z" visited="2023-08-31T21:47:56.796045Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2022-08-31T21:47:56.796052Z" count="1"/>
+          <bookmark:application name="snap.obs-studio" exec="&apos;gio open %u&apos;" modified="2022-08-31T21:49:02.298686Z" count="1"/>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-08-31T21:49:02.311777Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/onizuka/Images/Captures%20d%E2%80%99%C3%A9cran/grep.png" added="2022-11-03T01:21:55.065227Z" modified="2022-11-03T01:21:55.073179Z" visited="2023-11-03T01:21:55.065229Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="xdg-desktop-portal-gnome" exec="&apos;xdg-desktop-portal-gnome %u&apos;" modified="2022-11-03T01:21:55.073172Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
