@@ -28,7 +28,7 @@ Ensuite, il suffit de déposer le fichier `tp2.tgz` sur Moodle!
 
 ## Solution de l'exercice 1
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
 ### Démarche
 
