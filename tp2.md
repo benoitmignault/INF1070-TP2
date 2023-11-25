@@ -97,6 +97,8 @@ La première condition est fausse, car on a un paramètre. Le répertoire `dossi
 
 * Nous allons utiliser le fichier `fichier` qui contient une quantité appréciable de lignes, fourni par le professeur Moussa Abdenbi, via  Mattermost. Cela devrait nous aider à trouver la plus part des cas de figures.
 
+* Toutes les expressions régulières vont utiliser la commande `grep` et de mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
+
 #### Expression régulière 1 :
 
 ```bash
@@ -105,10 +107,18 @@ grep '^[aA]' fichier
 
 #### Explication régulière 1 :
 
-On va utiliser la commande `grep` qui permet de chercher à l'intérieur des fichiers. 
-On doit mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
 On nous demande de trouver les lignes qui commence par `a` ou `A` via l'ensemble `[aA]`, il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, expliquer plus haut. On utilise le symbole `^` qui est un ancrage pour corresponde au début d'une ligne.
 
+
+#### Expression régulière 2 :
+
+```bash
+grep 'rs$' fichier
+```
+
+#### Explication régulière 2 :
+
+On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne. On veut trouver les lignes qui finissent par la conbinaison `rs`.
 
 
 
