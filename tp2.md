@@ -175,6 +175,7 @@ grep -E '^\+?([0-9]{1,2})?\s?\(?[0-9]{3}\)?[0-9]{3}[-. ]{1}[0-9]{4}$' fichier
 
 #### Explication régulière 7 :
 
+On utilise l'option `-E` pour utiliser des expressions régulières étendues (ERE).
 On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par un `+` au sens littérale mais il est optionnel grâce au `?` qui suit le `+`. 
 Ensuite, on a notre premier groupe `([0-9]{1,2})` qui lui aussi pourrait être optionnel grâce au `?` et dans ce groupe nous pouvons avoir entre 1 et 2 chiffres qui correspond au code interrurbain du pays que nous tantons de rejoindre.
 Ensuite, dans certaines situation, il pourrait y avoir un espace entre le code interrurbain et le reste du numéro. On va utiliser la notion `\s` pour représenter l'espace avec l'option d'être optionnel grâce au `?`. 
@@ -193,6 +194,7 @@ grep -E '^[1-9][0-9]{3}-((0?2-(0?[1-9]|1[0-9]|2[0-8]))|((0?[13578]|1[02])-(0?[1-
 
 #### Explication régulière 8 :
 
+On utilise l'option `-E` pour utiliser des expressions régulières étendues (ERE).
 On va commencer par résumer mon expression de 135 caractères de long... Une chose qui est simple c'est le début, les années peuvent variées entre `1000` et `9999` donc on va utiliser `[1-9][0-9]{3}` mais précédé du symbole ancrage `^` pour dire que les lignes du fichiers commencent par un chiffre entre `1` et `9` et suivi d'un `-` pour séparer les années du reste...
 
 Il y a 3 situation qui peut arriver selon les exigences :
