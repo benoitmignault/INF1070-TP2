@@ -5,9 +5,9 @@
 - Cours      : Utilisation et administration des systèmes informatiques
 - Sigle      : INF1070
 - Session    : Automne 2023
-- Groupe     : <groupe>
-- Enseignant : <enseignant>
-- Auteur     : <nom> (<code_permanent>)
+- Groupe     : `20`
+- Enseignant : `Moussa Abdenbi`
+- Auteur     : `Benoît Mignault` (`MIGB09078205`)
 
 
 ## Solution de l'exercice 0
