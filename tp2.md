@@ -153,7 +153,18 @@ grep '[^.,;:?!]$' fichier
 #### Explication régulière 5 :
 
 On va utiliser le symbole `^` mais pas comme un ancrage mais comme une négation à l'intérieur de l'interval des ponctuations.
-Cet interval aura comme signes suivant `.`, `,`, `;`, `:`, `?` ou `!` via l'interval `[^.,;:?!]`. On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne. 
+Cet interval aura comme signes suivant `.`, `,`, `;`, `:`, `?` ou `!` via l'interval `[^.,;:?!]`. On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne.
+
+
+#### Expression régulière 6 :
+
+```bash
+grep '^.r' fichier
+```
+
+#### Explication régulière 6 :
+
+On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par n'importe quel caractère. Cependant, le 2e caractère de la ligne doit être absolument la lettre `r`.
 
 
 
