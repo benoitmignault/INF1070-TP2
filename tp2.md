@@ -32,7 +32,7 @@ Ensuite, il suffit de déposer le fichier `tp2.tgz` sur Moodle!
 
 ### Démarche
 
-#### Explication du script /mystere/mystere.sh
+#### Explication du script mystere/mystere.sh
 
 La premiere ligne du script permet d'utiliser le bon interpreteur de commande, ici on utilisera bash.
 Le script est diviser en deux parties. La première partie avec un bloc `if...fi`, suivi d'un 2e bloc `if...else...fi`.
