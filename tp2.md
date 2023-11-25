@@ -133,9 +133,15 @@ On commence par utiliser le symbole ancrage `^` pour trouver les lignes qui comm
 Ensuite, les lignes du fichiers doivent contenir au moins un chiffre via l'interval `[0-9]`. Cependant, si nous utilisons seulement ces deux intervale, ça nous donnera rien car il manque une logique à notre expression. Entre la majuscule du début et le chiffre, il n'est pas impossible de retrouver quelconque caractères entre les deux. On va utiliser `.*` qui signifi qu'on peut avoir entre 0 et plusieurs caractères quelconques.
 
 
+#### Expression régulière 4 :
 
+```bash
+grep '^[BEQ]' fichier
+```
 
+#### Explication régulière 4 :
 
+On utilise le symbole ancrage `^` pour trouver les lignes qui commencent par les lettres majuscules `B`, `E` ou `Q` via l'interval `[BEQ]`.
 
 
 
