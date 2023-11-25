@@ -167,6 +167,24 @@ grep '^.r' fichier
 On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par n'importe quel caractère. Cependant, le 2e caractère de la ligne doit être absolument la lettre `r`.
 
 
+#### Expression régulière 7 :
+
+```bash
+grep -E '^\+?([0-9]{1,2})?\s?\(?[0-9]{3}\)?[0-9]{3}[-. ]{1}[0-9]{4}$' fichier
+```
+
+#### Explication régulière 7 :
+
+On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par un `+` au sens littérale mais il est optionnel grâce au `?` qui suit le `+`. 
+Ensuite, on a notre premier groupe `([0-9]{1,2})` qui lui aussi pourrait être optionnel grâce au `?` et dans ce groupe nous pouvons avoir entre 1 et 2 chiffres qui correspond au code interrurbain du pays que nous tantons de rejoindre.
+Ensuite, dans certaines situation, il pourrait y avoir un espace entre le code interrurbain et le reste du numéro. On va utiliser la notion `\s` pour représenter l'espace avec l'option d'être optionnel grâce au `?`. 
+Ensuite, il pourrait y avoir une paranthèse ouvrante `(` tout en étant optionnel grâce au `?`. 
+Ensuite, nous avons 3 chiffres qui se suit consécutivement `[0-9]{3}`. 
+Si nous avions une paranthèse ouvrante, on pourrait forcément avoir une paranthèse fermante `)` tout en étant optionnel grâce au `?`.
+Ensuite, nous avons 3 chiffres qui se suit consécutivement `[0-9]{3}`. 
+Ensuite, vient obligatoirement un signe de ponctuation `.`, `-` ou ` ` dans l'ensemble suivant : `[-. ]{1}` pour séparer les 3 chiffres avec les 4 derniers que nous allons retrouver via la dernière partie de l'expression soit `[0-9]{4}$`.
+
+
 
 
 
