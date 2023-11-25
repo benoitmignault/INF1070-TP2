@@ -141,12 +141,19 @@ grep '^[BEQ]' fichier
 
 #### Explication régulière 4 :
 
-On utilise le symbole ancrage `^` pour trouver les lignes qui commencent par les lettres majuscules `B`, `E` ou `Q` via l'interval `[BEQ]`.
+On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par les lettres majuscules `B`, `E` ou `Q` via l'interval `[BEQ]`.
 
 
+#### Expression régulière 5 :
 
+```bash
+grep '[^.,;:?!]$' fichier
+```
 
+#### Explication régulière 5 :
 
+On va utiliser le symbole `^` mais pas comme un ancrage mais comme une négation à l'intérieur de l'interval des ponctuations.
+Cet interval aura comme signes suivant `.`, `,`, `;`, `:`, `?` ou `!` via l'interval `[^.,;:?!]`. On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne. 
 
 
 
