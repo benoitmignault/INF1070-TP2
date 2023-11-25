@@ -107,7 +107,7 @@ grep '^[aA]' fichier
 
 #### Explication régulière 1 :
 
-On nous demande de trouver les lignes qui commence par `a` ou `A` via l'ensemble `[aA]`, il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, expliquer plus haut. On utilise le symbole `^` qui est un ancrage pour corresponde au début d'une ligne.
+On nous demande de trouver les lignes qui commencent par `a` ou `A` via l'ensemble `[aA]`, il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, expliquer plus haut. On utilise le symbole `^` qui est un ancrage pour corresponde au début d'une ligne.
 
 
 #### Expression régulière 2 :
@@ -121,15 +121,16 @@ grep 'rs$' fichier
 On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne. On veut trouver les lignes qui finissent par la conbinaison `rs`.
 
 
+#### Expression régulière 3 :
 
+```bash
+grep '^[A-Z].*[0-9]' fichier
+```
 
+#### Explication régulière 3 :
 
-
-
-
-
-
-
+On commence par utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par une majuscule via l'interval `[A-Z]`.
+Ensuite, les lignes du fichiers doivent contenir au moins un chiffre via l'interval `[0-9]`. Cependant, si nous utilisons seulement ces deux intervale, ça nous donnera rien car il manque une logique à notre expression. Entre la majuscule du début et le chiffre, il n'est pas impossible de retrouver quelconque caractères entre les deux. On va utiliser `.*` qui signifi qu'on peut avoir entre 0 et plusieurs caractères quelconques.
 
 
 
