@@ -185,7 +185,68 @@ Ensuite, nous avons 3 chiffres qui se suit consécutivement `[0-9]{3}`.
 Ensuite, vient obligatoirement un signe de ponctuation `.`, `-` ou ` ` dans l'ensemble suivant : `[-. ]{1}` pour séparer les 3 chiffres avec les 4 derniers que nous allons retrouver via la dernière partie de l'expression soit `[0-9]{4}$`.
 
 
+#### Expression régulière 8 :
 
+```bash
+grep -E '^[1-9][0-9]{3}-((0?2-(0?[1-9]|1[0-9]|2[0-8]))|((0?[13578]|1[02])-(0?[1-9]|[1-2][0-9]|3[0-1]))|((0?[469]|11)-(0?[1-9]|[1-2][0-9]|30)))$' fichier
+```
+
+#### Explication régulière 8 :
+
+On va commencer par résumer mon expression de 135 caractères de long... Une chose qui est simple c'est le début, les années peuvent variées entre `1000` et `9999` donc on va utiliser `[1-9][0-9]{3}` mais précédé du symbole ancrage `^` pour dire que les lignes du fichiers commencent par un chiffre entre `1` et `9` et suivi d'un `-` pour séparer les années du reste...
+
+Il y a 3 situation qui peut arriver selon les exigences :
+
+* Le mois de févier (peu importe l'année) compte 28 jours.
+* Les mois de janvier, mars, mai, juillet, août, octobre, décembre comptent 31 jours.
+* Les mois d'avril, juin, septembre, novembre comptent 30 jours.
+
+On va ajouter notre première paire de parenthèses qui va contenir nos 3 scénarios. 
+Comme les trois scénarios peuvent arrivés, on va utiliser le symbole `|`, pour le sséparer et qui va représenter un `OU`.
+Pour chaque scénario, on va ajouter une autre paire de parenthèses `(....)` pour bien les isoler.
+
+
+Scénario des mois avec 28 jours. Il y a seulement le mois de février.
+
+On peut écrire le mois avec le `0` qui est optionel en raison du caractère `?` suivi du chiffre `2`.
+Ensuite, vient le tiret `-` pour séparer les mois des jours.
+
+Pour la section jour, on va ajouter une paire de parenthèses `(....)`, comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
+
+Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?` suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`.
+Deuxième scénario, les mois entre `10` et `19` jours en utilisant cette combinaison `1[0-9]`. 
+Troisième scénario, les mois entre `20` et `28` jours en utilisant cette combinaison `2[0-8]`. 
+Ce qui met fin au scénario de février.
+
+
+Scénario des mois avec 30 jours. Il y a les mois suivants : avril, juin, septembre, novembre. 
+On va ajouter une paire de parenthèses `(....)`, comme il va y avoir 3 scénarios pour les mois, séparer par le symbole `|` qui va représenter un `OU`.
+
+On peut écrire le mois avec le `0` qui est optionel en raison du caractère `?` suivi de l'interval `[469]` pour les mois en bas de 10.
+Pour le mois de novembre, on va utiliser cette combinaison `11`.
+Ensuite, vient le tiret `-` pour séparer les mois des jours.
+
+Pour la section jour, on va ajouter une paire de parenthèses `(....)`, comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
+
+Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?` suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`.
+Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
+Troisième scénario, le mois avec `30` jours.
+Ce qui met fin au scénario des mois de 30 jours.
+
+
+Scénario des mois avec 31 jours. Il y a les mois suivants : janvier, mars, mai, juillet, août, octobre, décembre. 
+On va ajouter une paire de parenthèses `(....)`, comme il va y avoir 3 scénarios pour les mois, séparer par le symbole `|` qui va représenter un `OU`.
+
+On peut écrire le mois avec le `0` qui est optionel en raison du caractère `?` suivi de l'interval `[13578]` pour les mois en bas de 10.
+Pour les mois d'octobre et décembre, on va utiliser cette manière dans le `regex` : `1[02]`.
+Ensuite, vient le tiret `-` pour séparer les mois des jours.
+
+Pour la section jour, on va ajouter une paire de parenthèses `(....)`, comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
+
+Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?` suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`. 
+Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
+Troisième scénario, les mois avec `30` et `31` jours en utilisant cette combinaison `3[0-1]`. 
+Ce qui met fin au scénario des mois de 31 jours.
 
 
 
