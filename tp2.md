@@ -319,6 +319,8 @@ Tous les dossiers sont séparés d'un `:` dans la variable Environnement `PATH`,
 Communément appeler `Internal Field Separator` permet d'interpreter comme on veut le séparateur utilisé par `PATH`.
 On commence à itérer à travers la première boucle `for` de chaque répertoires de la variable `PATH`.
 Pour chaque répertoire, on va itérer à nouveau via la deuxième boucle `for` sur chaque fichier possèdant le répertoire.
+Dans la deuxième boucle `for chemin_fichier in "$liste_repertoires"/*; do`, le terme `/*` est très important, 
+car grâce à lui, il permet au script de passer `vraiment` à travers chaque fichier.
 On doit déterminer, si nous avons un fichier normal et qui est un exécutable et qui n'est pas un lien symbolique.
 Si c'est trois conditions sont rempli, on affiche le fichier et son chemin relatif de la racine au fichier.
 On passera au prochain fichier dans la deuxième boucle. Une fois tous les fichiers du répertoire en cours d'itération,
