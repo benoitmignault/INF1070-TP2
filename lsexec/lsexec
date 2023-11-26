@@ -1,1 +1,19 @@
-#!/bin/bash
+#!/bin/sh
+
+# Associer le deux point comme séparateur pour la liste de dossiers dans la variable PATH 
+IFS=:
+
+# On va passer à travers de chaque répertoire de la variable Environnement PATH, avec le séparateur :.
+for liste_repertoires in $PATH; do
+
+    # On va passer à travers de chaque fichiers
+    for chemin_fichier in "$liste_repertoires"/*; do
+
+        # Si nous avons un fichier normal qui est un exécutable et qui n'est pas un lien symbolique
+        if [ -f "$chemin_fichier" ] && [ -x "$chemin_fichier" ] && [ ! -L "$chemin_fichier" ]; then
+
+            # On affiche le fichier avec son chemin relatif
+            printf "%s\n" "$chemin_fichier"
+        fi
+    done
+done
