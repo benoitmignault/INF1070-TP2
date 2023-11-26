@@ -331,7 +331,7 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 ### État de l'exercice: résolu, partiellement résolu ou non résolu
 
-Décrire votre solution ici.
+On commence l,exercice 4
 
 
 
