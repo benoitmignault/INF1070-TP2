@@ -331,7 +331,34 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 ### État de l'exercice: résolu, partiellement résolu ou non résolu
 
-On commence l,exercice 4
+**Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prier d'aller consulter le fichier `docker.md`.**
+
+#### Étape dans la création de docker
+
+1. Récupération de la version la plus récente d'Ubuntu via le registre des image Docker Hub.
+
+#### Explication de l'étape 1 :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker pull` de récupérer du registre des images, 
+l'image la plus récente de la distribution Linux `Ubuntu`. C'est une manière d'installer une image de base `Ubuntu`, sans utiliser la commande `docker build` qui est plus complexe, car elle demande le fichier de configuration `Dockerfile` qui permet l'installation d'une ou plusieurs images avec des spécificités différentes.
+
+
+2. Affichage des images disponibles pour la création de futurs conteneurs.
+
+#### Explication de l'étape 2 :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker images` d'afficher les images disponbibles. 
+Avec ces images, on va pouvoir créer des conteneurs et faire des utilisations d'Ubuntu en parallèle de notre distribution Ubuntu déjà installé sur notre ordinateur. 
+
+
+
+
+
+
+
+
 
 
 

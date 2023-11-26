@@ -15,3 +15,16 @@ Digest: sha256:2b7412e6465c3c7fc5bb21d3e6f1917c167358449fecac8176c6e496e5c1f05f
 Status: Downloaded newer image for ubuntu:latest
 docker.io/library/ubuntu:latest
 ```
+
+2. Affichage des images disponibles pour la création de futurs conteneurs.
+
+```bash
+sudo docker images
+```
+
+# Résultat de la commande précédente :
+
+```
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+ubuntu       latest    e4c58958181a   7 weeks ago   77.8MB
+```
