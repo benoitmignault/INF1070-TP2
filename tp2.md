@@ -93,7 +93,7 @@ La première condition est fausse, car on a un paramètre. Le répertoire `dossi
 
 ## Solution de l'exercice 2
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
 * Nous allons utiliser le fichier `fichier` qui contient une quantité appréciable de lignes, fourni par le professeur Moussa Abdenbi, via  Mattermost. Cela devrait nous aider à trouver la plus part des cas de figures.
 
@@ -251,20 +251,25 @@ Troisième scénario, les mois avec `30` et `31` jours en utilisant cette combin
 Ce qui met fin au scénario des mois de 31 jours.
 
 
+#### Expression régulière 9 :
 
+```bash
+grep -iP '^(https|ftp)(?=://([a-z])\2\2\.[a-z0-9]+\.[a-z]{2,3})' fichier
+```
 
+#### Explication régulière 9 :
 
+On utilise l'option `-i` pour ignore la différence entre majuscule et minusculecasepour utiliser des expressions régulières étendues (ERE). 
+On utilise aussi l'option `-P` pour utiliser la notion d'assertion. L'assertion permet de ne pas consommer les caractères trouvés.
 
-
-
-
-
-
-
-
-
-
-
+On va utiliser le symbole ancrage `^` pour trouver un des schémas valides dans le groupe `(https|ftp)`. Seulement le schémas sera capturé au final.
+Nous avons besoin d'une adresse web valide mais ne doit pas être capturer, donc nous allons utiliser une assertion de type `positive en avant (lookahead)`.
+Tous ce qui est à l'intéreiur de l'assertion sera valider comme d'habitude avec la commande `grep`.
+Entre le schéma et l'adresse web, il y a toujours ces 3 caractères important qui doivent être présent `://`.
+On a besoin de trouver les 3 caractères pareils, du début de l'adresse web. On va créer un deuxième groupe qui contient un caractère `([a-z])` et en utilisant deux fois le terme `\2`, ça nous permet de réperter deux fois le caractère du deuxième groupe. 
+Le groupe `([a-z])` est le deuxième, car c'est la deuxième parenthèse depuis le début de l'assertion.
+Après on valide que nous avons bien un `.` entre les 3 caractères pareils et le nom de domaine, qui d'ailleurs remplace l'adresse IP.
+Le nom de domaine est représenté par `[a-z0-9]` des caractères alphanumériques suivi d'un autre `.`. On termine la validation par les 2 ou 3 caractères qui termine une adresse web soit `[a-z]{2,3}`.
 
 
 ## Solution de l'exercice 3
