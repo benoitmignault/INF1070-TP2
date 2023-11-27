@@ -331,7 +331,7 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 ### État de l'exercice: résolu, partiellement résolu ou non résolu
 
-**Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prier d'aller consulter le fichier `docker.md`.**
+**Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prier d'aller consulter le fichier `docker/docker.md`.**
 
 #### Étape dans la création de docker
 
@@ -372,6 +372,76 @@ Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, t
 
 On utilise la commande `dpkg` qui est le gestionnaire de packages pour la distribution de Linux `Debian`.
 L'option `-L` permet de montrer pour chacun des packages listés après l'option, les endroits où ils se situent dans le système de fichiers.
+
+
+5. Installation du package `redis-cli`
+
+#### Explication de l'étape 5 :
+
++ Télécharger le package de la version la plus stable.
+
+#### Sous-Explication :
+
+La commande `curl` est utilisé pour télécharger le package `redis-stable.tar.gz`.
+On utilise l'option `-o` pour spécifier le nom du fichier qui sera téléchargé. Après le nom qu'on donnera à notre fichier récupéré, on indique le lien `URL`.
+
+
++ Extraire les fichiers du fichier
+
+#### Sous-Explication :
+
+On utilise la commande `tar` pour désarchiver et décompresser un ensemble de fichiers. Il y a plusieurs options utilisés pour extraire le contenu. 
+L'option `-x` permet d'extraitre les fichiers de l'archive. L'option `z` va utiliser la commande `gzip` pour décompresser le fichier. 
+L'option `-f` indique quel fichier à d'archiver et décompresser, s'il y a lieu.
+
+
++ Complier le code source, à l'intérieur du répertoire `/tmp/redis-stable`
+
+#### Sous-Explication :
+
+On utilise simplement la commande `make` à l'intérieur du répertoire dont l'archivage a extrait les fichiers.
+
+
++ Copier l'exécutable vers le répertoire `/usr/local/bin`
+
+#### Sous-Explication :
+
+Pour utiliser le package partout dans le conteneur, on devrait en faire une copie dans le répertoire `/usr/local/bin`.
+
+
++ Afficher la version de la commande`redis-cli`
+
+#### Sous-Explication :
+
+On va utiliser l'option qui est standard à pas mal toutes les commandes / pacakges soit l'option longue `--version`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

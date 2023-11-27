@@ -254,3 +254,76 @@ dpkg -L lsb-release curl gpg gcc libjemalloc-dev pkg-config make
 /usr/bin/gmake
 /usr/share/man/man1/gmake.1.gz
 ```
+
+
+5. Installation du package `redis-cli`
+
++ Télécharger le package de la version la plus stable.
+
+```bash
+curl -o /tmp/redis-stable.tar.gz https://download.redis.io/redis-stable.tar.gz?_gl=1*uld02z*_ga*MjA2MDM0NTk0OC4xNzAxMDU3MTE0*_ga_8BKGRQKRPV*MTroot@ba2e39f6db12:/#
+```
+
+## Résultat de la commande précédente :
+
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 3396k  100 3396k    0     0  4453k      0 --:--:-- --:--:-- --:--:-- 4451k
+```
+
++ Extraire les fichiers du fichier
+
+```bash
+tar xzf /tmp/redis-stable.tar.gz -C /tmp
+```
+
+## Résultat de la commande précédente :
+
+```
+Aucun résultat sur STDOUT
+```
+
++ Complier le code source, à l'intérieur du répertoire `/tmp/redis-stable`
+
+```bash
+make
+```
+
+## Résultat de la commande précédente :
+
+```
+[...]
+make[3]: Leaving directory '/tmp/redis-stable/deps/jemalloc'
+make[2]: Leaving directory '/tmp/redis-stable/deps'
+    CC adlist.o
+    CC quicklist.o
+    CC ae.o
+    CC anet.o
+    CC dict.o
+[...]
+```
+
++ Copier l'exécutable vers le répertoire `/usr/local/bin`
+
+```bash
+cp redis-cli /usr/local/bin
+```
+
+## Résultat de la commande précédente :
+
+```
+Aucun résultat sur STDOUT
+```
+
++ Afficher la version de la commande`redis-cli`
+
+```bash
+redis-cli --version
+```
+
+## Résultat de la commande précédente :
+
+```
+redis-cli 7.2.3
+```
