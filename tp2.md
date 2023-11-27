@@ -353,6 +353,21 @@ Ensuite, on demande à `docker` via la commande suivante `docker images` d'affic
 Avec ces images, on va pouvoir créer des conteneurs et faire des utilisations d'Ubuntu en parallèle de notre distribution Ubuntu déjà installé sur notre ordinateur. 
 
 
+3. Création d'un conteneur avec l'image de bbase que nous avons récupére du dépot des images `Ubuntu`.
+
+#### Explication de l'étape 3 :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker run` de créer et de démarrer l'instance du conteneur.
+On utilise aussi deux options pour faciliter l'utilisateur de ce dernier soit l'option `-i` pour avoir le droit à l'entrée standard même si aucun processus est attaché au terminal. 
+Il y a aussi l'option `-t` qui nous permet d'avoir un terminal, à notre disposition. 
+Il fallait donner un nom `containers-admin` à notre conteneur grâce à l'option longue `--name`. 
+Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible dans la liste d'images que nous avons importé de `DockerHub`, nous avons prit `ubuntu`. 
+Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notr eutilisation de notre conteneur.
+
+
+4. 
+
 
 
 

@@ -16,6 +16,7 @@ Status: Downloaded newer image for ubuntu:latest
 docker.io/library/ubuntu:latest
 ```
 
+
 2. Affichage des images disponibles pour la création de futurs conteneurs.
 
 ```bash
@@ -27,4 +28,17 @@ sudo docker images
 ```
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 ubuntu       latest    e4c58958181a   7 weeks ago   77.8MB
+```
+
+
+3. Création d'un conteneur avec l'image de bbase que nous avons récupére du dépot des images `Ubuntu`.
+
+```bash
+sudo docker run -it --name containers-admin ubuntu /bin/bash
+```
+
+# Résultat de la commande précédente :
+
+```
+root@ba2e39f6db12:/#
 ```
