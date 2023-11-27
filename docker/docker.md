@@ -327,3 +327,51 @@ redis-cli --version
 ```
 redis-cli 7.2.3
 ```
+
+
+6. Exporter la nouvelle image de notre conteneur dans le compte DockerHub.
+
++ Attribuer un nom à la nouvelle version de notre image.
+
+```bash
+sudo docker tag ubuntu hc591017/containers-admin:v1
+```
+
+## Résultat de la commande précédente :
+
+```
+Aucun résultat sur STDOUT
+```
+
++ Connexion à notre compte Docker-Hub.
+
+```bash
+sudo docker login
+```
+
+## Résultat de la commande précédente :
+
+```
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: hc591017
+Password: 
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+```
+
++ Exportation de notre image à notre compte Docker Hub.
+
+```bash
+sudo docker push hc591017/containers-admin:v1
+```
+
+## Résultat de la commande précédente :
+
+```
+The push refers to repository [docker.io/hc591017/containers-admin]
+256d88da4185: Mounted from library/ubuntu 
+v1: digest: sha256:c0eef2c2053b7e7a644da62acce5c26fdd655d581d3e52007bb97f567fbcd444 size: 529
+```

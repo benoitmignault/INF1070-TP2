@@ -329,7 +329,7 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 ## Solution de l'exercice 4
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
 **Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prier d'aller consulter le fichier `docker/docker.md`.**
 
@@ -416,12 +416,36 @@ Pour utiliser le package partout dans le conteneur, on devrait en faire une copi
 On va utiliser l'option qui est standard à pas mal toutes les commandes / pacakges soit l'option longue `--version`.
 
 
+6. Exporter la nouvelle image de notre conteneur dans le compte DockerHub.
+
++ Attribuer un nom à la nouvelle version de notre image.
+
+#### Sous-Explication :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker tag` qui permet de créer une nouvelle référence pour l'image utilisée par un conteneur. ÇA va servir, lorsqu'il sera le tmeps d'envoyer notre image sur le dépôt DockerHub.
 
 
++ Connexion à notre compte Docker-Hub.
+
+#### Sous-Explication :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker login` pour ouvrir un canal de communication avec notre compte sur DockerHub. ON nous demande de saisir notre nom d'utilisateur et mot de passe.
 
 
++ Exportation de notre image à notre compte Docker Hub.
+
+#### Sous-Explication :
+
+On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker push` pour exporter finalement notre nouvelle version de notre image.
+On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle version de notre image.
 
 
+7. Finalement, notre lien URL pour l'importation de notre image.
+
+[Ma nouvelle version de mon image](https://hub.docker.com/r/hc591017/containers-admin)
 
 
 
