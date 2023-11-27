@@ -366,8 +366,12 @@ Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible da
 Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notr eutilisation de notre conteneur.
 
 
-4. 
+4. Afficher les locatisations des packages installés, à l'aide d'une seule commande.
 
+#### Explication de l'étape 4 :
+
+On utilise la commande `dpkg` qui est le gestionnaire de packages pour la distribution de Linux `Debian`.
+L'option `-L` permet de montrer pour chacun des packages listés après l'option, les endroits où ils se situent dans le système de fichiers.
 
 
 
