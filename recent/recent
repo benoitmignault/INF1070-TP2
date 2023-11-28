@@ -44,27 +44,55 @@ else
     # La liste des options valides
     choix_option_valid="^-[fnc]$"
 
+
+    # Utilisation de la boucle while et shift pour itérer sur les arguments
+    while [ "$#" -gt 0 ]; do
+
+        # Stocker le contenu actuel de $1 avant le shift
+        current_option="$1"
+        
+        # Décaler vers la gauche pour passer à l'argument suivant
+        shift
+
+        # Stocker le contenu actuel de $1 avant le shift
+        next_argument="$1"
+        
+        # Afficher l'option actuelle et le prochain argument
+        echo "Option actuelle : $current_option"
+        echo "Prochain argument : $next_argument"
+    done
+
+    
+
+
+
+    # utiliser un While avec un shift au lieu d'une boucle for
+
     #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
     case "$#" in
         2)              
             # Vérifier si l'argument correspond à une option valide
-            if [[ "$1" =~ $choix_option_valid ]]; then
-                
+            if [[ "$1" = "-f" ]]; then                
                 # Avons nous un fichier régulier  
                 if [ -f "$2" ];  then
 
                     cat $2  | head -n 10
+
+                else
+                    echo "Le fichier $2 est un fichier non valide ou introuvable" >&2
+                    exit 2
                 fi
             else
-                echo "L'option saisie « $1 » n'est pas une option valide." >&2
-                exit 4
-            fi       
-            
-            
+                echo "Aucun fichier n'a été fourni" >&2
+                exit 2
+            fi
             ;;            
         3)  
-            # Scénario avec l'option -n et -f et son fichier
+            # Scénario avec l'option -c et -f et son fichier, seulement
             echo "Nous avons : $1, $2, $3" 
+            # Valeur de retour pour l'option -n et le nombre entier N.
+            # -f recently-used.xbel -n , code erreur 3 , il manque le nombre avec option 
+            # Valeur de retour pour une option inconnue.
 
 
 
