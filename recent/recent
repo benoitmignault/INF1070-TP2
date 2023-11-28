@@ -46,12 +46,11 @@ else
 
     #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
     case "$#" in
-        2)  
-            # Scénario avec l'option -f seulement
+        2)              
             # Vérifier si l'argument correspond à une option valide
             if [[ "$1" =~ $choix_option_valid ]]; then
-
-                # Avons nous un fichier valide  
+                
+                # Avons nous un fichier régulier  
                 if [ -f "$2" ];  then
 
                     cat $2  | head -n 10
@@ -62,19 +61,19 @@ else
             fi       
             
             
-            ;;
-            # Seulement si j'implémente l'option -c avec option -f et le nom du fichier
-        3)
+            ;;            
+        3)  
+            # Scénario avec l'option -n et -f et son fichier
             echo "Nous avons : $1, $2, $3" 
 
 
 
             ;;
         4)  
-            # Scénario avec l'option -f et l'option -n
+            # Scénario avec l'option -f et l'option -n et inversement
             
 
-            # Vérifier si l'argument correspond à une option valide
+            # Vérifier les arguments impaires sont des options valides
             if [[ "$1" =~ $choix_option_valid ]] && [[ "$3" =~ $choix_option_valid ]]; then
 
                 echo "Les options sont valides !"
@@ -89,6 +88,7 @@ else
 
             ;;
         5)
+            # Tous les scénario sont possible
             echo "Nous avons : $1, $2, $3, $4, $5"
 
 
