@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Déclaration des functions
+
+function F1(){
+    echo 'I like bash programming'
+}
+
+
+function greeting() {
+
+    str="Hello, $name"
+    # le return qu'on connait est représenté ici, par un ou plusieurs echo via la sortie standard
+    echo $str
+    echo $str
+    echo $str
+}
+#val=$(greeting)
+
+
+# Par défaut sans l'option -n, on affiche les 10 fichiers, les plus récents
+# Option -n doit avoir un chiffre valide positivement
+# Option -f doit avoir le nom du fichier qui le suit comme argument
+
+# On doit valider que le fichier existe avec le chemin fourni en paramètre
+
+
+
+
+
+
+
+
+# Début de l'exécution du script
+
+
+
+# Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
+if [ $# -lt 2 ] || [ $# -gt 5 ]; then
+
+    echo "Veuiller fournir un minimum de 2 arguments OU un maximum de 5 arguments !"
+    exit 1    
+else
+    #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
+    case "$#" in
+    2)
+        echo "Nous avons : $1 $2"
+        if [ "$1" -lt 2 ] && [ -f "$2" ]; then
+
+
+
+        fi
+
+
+
+
+        ;;
+        # Seulement si j'implémente l'option -c avec option -f et le nom du fichier
+    3)
+        echo "Nous avons : $1, $2, $3"
+
+
+
+
+
+
+        ;;
+    4)
+        echo "Nous avons : $1, $2, $3, $4"
+        # Valider si nous avons une variable contenant une valeur numérique et qui pourrait être négative
+        # le ~ est important pour une comparaision d'une expression régulière
+        #if [[ "$nb_fichier_creer" =~ ^-?[0-9]+$ ]]; then
+
+
+
+
+
+
+
+
+        ;;
+    5)
+        echo "Nous avons : $1, $2, $3, $4, $5"
+
+
+
+
+
+        ;;
+    esac
+fi
