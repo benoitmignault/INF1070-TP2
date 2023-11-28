@@ -38,7 +38,7 @@ function greeting() {
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
 if [ $# -lt 2 ] || [ $# -gt 5 ]; then
 
-    echo "Veuiller fournir un minimum de 2 arguments OU un maximum de 5 arguments !"
+    echo "Veuiller fournir entre 2 et 5 arguments !" >&2
     exit 1    
 else
     # La liste des options valides
@@ -46,43 +46,55 @@ else
 
     #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
     case "$#" in
-    2)  
-        # Vérifier si l'argument correspond à une option valide
-        if [[ "$1" =~ $choix_option_valid ]]; then
+        2)  
+            # Scénario avec l'option -f seulement
+            # Vérifier si l'argument correspond à une option valide
+            if [[ "$1" =~ $choix_option_valid ]]; then
 
-            # Avons nous un fichier valide  
-            if [ -f "$2" ];  then
+                # Avons nous un fichier valide  
+                if [ -f "$2" ];  then
 
-                cat $2  | head -n 10
+                    cat $2  | head -n 10
+                fi
+            else
+                echo "L'option saisie « $1 » n'est pas une option valide." >&2
+                exit 4
+            fi       
+            
+            
+            ;;
+            # Seulement si j'implémente l'option -c avec option -f et le nom du fichier
+        3)
+            echo "Nous avons : $1, $2, $3" 
+
+
+
+            ;;
+        4)  
+            # Scénario avec l'option -f et l'option -n
+            
+
+            # Vérifier si l'argument correspond à une option valide
+            if [[ "$1" =~ $choix_option_valid ]] && [[ "$3" =~ $choix_option_valid ]]; then
+
+                echo "Les options sont valides !"
+
+
+            else
+                echo "L'une des deux ou les deux l'options ne sont valides." >&2
+                exit 4
             fi
-        else
-            echo "L'option saisie « $1 » n'est pas une option valide."
-            exit 4
-        fi       
-        
-        
-        ;;
-        # Seulement si j'implémente l'option -c avec option -f et le nom du fichier
-    3)
-        echo "Nous avons : $1, $2, $3"
 
 
 
-        ;;
-    4)
-        echo "Nous avons : $1, $2, $3, $4"
-
-
-
-
-        ;;
-    5)
-        echo "Nous avons : $1, $2, $3, $4, $5"
+            ;;
+        5)
+            echo "Nous avons : $1, $2, $3, $4, $5"
 
 
 
 
 
-        ;;
+            ;;
     esac
 fi
