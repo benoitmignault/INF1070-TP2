@@ -44,22 +44,64 @@ else
     # La liste des options valides
     choix_option_valid="^-[fnc]$"
 
+    # Les variables de contrôles contre les erreurs
+    fichier_valide=false
+    option_fichier=false    
+    option_nbligne=false
+    option_charHex=false
+    option_invalide=false
+
+    # Les variables utilisables 
+    nom_fichier=""
+    nb_lignes=10 # Par défaut c'est 10
 
     # Utilisation de la boucle while et shift pour itérer sur les arguments
     while [ "$#" -gt 0 ]; do
 
-        # Stocker le contenu actuel de $1 avant le shift
-        current_option="$1"
+        # Récupère l'information de l'argument $1, avant le shift
+        option_actuelle="$1"        
         
-        # Décaler vers la gauche pour passer à l'argument suivant
         shift
 
-        # Stocker le contenu actuel de $1 avant le shift
-        next_argument="$1"
+        # Récupère l'information de l'argument $1, après le shift, pour vérification
+        prochaine_option="$1"
+
+        # On vérifi si l'option est invalide
+        if [[ ! "$option_actuelle" =~ $choix_option_valid ]]; then
+
+            echo "L'option saisie « $option_actuelle » est invalide..." >&2
+            exit 4              
+        else
+            # Maintenant, on doit trouver notre option qui a été validée
+            case "$option_actuelle" in
+                "-f")             
+                    option_fichier=true
+                    # On trouve un fichier invalide ou qui n'existe pas
+                    if [ ! -f "$prochaine_option" ]; then
+
+                        echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
+                        exit 2
+                    fi
+                    ;;
+
+                "-n")
+                    option_nbligne=true 
+
+
+
+
+                    ;;
+
+                "-c")
+                    option_charHex=true 
+                    ;;
+            esac
+        fi
         
-        # Afficher l'option actuelle et le prochain argument
-        echo "Option actuelle : $current_option"
-        echo "Prochain argument : $next_argument"
+
+
+
+        
     done
 
     
