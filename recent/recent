@@ -1,39 +1,6 @@
 #!/bin/bash
 
-# Déclaration des functions
-
-function F1(){
-    echo 'I like bash programming'
-}
-
-
-function greeting() {
-
-    str="Hello, $name"
-    # le return qu'on connait est représenté ici, par un ou plusieurs echo via la sortie standard
-    echo $str
-    echo $str
-    echo $str
-}
-#val=$(greeting)
-
-
-# Par défaut sans l'option -n, on affiche les 10 fichiers, les plus récents
-# Option -n doit avoir un chiffre valide positivement
-# Option -f doit avoir le nom du fichier qui le suit comme argument
-
-# On doit valider que le fichier existe avec le chemin fourni en paramètre
-
-
-
-
-
-
-
-
 # Début de l'exécution du script
-
-
 
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
 if [ $# -lt 2 ] || [ $# -gt 5 ]; then
@@ -42,26 +9,22 @@ if [ $# -lt 2 ] || [ $# -gt 5 ]; then
     exit 1    
 else
     # La liste des options valides
-    choix_option_valid="^-[fnc]$"
+    choix_option_valid='^-[fnc]$'
+    # Validation sur un nombre positif
+    nb_valide='^[0-9]+$'
 
     # Les variables de contrôles contre les erreurs
-    fichier_valide=false
     option_fichier=false    
     option_nbligne=false
     option_charHex=false
-    option_invalide=false
-    fin_argument_dispo=false
-    
+    fin_argument_dispo=false    
 
     # Les variables utilisables 
-    nom_fichier=""
-    # Par défaut c'est 10
-    nb_lignes=10
-    # On assigne le nombre total arguments
-    nb_arguments=$#
+    nom_fichier=""  # Nom du fichier
+    nb_lignes=0     # Par défaut à 0    
+    nb_arguments=$# # Nombre totaux arguments
 
     # Utilisation de la boucle while et shift pour itérer sur les arguments
-    # Tant qu'il y a des arguments
     while [ "$nb_arguments" -gt 0 ]; do
 
         # Récupère l'information de l'argument $1, avant le shift
@@ -94,31 +57,55 @@ else
                         exit 4
                     else
                         option_fichier=true
-                        # On a trouvé un fichier invalide ou qui n'existe pas
-                        if [ ! -f "$prochaine_option" ]; then
+                        # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
+                        if [ "$fin_argument_dispo" = true ]; then
+                            break
+                        else
+                            # On a trouvé un fichier invalide ou qui n'existe pas
+                            if [ ! -f "$prochaine_option" ]; then
 
-                            echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
-                            exit 2
-                        else 
-                            # On associe le nom du fichier
-                            nom_fichier="$prochaine_option"
+                                echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
+                                exit 2
+                            else 
+                                # On associe le nom du fichier
+                                nom_fichier="$prochaine_option"
+                            fi
                         fi
-                    fi                    
-                    ;;
+                    fi ;;
                 "-n")
-                    option_nbligne=true 
+                    # On doit valide que nous n'avons pas déjà saisie une option
+                    if [ "$option_nbligne" = true ]; then
+                        
+                        echo "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." >&2
+                        exit 4
+                    else
+                        option_nbligne=true
+                        # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
+                        if [ "$fin_argument_dispo" = true ]; then
+                            break
+                        else
+                            if [[ ! "$prochaine_option" =~ $nb_valide ]]; then
 
+                                echo "Le nombre de lignes « $prochaine_option » doit être être une valeur numérique valide..." >&2
+                                exit 3        
+                            else
+                                if [ "$prochaine_option" -gt 0 ]; then
 
-
-
-                    ;;
+                                    # On associe le nombre de lignes
+                                    nb_lignes="$prochaine_option"
+                                else
+                                    echo "Le nombre de lignes « $prochaine_option » doit être supérieur à 0..." >&2
+                                    exit 3
+                                fi
+                            fi
+                        fi
+                    fi ;;
                 "-c")
-                    option_charHex=true 
-                    ;;
+                    option_charHex=true ;;
             esac
         fi
 
-        # On doit refaire la validation On peut shifter, seulement si nous avons un nombre paire argument
+        # On doit refaire la validation, si on peut shifter, seulement si nous avons un nombre paire arguments
         if [ "$fin_argument_dispo" = true ]; then
             break
         else
@@ -130,65 +117,27 @@ else
         fi        
     done
 
-    # Ici, on va devoir faire le test si il nous manque la valeur numérique pour l'option -n
+    # On va faire plusieurs scénarios de tests
+    if [ "$option_nbligne" = true ]; then
 
+        if [ "$nb_lignes" -eq 0 ]; then
+            echo "Vous avez omis de saisir le nombre de lignes vue l'option -n activitée..." >&2
+            exit 3
+        else
+            if [ "$option_fichier" = false ]; then
 
+                echo "L'option -f avec son nom de fichier a été omis..." >&2
+                exit 2
+            else
+                if [ ! -n "$nom_fichier" ]; then
 
-    #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
-    case "$#" in
-        2)              
-            # Vérifier si l'argument correspond à une option valide
-            if [[ "$1" = "-f" ]]; then                
-                # Avons nous un fichier régulier  
-                if [ -f "$2" ];  then
-
-                    cat $2  | head -n 10
-
-                else
-                    echo "Le fichier $2 est un fichier non valide ou introuvable" >&2
+                    echo "L'option -f avec son nom de fichier a été omis..." >&2
                     exit 2
                 fi
-            else
-                echo "Aucun fichier n'a été fourni" >&2
-                exit 2
             fi
-            ;;            
-        3)  
-            # Scénario avec l'option -c et -f et son fichier, seulement
-            echo "Nous avons : $1, $2, $3" 
-            # Valeur de retour pour l'option -n et le nombre entier N.
-            # -f recently-used.xbel -n , code erreur 3 , il manque le nombre avec option 
-            # Valeur de retour pour une option inconnue.
-
-
-
-            ;;
-        4)  
-            # Scénario avec l'option -f et l'option -n et inversement
-            
-
-            # Vérifier les arguments impaires sont des options valides
-            if [[ "$1" =~ $choix_option_valid ]] && [[ "$3" =~ $choix_option_valid ]]; then
-
-                echo "Les options sont valides !"
-
-
-            else
-                echo "L'une des deux ou les deux l'options ne sont valides." >&2
-                exit 4
-            fi
-
-
-
-            ;;
-        5)
-            # Tous les scénario sont possible
-            echo "Nous avons : $1, $2, $3, $4, $5"
-
-
-
-
-
-            ;;
-    esac
+        fi       
+    else
+        # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
+        nb_lignes=10
+    fi
 fi
