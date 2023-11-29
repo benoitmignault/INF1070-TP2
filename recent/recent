@@ -50,8 +50,7 @@ else
         # On vérifi si l'option est invalide
         if [[ ! "$option_actuelle" =~ $choix_option_valid ]]; then
 
-            echo "L'option saisie « $option_actuelle » est invalide..." >&2
-            exit 4              
+            message_erreur_exit "L'option saisie « $option_actuelle » est invalide..." 4
         else
             # Maintenant, on doit trouver notre option qui a été validée
             case "$option_actuelle" in
@@ -59,8 +58,7 @@ else
                     # On doit valide que nous n'avons pas déjà saisie une option
                     if [ "$option_fichier" = true ]; then
                         
-                        echo "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." >&2
-                        exit 4
+                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
                     else
                         option_fichier=true
                         # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
@@ -70,8 +68,7 @@ else
                             # On a trouvé un fichier invalide ou qui n'existe pas
                             if [ ! -f "$prochaine_option" ]; then
 
-                                echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
-                                exit 2
+                                message_erreur_exit "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." 2
                             else 
                                 # On associe le nom du fichier
                                 nom_fichier="$prochaine_option"
@@ -82,8 +79,7 @@ else
                     # On doit valide que nous n'avons pas déjà saisie une option
                     if [ "$option_nbligne" = true ]; then
                         
-                        echo "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." >&2
-                        exit 4
+                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
                     else
                         option_nbligne=true
                         # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
@@ -92,16 +88,14 @@ else
                         else
                             if [[ ! "$prochaine_option" =~ $nb_valide ]]; then
 
-                                echo "Le nombre de lignes « $prochaine_option » doit être être une valeur numérique valide..." >&2
-                                exit 3        
+                                message_erreur_exit "Le nombre de lignes « $prochaine_option » doit être être une valeur numérique valide..." 3
                             else
                                 if [ "$prochaine_option" -gt 0 ]; then
 
                                     # On associe le nombre de lignes
                                     nb_lignes="$prochaine_option"
                                 else
-                                    echo "Le nombre de lignes « $prochaine_option » doit être supérieur à 0..." >&2
-                                    exit 3
+                                    message_erreur_exit "Le nombre de lignes « $prochaine_option » doit être supérieur à 0..." 3
                                 fi
                             fi
                         fi
