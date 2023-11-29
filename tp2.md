@@ -448,38 +448,18 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 [Ma nouvelle version de mon image](https://hub.docker.com/r/hc591017/containers-admin)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Solution de l'exercice 5
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
 Décrire votre solution ici.
+
+
+
+
+sed 's/%/\\x/g' : remplace chaque occurrence de '%' par '\x'. Cela prépare les caractères hexadécimaux pour printf.
+
+xargs -0 printf : utilise xargs pour passer le résultat à printf. L'option -0 de xargs indique que les entrées sont délimitées par un caractère null (ce qui est nécessaire si votre chemin de fichier contient des espaces).
 
 
 
