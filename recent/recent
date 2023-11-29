@@ -138,4 +138,7 @@ else
         # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
         nb_lignes=10
     fi
+
+    # Si le script arrive ici, ça veut dire qu'on arrive à l'étape finale soit afficher les lignes voulues
+    grep 'href="file://' recently-used.xbel | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n 10 | sed 's/%/\\x/g' | xargs -0 printf
 fi
