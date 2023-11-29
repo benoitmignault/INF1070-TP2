@@ -127,18 +127,16 @@ else
     if [ "$option_nbligne" = true ]; then
 
         if [ "$nb_lignes" -eq 0 ]; then
-            echo "Vous avez omis de saisir le nombre de lignes vue l'option -n activitée..." >&2
-            exit 3
+
+            message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'option -n activitée..." 3
         else
             if [ "$option_fichier" = false ]; then
 
-                echo "L'option -f avec son nom de fichier a été omis..." >&2
-                exit 2
+                message_erreur_exit "L'option -f a été omis..." 2
             else
                 if [ ! -n "$nom_fichier" ]; then
 
-                    echo "L'option -f avec son nom de fichier a été omis..." >&2
-                    exit 2
+                    message_erreur_exit "L'option -f avec son nom de fichier a été omis..." 2
                 fi
             fi
         fi       
