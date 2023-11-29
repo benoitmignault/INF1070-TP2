@@ -50,21 +50,33 @@ else
     option_nbligne=false
     option_charHex=false
     option_invalide=false
+    fin_argument_dispo=false
+    
 
     # Les variables utilisables 
     nom_fichier=""
-    nb_lignes=10 # Par défaut c'est 10
+    # Par défaut c'est 10
+    nb_lignes=10
+    # On assigne le nombre total arguments
+    nb_arguments=$#
 
     # Utilisation de la boucle while et shift pour itérer sur les arguments
-    while [ "$#" -gt 0 ]; do
+    # Tant qu'il y a des arguments
+    while [ "$nb_arguments" -gt 0 ]; do
 
         # Récupère l'information de l'argument $1, avant le shift
-        option_actuelle="$1"        
+        option_actuelle="$1"
         
-        shift
+        # On peut shifter, seulement si nous avons un nombre paire argument
+        if [ "$nb_arguments" -gt 1 ]; then
 
-        # Récupère l'information de l'argument $1, après le shift, pour vérification
-        prochaine_option="$1"
+            shift            
+            # Récupère l'information de l'argument $1, après le shift, pour vérification
+            prochaine_option="$1"
+        else
+            # À la fin du tour, on revalide et on va sortir de la boucle, si on n'a pas trouvé d'erreur en cours de route
+            fin_argument_dispo=true
+        fi
 
         # On vérifi si l'option est invalide
         if [[ ! "$option_actuelle" =~ $choix_option_valid ]]; then
@@ -74,16 +86,25 @@ else
         else
             # Maintenant, on doit trouver notre option qui a été validée
             case "$option_actuelle" in
-                "-f")             
-                    option_fichier=true
-                    # On trouve un fichier invalide ou qui n'existe pas
-                    if [ ! -f "$prochaine_option" ]; then
+                "-f")
+                    # On doit valide que nous n'avons pas déjà saisie une option
+                    if [ "$option_fichier" = true ]; then
+                        
+                        echo "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." >&2
+                        exit 4
+                    else
+                        option_fichier=true
+                        # On a trouvé un fichier invalide ou qui n'existe pas
+                        if [ ! -f "$prochaine_option" ]; then
 
-                        echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
-                        exit 2
-                    fi
+                            echo "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." >&2
+                            exit 2
+                        else 
+                            # On associe le nom du fichier
+                            nom_fichier="$prochaine_option"
+                        fi
+                    fi                    
                     ;;
-
                 "-n")
                     option_nbligne=true 
 
@@ -91,24 +112,27 @@ else
 
 
                     ;;
-
                 "-c")
                     option_charHex=true 
                     ;;
             esac
         fi
-        
 
+        # On doit refaire la validation On peut shifter, seulement si nous avons un nombre paire argument
+        if [ "$fin_argument_dispo" = true ]; then
+            break
+        else
+            # Une fois les arguments vérifiés, on retranche 
+            (( nb_arguments=$nb_arguments-2 )) 
 
-
-        
+            # On fait un 2e shift, pour vérifier jusqu'à deux autres arguments
+            shift
+        fi        
     done
 
-    
+    # Ici, on va devoir faire le test si il nous manque la valeur numérique pour l'option -n
 
 
-
-    # utiliser un While avec un shift au lieu d'une boucle for
 
     #On va structurer notre gestion argument avec Switch/Case, pour une meilleure lisibilité
     case "$#" in
