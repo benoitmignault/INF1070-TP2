@@ -130,13 +130,18 @@ else
             else
                 if [ ! -n "$nom_fichier" ]; then
 
-                    message_erreur_exit "L'option -f avec son nom de fichier a été omis..." 2
+                    message_erreur_exit "L'option -f est présent mais pas le fichier, car il a été omis..." 2
                 fi
             fi
         fi       
     else
-        # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
-        nb_lignes=10
+        if [ ! -n "$nom_fichier" ]; then
+
+            message_erreur_exit "L'option -f est présent mais pas le fichier, car il a été omis..." 2
+        else
+            # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
+            nb_lignes=10
+        fi
     fi
 
     # subtitution de commande qui l,a donner à la variable pour l'executer via la commande echo
