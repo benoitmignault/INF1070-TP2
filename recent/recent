@@ -167,7 +167,7 @@ else
 
         if [ "$nb_lignes" -eq 0 ]; then
 
-            message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'option -n activitée..." 3
+            message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'utilisation de l'option -n..." 3
         else
             if [ "$option_fichier" = false ]; then
 
