@@ -366,9 +366,13 @@ Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible da
 Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notr eutilisation de notre conteneur.
 
 
-4. Afficher les locatisations des packages installés, à l'aide d'une seule commande.
+4. Installer les outils suivants dans le conteneur containers-admin et afficher leurs localisations dans le système de fichiers.
 
 #### Explication de l'étape 4 :
+
+Avant de faire l'installation des packages, il est important de faire la commande `apt update`. Ça permet de mettre notre conteneur à jour pour la réception des futurs packages qu'on pourrait avoir besoin.
+
+Pour faire l'installation, tous les packages dont on aura besoin, on fait simplement `apt install` avec les packages qu'on veut installer un à la suite de l'autre, après le mot `install`.
 
 On utilise la commande `dpkg` qui est le gestionnaire de packages pour la distribution de Linux `Debian`.
 L'option `-L` permet de montrer pour chacun des packages listés après l'option, les endroits où ils se situent dans le système de fichiers.
