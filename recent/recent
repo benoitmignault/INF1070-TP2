@@ -16,6 +16,7 @@ if [ $# -lt 2 ] || [ $# -gt 5 ]; then
 else
     # La liste des options valides
     choix_option_valid='^-[fnc]$'
+
     # Validation sur un nombre positif
     nb_valide='^[0-9]+$'
 
@@ -47,10 +48,35 @@ else
             fin_argument_dispo=true
         fi
 
-        # On vérifi si l'option est invalide
-        if [[ ! "$option_actuelle" =~ $choix_option_valid ]]; then
+        # On vérifi si l'option est invalide 
+        # On aussi valider que certaines situations valides ou non pourrait arriver avec l'argument impair (3 et 5)
+        if [[ ! "$option_actuelle" =~ $choix_option_valid ]] || [ -f "$option_actuelle" ] || [[ "$option_actuelle" =~ $nb_valide ]]; then
+            
+            # Il pourrait s'agir de -- , -x etc...
+            if [[ "$option_actuelle" =~ '^-' ]]; then
 
-            message_erreur_exit "L'option saisie « $option_actuelle » est invalide..." 4
+                message_erreur_exit "L'option saisie « $option_actuelle » est invalide..." 4
+            fi
+
+            # On pourrait avoir soit un fichier si le nom du fichier est en 3e ou 5e argument
+            # Même principe pour le nombre suivi de l'option -n
+            if [ ! -f "$option_actuelle" ] && [[ "$option_actuelle" =~ $nb_valide ]]; then
+
+                # Nous avons un nombre, est-il bon...
+                if ["$option_nbligne" = true ] && [ "$option_actuelle" -gt 0 ]; then
+
+                    nb_lignes="$option_actuelle"
+                else
+                    message_erreur_exit "Le nombre de lignes est invalide ou que l'option du nombre de ligne n'est pas présente avec le nombre..." 3
+                fi
+            else
+                if [ "$option_fichier" = true ]; then
+
+                    nom_fichier="$option_actuelle"
+                else
+                    message_erreur_exit "Un fichier « $option_actuelle » a été fourni sans l'option -f..." 2
+                fi
+            fi
         else
             # Maintenant, on doit trouver notre option qui a été validée
             case "$option_actuelle" in
@@ -60,18 +86,23 @@ else
                         
                         message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
                     else
-                        option_fichier=true
-                        # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
-                        if [ "$fin_argument_dispo" = true ]; then
+                        # Si nous avons l'option -f précédé de l'option -n sans nombre entre les deux, erreur et break
+                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
                             break
                         else
-                            # On a trouvé un fichier invalide ou qui n'existe pas
-                            if [ ! -f "$prochaine_option" ]; then
+                            option_fichier=true
+                            # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
+                            if [ "$fin_argument_dispo" = true ]; then
+                                break
+                            else
+                                # On a trouvé un fichier invalide ou qui n'existe pas
+                                if [ ! -f "$prochaine_option" ]; then
 
-                                message_erreur_exit "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." 2
-                            else 
-                                # On associe le nom du fichier
-                                nom_fichier="$prochaine_option"
+                                    message_erreur_exit "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." 2
+                                else 
+                                    # On associe le nom du fichier
+                                    nom_fichier="$prochaine_option"
+                                fi
                             fi
                         fi
                     fi 
@@ -108,7 +139,12 @@ else
                         
                         message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
                     else
-                        option_charHex=true
+                        # Si nous avons l'option -c précédé de l'option -n sans nombre entre les deux, erreur et break
+                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
+                            break
+                        else
+                            option_charHex=true
+                        fi
                     fi 
                     ;;
             esac
