@@ -192,9 +192,6 @@ Cependant, le 2e caractère de la ligne doit être absolument la lettre `r`.
 
 #### Expression régulière 7 :
 
-********************************** Des cas passe invalidement **********************************
-
-
 ```bash
 grep -E '^\+?([0-9]{1,2})?\s?\(?[0-9]{3}\)?[0-9]{3}[-. ]{1}[0-9]{4}$' fichier
 ```
