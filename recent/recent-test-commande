@@ -1,3 +1,44 @@
+# Test valide
 ./recent -f recently-used.xbel
-./recent -c -f recently-used.xbel
 ./recent -f recently-used.xbel -c
+./recent -c -f recently-used.xbel
+./recent -f recently-used.xbel -n 20
+./recent -n 20 -f recently-used.xbel
+./recent -f recently-used.xbel -n 20 -c
+./recent -f recently-used.xbel -c -n 20
+./recent -n 20 -c -f recently-used.xbel
+./recent -c -n 20 -f recently-used.xbel
+./recent -c -f recently-used.xbel -n 20
+
+# Test invalide
+# Code erreur 1
+./recent 
+./recent -f
+./recent recently-used.xbel
+./recent -c
+./recent -n
+
+# Code erreur 2
+./recent -f fail       >>> fichier est invalide
+./recent -n 4          >>> aucun nom de fichier na été fourni
+./recent -f /home/moot >>> fichier est invalide
+./recent -c -f         >>> aucun nom de fichier na été fourni
+./recent -n 4 -c -f    >>> aucun nom de fichier na été fourni
+./recent -n 4 -c       >>> aucun nom de fichier na été fourni
+
+# Code erreur 3
+./recent -f recently-used.xbel -n     >>> le nombre est manquant
+./recent -f recently-used.xbel -n 0   >>> le nombre est doit être supérieur à 0
+./recent -f recently-used.xbel -n 10x >>> le nombre est invalide
+./recent -f recently-used.xbel -n a7  >>> le nombre est invalide 
+./recent -c -n -f recently-used.xbel  >>> le nombre est manquant
+./recent -n -c -f recently-used.xbel  >>> le nombre est manquant
+
+# Code erreur 4
+./recent -f recently-used.xbel -x      >>> option invalide
+./recent -- -f recently-used.xbel      >>> option invalide
+./recent -n 4 -n -f recently-used.xbel >>> option déjà présente
+
+# Code erreur 5
+./recent -f recently-used.xbel abcd               >>> argument inconnu
+./recent -f recently-used.xbel recently-used.xbel >>> argument inconnu
