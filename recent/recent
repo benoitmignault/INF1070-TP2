@@ -74,7 +74,8 @@ else
                                 nom_fichier="$prochaine_option"
                             fi
                         fi
-                    fi ;;
+                    fi 
+                    ;;
                 "-n")
                     # On doit valide que nous n'avons pas déjà saisie une option
                     if [ "$option_nbligne" = true ]; then
@@ -99,19 +100,15 @@ else
                                 fi
                             fi
                         fi
-                    fi ;;
+                    fi
+                    ;;
                 "-c")
                     # On doit valide que nous n'avons pas déjà saisie une option
                     if [ "$option_charHex" = true ]; then
                         
-                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument »..." 4
+                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
                     else
-                        # Si nous avons l'option -c précédé de l'option -n sans nombre entre les deux, erreur et break
-                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
-                            break
-                        else
-                            option_charHex=true
-                        fi
+                        option_charHex=true
                     fi 
                     ;;
             esac
