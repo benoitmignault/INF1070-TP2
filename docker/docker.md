@@ -44,7 +44,49 @@ root@ba2e39f6db12:/#
 ```
 
 
-4. Afficher les locatisations des packages installés, à l'aide d'une seule commande.
+4. Installer les outils suivants dans le conteneur containers-admin et afficher leurs localisations dans le système de fichiers.
+
+* Avant d'installer les packages, on doit faire cette commande :
+
+```bash
+apt update
+```
+
+## Résultat de la commande précédente :
+
+```
+Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]                      
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1494 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.0 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1027 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]      
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1265 kB]     
+Get:9 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]            
+Get:10 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1520 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [49.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1292 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1535 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [32.6 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [78.3 kB]
+Fetched 28.6 MB in 4s (7205 kB/s)                          
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+13 packages can be upgraded. Run 'apt list --upgradable' to see them.
+```
+
+* Voici la commande pour installer d'un coup les packages sur une même ligne de commande :
+
+```bash
+apt install lsb-release curl gpg gcc libjemalloc-dev pkg-config make
+```
+
+* Voici la commande pour afficher leurs localisations dans le système de fichiers :
 
 ```bash
 dpkg -L lsb-release curl gpg gcc libjemalloc-dev pkg-config make
