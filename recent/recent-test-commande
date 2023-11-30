@@ -1,0 +1,3 @@
+./recent -f recently-used.xbel
+./recent -c -f recently-used.xbel
+./recent -f recently-used.xbel -c
