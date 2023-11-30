@@ -139,6 +139,12 @@ else
         nb_lignes=10
     fi
 
-    # Si le script arrive ici, ça veut dire qu'on arrive à l'étape finale soit afficher les lignes voulues
-    grep 'href="file://' recently-used.xbel | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n 10 | sed 's/%/\\x/g' | xargs -0 printf
+    # subtitution de commande qui l,a donner à la variable pour l'executer via la commande echo
+    commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
+
+    if [ -n "$commande" ] && [ "$option_charHex" = false ]; then
+        echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
+    else
+        echo "$commande"
+    fi    
 fi
