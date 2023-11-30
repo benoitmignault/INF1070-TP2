@@ -191,5 +191,5 @@ else
         echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
     else
         echo "$commande"
-    fi 
+    fi    
 fi
