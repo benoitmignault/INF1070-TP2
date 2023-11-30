@@ -101,7 +101,19 @@ else
                         fi
                     fi ;;
                 "-c")
-                    option_charHex=true ;;
+                    # On doit valide que nous n'avons pas déjà saisie une option
+                    if [ "$option_charHex" = true ]; then
+                        
+                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument »..." 4
+                    else
+                        # Si nous avons l'option -c précédé de l'option -n sans nombre entre les deux, erreur et break
+                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
+                            break
+                        else
+                            option_charHex=true
+                        fi
+                    fi 
+                    ;;
             esac
         fi
 
