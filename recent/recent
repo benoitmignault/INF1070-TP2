@@ -74,7 +74,8 @@ else
                                 nom_fichier="$prochaine_option"
                             fi
                         fi
-                    fi ;;
+                    fi 
+                    ;;
                 "-n")
                     # On doit valide que nous n'avons pas déjà saisie une option
                     if [ "$option_nbligne" = true ]; then
@@ -99,9 +100,17 @@ else
                                 fi
                             fi
                         fi
-                    fi ;;
+                    fi
+                    ;;
                 "-c")
-                    option_charHex=true ;;
+                    # On doit valide que nous n'avons pas déjà saisie une option
+                    if [ "$option_charHex" = true ]; then
+                        
+                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+                    else
+                        option_charHex=true
+                    fi 
+                    ;;
             esac
         fi
 
@@ -147,7 +156,7 @@ else
     # subtitution de commande qui l,a donner à la variable pour l'executer via la commande echo
     commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
 
-    if [ -n "$commande" ] && [ "$option_charHex" = false ]; then
+    if [ -n "$commande" ] && [ "$option_charHex" = true ]; then
         echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
     else
         echo "$commande"
