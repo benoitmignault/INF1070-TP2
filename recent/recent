@@ -7,6 +7,15 @@ function message_erreur_exit(){
     exit $2
 }
 
+function validation_option_utilise(){
+
+    if [ "$1" = true ]; then
+    
+        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $2 »..." 4
+    fi
+}
+
+
 # Début de l'exécution du script
 
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
@@ -14,13 +23,11 @@ if [ $# -lt 2 ] || [ $# -gt 5 ]; then
     message_erreur_exit "Veuiller fournir entre 2 et 5 arguments !" 1
 fi
 
-# La liste des options valides
-choix_option_valid='^-[fnc]$'
+# Validation pour une mauvaise option
 choix_option_mauvais='^-.*'
 
 # Validation sur un nombre positif
 nb_valide='^[0-9]+$'
-
 
 # Les variables de contrôles contre les erreurs
 option_fichier=false    
@@ -45,30 +52,18 @@ for argument in "$@"; do
     # Maintenant, on doit trouver notre option qui a été validée
     case "$argument_actuel" in
         "-f")
-            # On doit valide que nous n'avons pas déjà saisie l'optionune option
-            if [ "$option_fichier" = true ]; then
-
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
-            fi
-
+            # On doit valider que nous n'avons pas déjà saisie l'optionune option
+            validation_option_utilise "$option_fichier" "$argument_actuel"
             option_fichier=true
             ;;
         "-n")
-            # On doit valide que nous n'avons pas déjà saisie une option
-            if [ "$option_nbligne" = true ]; then  
-
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
-            fi
-
+            # On doit valider que nous n'avons pas déjà saisie une option
+            validation_option_utilise "$option_nbligne" "$argument_actuel"
             option_nbligne=true
             ;;
         "-c")
-            # On doit valide que nous n'avons pas déjà saisie une option
-            if [ "$option_charHex" = true ]; then
-                
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
-            fi
-
+            # On doit valider que nous n'avons pas déjà saisie une option
+            validation_option_utilise "$option_charHex" "$argument_actuel"
             option_charHex=true
             ;;
         *)
@@ -102,16 +97,16 @@ for argument in "$@"; do
                         message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être une valeur numérique valide..." 3
                     fi
                 else
-                    if [ -f "$argument_actuel" ]; then
+                    # Il faut protéger cette situation, en rajoutant que le fichier n'a pas encore été enregistrer
+                    if [ -f "$argument_actuel" ] && [ ! -n "$nom_fichier" ]; then
                         message_erreur_exit "Vous avez omis de saisir l'option -f avec le fichier « $argument_actuel »..." 2
                     else                    
-                        message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
+                        message_erreur_exit "L'argument saisi « $argument_actuel » est inconnu du système..." 5
                     fi                    
-                fi                
+                fi
             fi
             ;;
     esac
-
 done
 
 
