@@ -12,32 +12,33 @@
 
 # Test invalide
 # Code erreur 1
-./recent 
-./recent -f
-./recent recently-used.xbel
-./recent -c
-./recent -n
+./recent >>> Veuiller fournir entre 2 et 5 arguments !
+./recent -f >>> Veuiller fournir entre 2 et 5 arguments !
+./recent recently-used.xbel >>> Veuiller fournir entre 2 et 5 arguments !
+./recent -c >>> Veuiller fournir entre 2 et 5 arguments !
+./recent -n >>> Veuiller fournir entre 2 et 5 arguments !
 
 # Code erreur 2
-./recent -f fail       >>> fichier est invalide
-./recent -n 4          >>> aucun nom de fichier na été fourni
-./recent -f /home/moot >>> fichier est invalide
-./recent -c -f         >>> aucun nom de fichier na été fourni
-./recent -n 4 -c -f    >>> aucun nom de fichier na été fourni
-./recent -n 4 -c       >>> aucun nom de fichier na été fourni
+./recent -f fail       >>> Le fichier est soit invalide ou non trouvé
+./recent -n 5 recently-used.xbel >>> Vous avez omis de saisir option -f avec le fichier
+./recent -n 5          >>> option -f a été omis
+./recent -f /home/frantz256255/.local/share >>> Le fichier est soit invalide ou non trouvé
+./recent -c -f         >>> Vous avez omis le nom du fichier en utilisant option -f
+./recent -n 4 -c -f    >>> Vous avez omis le nom du fichier en utilisant option -f
+./recent -n 4 -c       >>> option -f a été omis
 
 # Code erreur 3
-./recent -f recently-used.xbel -n     >>> le nombre est manquant
-./recent -f recently-used.xbel -n 0   >>> le nombre est doit être supérieur à 0
-./recent -f recently-used.xbel -n 10x >>> le nombre est invalide
-./recent -f recently-used.xbel -n a7  >>> le nombre est invalide 
-./recent -c -n -f recently-used.xbel  >>> le nombre est manquant
-./recent -n -c -f recently-used.xbel  >>> le nombre est manquant
+./recent -f recently-used.xbel -n     >>> Vous avez omis de saisir le nombre de lignes avec option -n
+./recent -f recently-used.xbel -n 0   >>> Le nombre de lignes doit être supérieur à 0
+./recent -f recently-used.xbel -n 10x >>> Le nombre de lignes doit être une valeur numérique valide
+./recent -f recently-used.xbel -n a7  >>> Le nombre de lignes doit être une valeur numérique valide
+./recent -c -n -f recently-used.xbel  >>> Vous avez omis de saisir le nombre de lignes avec option -n
+./recent -n -c -f recently-used.xbel  >>> Vous avez omis de saisir le nombre de lignes avec option -n
 
 # Code erreur 4
-./recent -f recently-used.xbel -x      >>> option invalide
-./recent -- -f recently-used.xbel      >>> option invalide
-./recent -n 4 -n -f recently-used.xbel >>> option déjà présente
+./recent -f recently-used.xbel -x      >>> option saisie est invalide
+./recent -- -f recently-used.xbel      >>> option saisie est invalide
+./recent -n 4 -n -f recently-used.xbel >>> Vous ne pouvez pas saisir une option déjà utilisée
 
 # Code erreur 5
 ./recent -f recently-used.xbel abcd               >>> argument inconnu
