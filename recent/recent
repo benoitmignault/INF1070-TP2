@@ -7,189 +7,108 @@ function message_erreur_exit(){
     exit $2
 }
 
+# 
+
+
+
+
+
+
 # Début de l'exécution du script
 
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
 if [ $# -lt 2 ] || [ $# -gt 5 ]; then
 
     message_erreur_exit "Veuiller fournir entre 2 et 5 arguments !" 1
-else
-    # La liste des options valides
-    choix_option_valid='^-[fnc]$'
+fi
 
-    # Validation sur un nombre positif
-    nb_valide='^[0-9]+$'
+# La liste des options valides
+choix_option_valid='^-[fnc]$'
+choix_option_mauvais='^-.*'
 
-    # Les variables de contrôles contre les erreurs
-    option_fichier=false    
-    option_nbligne=false
-    option_charHex=false
-    fin_argument_dispo=false    
+# Validation sur un nombre positif
+nb_valide='^[0-9]+$'
 
-    # Les variables utilisables 
-    nom_fichier=""  # Nom du fichier
-    nb_lignes=0     # Par défaut à 0    
-    nb_arguments=$# # Nombre totaux arguments
 
-    # Utilisation de la boucle while et shift pour itérer sur les arguments
-    while [ "$nb_arguments" -gt 0 ]; do
+# Les variables de contrôles contre les erreurs
+option_fichier=false    
+option_nbligne=false
+option_charHex=false 
 
-        # Récupère l'information de l'argument $1, avant le shift
-        option_actuelle="$1"
-        
-        # On peut shifter, seulement si nous avons un nombre paire argument
-        if [ "$nb_arguments" -gt 1 ]; then
+# Les variables utilisables 
+nom_fichier=""  # Nom du fichier
+nb_lignes=0     # Par défaut à 0 
 
-            shift            
-            # Récupère l'information de l'argument $1, après le shift, pour vérification
-            prochaine_option="$1"
-        else
-            # À la fin du tour, on revalide et on va sortir de la boucle, si on n'a pas trouvé d'erreur en cours de route
-            fin_argument_dispo=true
-        fi
+# Les variables arguments pour la gestion des situations possible
+argument_actuel=""
+argument_ancien=""
 
-        # On vérifi si l'option est invalide 
-        # On aussi valider que certaines situations valides ou non pourrait arriver avec l'argument impair (3 et 5)
-        if [[ ! "$option_actuelle" =~ $choix_option_valid ]] || [ -f "$option_actuelle" ] || [[ "$option_actuelle" =~ $nb_valide ]]; then
-            
-            # Il pourrait s'agir de -- , -x etc...
-            if [[ "$option_actuelle" =~ '^-' ]]; then
+# Décision d'utiliser un forEach, finalement
+for argument in "$@"; do
 
-                message_erreur_exit "L'option saisie « $option_actuelle » est invalide..." 4
+    # On associ l'ancien argument à la variable
+    argument_ancien="$argument_actuel"
+    argument_actuel="$argument"
+    
+    
+
+    
+    # Maintenant, on doit trouver notre option qui a été validée
+    case "$argument_actuel" in
+        "-f")
+            # On doit valide que nous n'avons pas déjà saisie l'optionune option
+            if [ "$option_fichier" = true ]; then
+
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+            fi                
+            ;;
+        "-n")
+            # On doit valide que nous n'avons pas déjà saisie une option
+            if [ "$option_nbligne" = true ]; then  
+
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+            fi                
+            ;;
+        "-c")
+            # On doit valide que nous n'avons pas déjà saisie une option
+            if [ "$option_charHex" = true ]; then
+                
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
             fi
+            ;;
+        *)
+            ;;    
+    esac    
+done
 
-            # On pourrait avoir soit un fichier si le nom du fichier est en 3e ou 5e argument
-            # Même principe pour le nombre suivi de l'option -n
-            if [ ! -f "$option_actuelle" ] && [[ "$option_actuelle" =~ $nb_valide ]]; then
 
-                # Nous avons un nombre, est-il bon...
-                if ["$option_nbligne" = true ] && [ "$option_actuelle" -gt 0 ]; then
+# Maintenant, que nous avons itéré sur tous les arguments, finalisation des scénarios d'erreur, avant de faire la commande
+if [ "$option_nbligne" = true ]; then
 
-                    nb_lignes="$option_actuelle"
-                else
-                    message_erreur_exit "Le nombre de lignes est invalide ou que l'option du nombre de ligne n'est pas présente avec le nombre..." 3
-                fi
-            else
-                if [ "$option_fichier" = true ]; then
-
-                    nom_fichier="$option_actuelle"
-                else
-                    message_erreur_exit "Un fichier « $option_actuelle » a été fourni sans l'option -f..." 2
-                fi
-            fi
-        else
-            # Maintenant, on doit trouver notre option qui a été validée
-            case "$option_actuelle" in
-                "-f")
-                    # On doit valide que nous n'avons pas déjà saisie une option
-                    if [ "$option_fichier" = true ]; then
-                        
-                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
-                    else
-                        # Si nous avons l'option -f précédé de l'option -n sans nombre entre les deux, erreur et break
-                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
-                            break
-                        else
-                            option_fichier=true
-                            # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
-                            if [ "$fin_argument_dispo" = true ]; then
-                                break
-                            else
-                                # On a trouvé un fichier invalide ou qui n'existe pas
-                                if [ ! -f "$prochaine_option" ]; then
-
-                                    message_erreur_exit "Le fichier saisi « $prochaine_option » est non valide ou introuvable..." 2
-                                else 
-                                    # On associe le nom du fichier
-                                    nom_fichier="$prochaine_option"
-                                fi
-                            fi
-                        fi
-                    fi 
-                    ;;
-                "-n")
-                    # On doit valide que nous n'avons pas déjà saisie une option
-                    if [ "$option_nbligne" = true ]; then
-                        
-                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
-                    else
-                        option_nbligne=true
-                        # Nouvelle validation pour gérer la situation, où il n'y a pas de nombre avec l'option -n
-                        if [ "$fin_argument_dispo" = true ]; then
-                            break
-                        else
-                            if [[ ! "$prochaine_option" =~ $nb_valide ]]; then
-
-                                message_erreur_exit "Le nombre de lignes « $prochaine_option » doit être être une valeur numérique valide..." 3
-                            else
-                                if [ "$prochaine_option" -gt 0 ]; then
-
-                                    # On associe le nombre de lignes
-                                    nb_lignes="$prochaine_option"
-                                else
-                                    message_erreur_exit "Le nombre de lignes « $prochaine_option » doit être supérieur à 0..." 3
-                                fi
-                            fi
-                        fi
-                    fi
-                    ;;
-                "-c")
-                    # On doit valide que nous n'avons pas déjà saisie une option
-                    if [ "$option_charHex" = true ]; then
-                        
-                        message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
-                    else
-                        # Si nous avons l'option -c précédé de l'option -n sans nombre entre les deux, erreur et break
-                        if [ "$option_nbligne" = true ] && [ "$nb_lignes" -eq 0 ]; then
-                            break
-                        else
-                            option_charHex=true
-                        fi
-                    fi 
-                    ;;
-            esac
-        fi
-
-        # On doit refaire la validation, si on peut shifter, seulement si nous avons un nombre paire arguments
-        if [ "$fin_argument_dispo" = true ]; then
-            break
-        else
-            # Une fois les arguments vérifiés, on retranche 
-            (( nb_arguments=$nb_arguments-2 )) 
-
-            # On fait un 2e shift, pour vérifier jusqu'à deux autres arguments
-            shift
-        fi        
-    done
-
-    # On va faire plusieurs scénarios de tests
-    if [ "$option_nbligne" = true ]; then
-
-        if [ "$nb_lignes" -eq 0 ]; then
-
-            message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'utilisation de l'option -n..." 3
-        else
-            if [ "$option_fichier" = false ]; then
-
-                message_erreur_exit "L'option -f a été omis..." 2
-            else
-                if [ ! -n "$nom_fichier" ]; then
-
-                    message_erreur_exit "L'option -f avec son nom de fichier a été omis..." 2
-                fi
-            fi
-        fi       
-    else
-        # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
-        nb_lignes=10
+    if [ "$nb_lignes" -eq 0 ]; then        
+        message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'utilisation de l'option -n..." 3
     fi
 
-    # subtitution de commande qui l,a donner à la variable pour l'executer via la commande echo
-    commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
+    # Nous avons pas reçu l'option -f
+    if [ "$option_fichier" = false ]; then
+        message_erreur_exit "L'option -f a été omis..." 2
+    fi
 
-    if [ -n "$commande" ] && [ "$option_charHex" = true ]; then
-        echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
-    else
-        echo "$commande"
-    fi    
+    # Le nom du fichier est absent
+    if [ ! -n "$nom_fichier" ]; then
+        message_erreur_exit "L'option -f avec son nom de fichier a été omis..." 2
+    fi   
+else
+    # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
+    nb_lignes=10
 fi
+
+# subtitution de commande qui l'a donner à la variable pour l'executer via la commande echo
+commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
+
+if [ -n "$commande" ] && [ "$option_charHex" = true ]; then
+    # Conversion des % pour \x pour avoir vraiment des caractères hexa. 
+    echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
+else
+    echo "$commande"
+fi    
