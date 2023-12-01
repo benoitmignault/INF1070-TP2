@@ -7,18 +7,10 @@ function message_erreur_exit(){
     exit $2
 }
 
-# 
-
-
-
-
-
-
 # Début de l'exécution du script
 
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
 if [ $# -lt 2 ] || [ $# -gt 5 ]; then
-
     message_erreur_exit "Veuiller fournir entre 2 et 5 arguments !" 1
 fi
 
@@ -83,7 +75,6 @@ for argument in "$@"; do
             # Tout ce qui sera soit : Option invalide OU Nom de fichier OU Nombre ligne OU autre chose
             # On commence va valider que ce n'est pas une option inconnue
             if [[ "$argument_actuel" =~ $choix_option_mauvais ]]; then
-
                 message_erreur_exit "L'option saisie « $argument_actuel » est invalide..." 4
             fi
 
@@ -92,61 +83,69 @@ for argument in "$@"; do
             if [ "$argument_precedent" = "-f" ]; then
                 # On valide si nous avons un fichier
                 if [ -f "$argument_actuel" ]; then
-
                     nom_fichier="$argument_actuel"
                 else
                     message_erreur_exit "Le fichier « $argument_actuel » est soit invalide ou non trouvé..." 2
                 fi                                
             else
-            # Nous avons peut-être l'option -n 
-            if [ "$argument_precedent" = "-n" ]; then
-
-                # On valide si nous avons une valeur numérique
-                if [[ "$argument_actuel" =~ $nb_valide ]]; then
-
-                    # Il se peut que nous avons un nombre de ligne à 0
-                    if [ "$argument_actuel" -gt 0 ]; then
-                                
-                        nb_lignes="$argument_actuel"
+                # Nous avons peut-être l'option -n 
+                if [ "$argument_precedent" = "-n" ]; then
+                    # On valide si nous avons une valeur numérique
+                    if [[ "$argument_actuel" =~ $nb_valide ]]; then
+                        # Il se peut que nous avons un nombre de ligne à 0
+                        if [ "$argument_actuel" -gt 0 ]; then                                
+                            nb_lignes="$argument_actuel"
+                        else
+                            message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être supérieur à 0..." 3       
+                        fi
                     else
-                        message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être supérieur à 0..." 3          
-                    fi              
+                        message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être être une valeur numérique valide..." 3
+                    fi
                 else
-                    message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être être une valeur numérique valide..." 3
+                    message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
                 fi
-            else
-                message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
             fi
-            ;;    
-    esac    
+            ;;
+    esac
+
 done
 
 
 # Maintenant, que nous avons itéré sur tous les arguments, finalisation des scénarios d'erreur, avant de faire la commande
 if [ "$option_nbligne" = true ]; then
 
-    if [ "$nb_lignes" -eq 0 ]; then        
-        message_erreur_exit "Vous avez omis de saisir le nombre de lignes vue l'utilisation de l'option -n..." 3
+    if [ "$nb_lignes" -eq 0 ]; then
+
+        message_erreur_exit "Vous avez omis de saisir le nombre de lignes avec l'option -n..." 3
     fi
 
     # Nous avons pas reçu l'option -f
     if [ "$option_fichier" = false ]; then
+
         message_erreur_exit "L'option -f a été omis..." 2
     fi
 
     # Le nom du fichier est absent
     if [ ! -n "$nom_fichier" ]; then
-        message_erreur_exit "L'option -f avec son nom de fichier a été omis..." 2
+
+        message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2
     fi   
 else
     # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
     nb_lignes=10
+
+    # C'est automatique, l'option -f a été déclaré
+    # Le nom du fichier est absent
+    if [ ! -n "$nom_fichier" ]; then
+
+        message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2    
+    fi
 fi
 
-# subtitution de commande qui l'a donner à la variable pour l'executer via la commande echo
+# Subtitution de commande pour alléger le code qui vient
 commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
 
-if [ -n "$commande" ] && [ "$option_charHex" = true ]; then
+if [ "$option_charHex" = true ]; then
     # Conversion des % pour \x pour avoir vraiment des caractères hexa. 
     echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
 else
