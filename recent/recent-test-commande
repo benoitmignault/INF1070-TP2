@@ -21,7 +21,7 @@
 # Code erreur 2
 ./recent -f fail       >>> fichier est invalide
 ./recent -n 5 recently-used.xbel >>> fichier sans la présence de son option -f
-./recent -n 4          >>> aucun nom de fichier na été fourni
+./recent -n 5          >>> absence de option -f
 ./recent -f /home/moot >>> fichier est invalide
 ./recent -c -f         >>> aucun nom de fichier na été fourni
 ./recent -n 4 -c -f    >>> aucun nom de fichier na été fourni
