@@ -48,7 +48,7 @@ for argument in "$@"; do
             # On doit valide que nous n'avons pas déjà saisie l'optionune option
             if [ "$option_fichier" = true ]; then
 
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
             fi
 
             option_fichier=true
@@ -57,7 +57,7 @@ for argument in "$@"; do
             # On doit valide que nous n'avons pas déjà saisie une option
             if [ "$option_nbligne" = true ]; then  
 
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
             fi
 
             option_nbligne=true
@@ -66,7 +66,7 @@ for argument in "$@"; do
             # On doit valide que nous n'avons pas déjà saisie une option
             if [ "$option_charHex" = true ]; then
                 
-                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
+                message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $argument_actuel »..." 4
             fi
 
             option_charHex=true
@@ -99,11 +99,15 @@ for argument in "$@"; do
                             message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être supérieur à 0..." 3       
                         fi
                     else
-                        message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être être une valeur numérique valide..." 3
+                        message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être une valeur numérique valide..." 3
                     fi
                 else
-                    message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
-                fi
+                    if [ -f "$argument_actuel" ]; then
+                        message_erreur_exit "Vous avez omis de saisir l'option -f avec le fichier « $argument_actuel »..." 2
+                    else                    
+                        message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
+                    fi                    
+                fi                
             fi
             ;;
     esac
