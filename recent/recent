@@ -1,12 +1,13 @@
 #!/bin/bash
 
-# Elle sera utilisé à chaque fois qu'on aura un message d'erreur
+# Elle sera utilisée à chaque fois qu'on aura un message d'erreur
 function message_erreur_exit(){
 
     echo "$1" >&2
     exit $2
 }
 
+# Elle sera utilisée, lorsqu'une option déjà présente survient
 function validation_option_utilise(){
 
     if [ "$1" = true ]; then
@@ -15,7 +16,17 @@ function validation_option_utilise(){
     fi
 }
 
+# Ele sera utilisée, lorsqu'on doit faire appel quand avec l'option -f, on n'a pas saisi de fichier
+function validation_nom_fichier_vide(){
 
+    # Le nom du fichier est absent
+    if [ ! -n "$1" ]; then
+
+        message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2
+    fi 
+}
+
+#####################################################################################
 # Début de l'exécution du script
 
 # Si le nombre d'arguments est en bas de 2 ou supérieur à 5, Exit 1
@@ -70,14 +81,17 @@ for argument in "$@"; do
             # Tout ce qui sera soit : Option invalide OU Nom de fichier OU Nombre ligne OU autre chose
             # On commence va valider que ce n'est pas une option inconnue
             if [[ "$argument_actuel" =~ $choix_option_mauvais ]]; then
+
                 message_erreur_exit "L'option saisie « $argument_actuel » est invalide..." 4
             fi
 
             # Avant de vérifier l'argument actuel, on va valider son argument précédent
             # Nous avons peut-être l'option -f
             if [ "$argument_precedent" = "-f" ]; then
+
                 # On valide si nous avons un fichier
                 if [ -f "$argument_actuel" ]; then
+
                     nom_fichier="$argument_actuel"
                 else
                     message_erreur_exit "Le fichier « $argument_actuel » est soit invalide ou non trouvé..." 2
@@ -85,20 +99,25 @@ for argument in "$@"; do
             else
                 # Nous avons peut-être l'option -n 
                 if [ "$argument_precedent" = "-n" ]; then
+
                     # On valide si nous avons une valeur numérique
                     if [[ "$argument_actuel" =~ $nb_valide ]]; then
+
                         # Il se peut que nous avons un nombre de ligne à 0
-                        if [ "$argument_actuel" -gt 0 ]; then                                
+                        if [ "$argument_actuel" -gt 0 ]; then
+
                             nb_lignes="$argument_actuel"
                         else
                             message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être supérieur à 0..." 3       
                         fi
+                        nb_lignes="$argument_actuel"
                     else
                         message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être une valeur numérique valide..." 3
                     fi
                 else
                     # Il faut protéger cette situation, en rajoutant que le fichier n'a pas encore été enregistrer
                     if [ -f "$argument_actuel" ] && [ ! -n "$nom_fichier" ]; then
+
                         message_erreur_exit "Vous avez omis de saisir l'option -f avec le fichier « $argument_actuel »..." 2
                     else                    
                         message_erreur_exit "L'argument saisi « $argument_actuel » est inconnu du système..." 5
@@ -125,23 +144,19 @@ if [ "$option_nbligne" = true ]; then
     fi
 
     # Le nom du fichier est absent
-    if [ ! -n "$nom_fichier" ]; then
-
-        message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2
-    fi   
+    validation_nom_fichier_vide "$nom_fichier"     
 else
     # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
     nb_lignes=10
 
     # C'est automatique, l'option -f a été déclaré
     # Le nom du fichier est absent
-    if [ ! -n "$nom_fichier" ]; then
-
-        message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2    
-    fi
+    validation_nom_fichier_vide "$nom_fichier"   
 fi
 
-# Subtitution de commande pour alléger le code qui vient
+# Maintenant, on va passer à l'étape ultime, la commande...
+
+# Subtitution de commande pour alléger le code
 commande=$(grep 'href="file://' "$nom_fichier" | awk -F'"' '{print $2}' | sed 's/file:\/\///g' | sort -r | head -n "$nb_lignes")
 
 if [ "$option_charHex" = true ]; then
@@ -149,4 +164,4 @@ if [ "$option_charHex" = true ]; then
     echo "$commande" | sed 's/%/\\x/g' | xargs -0 printf
 else
     echo "$commande"
-fi    
+fi
