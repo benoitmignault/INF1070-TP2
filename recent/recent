@@ -57,14 +57,18 @@ for argument in "$@"; do
             if [ "$option_fichier" = true ]; then
 
                 message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
-            fi                
+            fi
+
+            option_fichier=true
             ;;
         "-n")
             # On doit valide que nous n'avons pas déjà saisie une option
             if [ "$option_nbligne" = true ]; then  
 
                 message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
-            fi                
+            fi
+
+            option_nbligne=true
             ;;
         "-c")
             # On doit valide que nous n'avons pas déjà saisie une option
@@ -72,8 +76,47 @@ for argument in "$@"; do
                 
                 message_erreur_exit "Vous ne pouvez pas saisir une option déjà utilisée « $option_actuelle »..." 4
             fi
+
+            option_charHex=true
             ;;
         *)
+            # Tout ce qui sera soit : Option invalide OU Nom de fichier OU Nombre ligne OU autre chose
+            # On commence va valider que ce n'est pas une option inconnue
+            if [[ "$argument_actuel" =~ $choix_option_mauvais ]]; then
+
+                message_erreur_exit "L'option saisie « $argument_actuel » est invalide..." 4
+            fi
+
+            # Avant de vérifier l'argument actuel, on va valider son argument précédent
+            # Nous avons peut-être l'option -f
+            if [ "$argument_precedent" = "-f" ]; then
+                # On valide si nous avons un fichier
+                if [ -f "$argument_actuel" ]; then
+
+                    nom_fichier="$argument_actuel"
+                else
+                    message_erreur_exit "Le fichier « $argument_actuel » est soit invalide ou non trouvé..." 2
+                fi                                
+            else
+            # Nous avons peut-être l'option -n 
+            if [ "$argument_precedent" = "-n" ]; then
+
+                # On valide si nous avons une valeur numérique
+                if [[ "$argument_actuel" =~ $nb_valide ]]; then
+
+                    # Il se peut que nous avons un nombre de ligne à 0
+                    if [ "$argument_actuel" -gt 0 ]; then
+                                
+                        nb_lignes="$argument_actuel"
+                    else
+                        message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être supérieur à 0..." 3          
+                    fi              
+                else
+                    message_erreur_exit "Le nombre de lignes « $argument_actuel » doit être être une valeur numérique valide..." 3
+                fi
+            else
+                message_erreur_exit "L'argument saisie « $argument_actuel » est inconnu du système..." 5
+            fi
             ;;    
     esac    
 done
