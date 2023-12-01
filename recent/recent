@@ -128,7 +128,6 @@ for argument in "$@"; do
     esac
 done
 
-
 # Maintenant, que nous avons itéré sur tous les arguments, finalisation des scénarios d'erreur, avant de faire la commande
 if [ "$option_nbligne" = true ]; then
 
