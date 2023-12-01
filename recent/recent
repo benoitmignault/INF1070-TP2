@@ -41,18 +41,15 @@ nb_lignes=0     # Par défaut à 0
 
 # Les variables arguments pour la gestion des situations possible
 argument_actuel=""
-argument_ancien=""
+argument_precedent=""
 
 # Décision d'utiliser un forEach, finalement
 for argument in "$@"; do
 
     # On associ l'ancien argument à la variable
-    argument_ancien="$argument_actuel"
+    argument_precedent="$argument_actuel"
     argument_actuel="$argument"
-    
-    
 
-    
     # Maintenant, on doit trouver notre option qui a été validée
     case "$argument_actuel" in
         "-f")
