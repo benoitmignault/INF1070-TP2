@@ -452,38 +452,91 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 [Ma nouvelle version de mon image](https://hub.docker.com/r/hc591017/containers-admin)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Solution de l'exercice 5
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
-Décrire votre solution ici.
+La mécanique du script est séparé en différente section. 
+Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
+Nous avons éliminé la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution.
+
+Pour le bon fonctionnement du script, j'ai conçu des tests qui étaient fonctionnels et d'autres non-fonctionnels.
+
+#### Tests fonctionnels
+
+Ici, on va tester toutes les combinaisons possibles des options.
+```
+./recent -f recently-used.xbel
+./recent -f recently-used.xbel -c
+./recent -c -f recently-used.xbel
+./recent -f recently-used.xbel -n 20
+./recent -n 20 -f recently-used.xbel
+./recent -f recently-used.xbel -n 20 -c
+./recent -f recently-used.xbel -c -n 20
+./recent -n 20 -c -f recently-used.xbel
+./recent -c -n 20 -f recently-used.xbel
+./recent -c -f recently-used.xbel -n 20
+```
+
+#### Tests non fonctionnels, pour s'assurer de l'intégrité du script.
+
+# Test invalide
+
+# Code erreur 1
+```
+./recent 
+./recent -f
+./recent recently-used.xbel
+./recent -c
+./recent -n
+```
+
+
+# Code erreur 2
+```
+./recent -f fail                   >>> fichier est invalide
+./recent -n 5 recently-used.xbel >>> le fichier doit venir avec son option -f
+./recent -n 5                     >>> aucun nom de fichier na été fourni
+./recent -f /home/frantz256255/.local/share >>> fichier est invalide
+./recent -c -f                     >>> aucun nom de fichier na été fourni
+./recent -n 4 -c -f             >>> aucun nom de fichier na été fourni
+./recent -n 4 -c                 >>> aucun nom de fichier na été fourni
+```
+
+# Code erreur 3
+```
+./recent -f recently-used.xbel -n        >>> le nombre est manquant
+./recent -f recently-used.xbel -n 0     >>> le nombre est doit être supérieur à 0
+./recent -f recently-used.xbel -n 10x >>> le nombre est invalide
+./recent -f recently-used.xbel -n a7   >>> le nombre est invalide 
+./recent -c -n -f recently-used.xbel    >>> le nombre est manquant
+./recent -n -c -f recently-used.xbel    >>> le nombre est manquant
+```
+
+# Code erreur 4
+```
+./recent -f recently-used.xbel -x          >>> option invalide
+./recent -- -f recently-used.xbel          >>> option invalide
+./recent -n 4 -n -f recently-used.xbel >>> option déjà présente
+```
+
+# Code erreur 5
+```
+./recent -f recently-used.xbel abcd               >>> argument inconnu
+./recent -f recently-used.xbel recently-used.xbel >>> argument inconnu
+```
+
+Ces tests seront testés à différent pendant dans le script. 
+Si nous avons un nombre argument valide, on va initier plusieurs variables.
+On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles, que je vais faire des recherches. 
+Comme dans les autres languages, on va utliser la mécanique de `Switch & Case`, on commence par essayer s'il y s'agit d'une option valide entre `-f, -n & -c`, il faut dire que la dernière option est optionnelle.
+Une des situations d'erreurs que j'ai attrapé c'est la gestion d'erreur avec la même option répétée deux fois.
+Si notre option valide est la première, on va associer la variables de contrôles à «YES». Si nous n'avons pas un argument qui s'apparente à une option valide, on va peut-être avoir un nombre valide avec l'option -n. 
+Il y a la possibilité d'avoir de trouver un fichier valide et existant. 
+
+
+
+
 
 
 
