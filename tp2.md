@@ -458,9 +458,9 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 
 La mécanique du script est séparé en différente section. 
 Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
-Nous avons éliminé la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution.
+Nous avons éliminé la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
 
-Pour le bon fonctionnement du script, j'ai conçu des tests qui étaient fonctionnels et d'autres non-fonctionnels.
+Pour le bon fonctionnement du script, j'ai conçu des tests valides à la hauteur de `10` et d'autres tests invalides à la hauteur de `23` qui donneront des messages d'erreur et ainsi qu'un code d'erreur de sortie.
 
 #### Tests fonctionnels
 
@@ -480,8 +480,6 @@ Ici, on va tester toutes les combinaisons possibles des options.
 
 #### Tests non fonctionnels, pour s'assurer de l'intégrité du script.
 
-# Test invalide
-
 # Code erreur 1
 ```
 ./recent 
@@ -490,7 +488,6 @@ Ici, on va tester toutes les combinaisons possibles des options.
 ./recent -c
 ./recent -n
 ```
-
 
 # Code erreur 2
 ```
@@ -526,13 +523,34 @@ Ici, on va tester toutes les combinaisons possibles des options.
 ./recent -f recently-used.xbel recently-used.xbel >>> argument inconnu
 ```
 
-Ces tests seront testés à différent pendant dans le script. 
-Si nous avons un nombre argument valide, on va initier plusieurs variables.
-On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles, que je vais faire des recherches. 
-Comme dans les autres languages, on va utliser la mécanique de `Switch & Case`, on commence par essayer s'il y s'agit d'une option valide entre `-f, -n & -c`, il faut dire que la dernière option est optionnelle.
-Une des situations d'erreurs que j'ai attrapé c'est la gestion d'erreur avec la même option répétée deux fois.
-Si notre option valide est la première, on va associer la variables de contrôles à «YES». Si nous n'avons pas un argument qui s'apparente à une option valide, on va peut-être avoir un nombre valide avec l'option -n. 
-Il y a la possibilité d'avoir de trouver un fichier valide et existant. 
+Ces tests seront déclanchés à différent moment pendant le script. 
+Si nous avons un nombre argument valide, on va initier plusieurs variables qui seront utilisées dans le script.
+
+On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles, on va travailler. Ici, je parle de l'argument précédent qui sera affectué à l'argument actuel, qui est à null pour le premier argument, comme il n'y a pas d'argument précédent, vue qu'on commence à itérer.
+
+On va utliser une mécanique de `switch / case` qui permet alléger le code en éliminant, la redondance des `if then else...`. Les choix possibles du `switch / case` seront dans un premier temps les options `-f, -n & -c`, et la dernière situation sera tout le restant qui n'est pas une option valide.
+
+Il faut dire qu'après une option valide, vient son argument propre à lui, sauf pour l'option `-c` qui viendra seul. Sinon, il faudra gérer des situations d'erreurs, tel mentionné plus haut.
+
+Exemple de situation d'erreur possible, un nom de fichier qui ne vient pas après l'option `-f` mais remplacer par l'option `-n` et vise versa. Un nombre de lignes `valides` qui seront utilisées pour l'affichage du contenu du fichier récupérer via l'option `-f`. 
+
+Lorsqu'une erreur survient, nous allons envoyer un message ainsi qu'un code de sortie à la fonction `message_erreur_exit`. Il y a aussi l'utilisation de la fonction `validation_option_utilise` qui sera pour vérifier si on ne reçoit pas deux fois la même option. On a utilisé des variables de contrôles de style `booléen`, une variable pour récupérer une valeur numérique et une variable qui contiendra le nom du fichier.
+
+Une fois le `switch / case` terminé, on va finaliser certaines situations d'erreurs qui pourraient survenir à ce moment là.
+
+Nous sommes maintenant, rendu à exécuter notre commande pour récupérer les fichiers les plus récents ouvert dans notre système de fichiers `Ubuntu`. 
+Pour ce faire, on commence par utiliser la commande `grep` pour récupérer les lignes qui possède la mention de `href="file://`. 
+Ensuite, on va utiliser la commande `awk` sur toutes les lignes retrouvées grace au résultat précédent. 
+Avec l'option `-F` et son délimiteur voulu `"` qui permettra de récupérer toutes les séquences qui content des `"`. 
+On va garder seulement la deuxième occurence soit via l'argument d ela même commande `'{print $2}'`. 
+Maintenant que nous avons les noms complèts des fichier, on va garder seulement le chemin et son nom de fichier, 
+donc on aura besoin de la commande `sed` pour faire un traitement de nettoyage. 
+On va utiliser l'option `-s/regexp/remplacement/g` pour remplacer l'occurence trouvée par rien, donc on fera juste supprimer `href="file://`. 
+On va maintenant inverser la sélection pour avoir les fichiers les plus récents à la première ligne avec la commande `sort -r`. 
+La commande `head -n` est obligatoire mais tout ce qui peut varier sera le nombre de lignes affichées en fonction du choix passer au script, 
+préalablement. Le résultat affichera des caractères bizarre, car l'encodage n'a pas été prévu pour ce genre de caractères spéciaux. 
+Exemple pour les espaces, on va avoir `%20` et pour les accents dont le `é`, on va avoir `%C3%A9`.
+Pour corriger ces caractères innabituels, on devra faire appel à l'option `-c` du script.
 
 
 
