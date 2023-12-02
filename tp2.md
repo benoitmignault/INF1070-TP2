@@ -563,5 +563,5 @@ On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fi
 
 ### État de l'exercice: résolu, partiellement résolu ou non résolu
 
-Décrire votre solution ici.
+En cours
 
