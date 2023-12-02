@@ -559,11 +559,6 @@ La commande finale `xargs` agira d'exécutante pour la commande `printf` qui agi
 On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fichier est terminé par des caractères null.
 
 
-
-
-
-
-
 ## Solution de l'exercice 6
 
 ### État de l'exercice: résolu, partiellement résolu ou non résolu
