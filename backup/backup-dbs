@@ -1,1 +1,52 @@
 #!/bin/sh
+
+# Elle sera utilisée à chaque fois qu'on aura un message d'erreur
+message_erreur_exit(){
+
+    echo "$1" >&2
+    exit $2
+}
+
+#####################################################################################
+# Début de l'exécution du script
+
+# Si le nombre d'arguments est différent de 1, on call la fonction de message d'erreur
+if [ $# -ne 1 ]; then
+    message_erreur_exit "Usage: $0 QLITE3_DBS_DIR !" 1
+fi
+
+# On récupère le répertoire où se trouve les fichiers DBs à exporter
+repertoire_ciblie="$1"
+
+# Étape 1 - Exporter chacune des bases de données sous format sql dans le répertoire, si possible
+
+# On valide que le répertoire existe bien ou qui est valide
+if [ ! -d "$repertoire_ciblie" ]; then
+    message_erreur_exit "Le répertoire demandé « $repertoire_ciblie » est invalide ou inexistant !" 1
+fi
+
+# Maintenant que nous avons un répertoire valide, on va vérifier que nous avons bien, des DBs pour exportation et archivage.
+nb_db_existantes=$(find "$repertoire_ciblie" -name "*.db" -type f | wc -l)
+
+# Validation que nous avons bien des DBs à exporter
+if [ "$nb_db_existantes" -eq 0 ]; then
+    message_erreur_exit "Aucune base de données à sauvegarder dans le répertoire $repertoire_ciblie !" 1
+fi
+
+# Lister les fichiers qui se termine par extension .db 
+for un_fichier in "$repertoire_ciblie"/*.db; do
+
+    echo "Export de $un_fichier sous format SQL ..."
+    # On récupert seulement le nom du fichier en excluant le suffixe (extension)
+    renommage_fichier="./sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
+    sqlite3 "$un_fichier" .dump > "$renommage_fichier"
+done
+
+# Archiver et compresser l'archive de l'ensemble des fichiers SQL
+nom_archive="./mybackups/mydbs-$(date +"%Y%m%d%H%M").tar.gz"
+tar -cvzf "$nom_archive" "$(ls ./sql/*.sql)"
+
+echo "Archivage et compression dans $nom_archive ... "
+
+# On fait le clean up des fichiers .SQL non nécessaire
+#rm ./sql/*.sql
