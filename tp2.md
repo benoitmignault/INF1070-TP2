@@ -456,6 +456,8 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 
 ### État de l'exercice: résolu
 
+Le but de cet exercice est d'afficher les fichiers récament ouvert dans notre système de fichier `Ubuntu`.
+
 La mécanique du script est séparé en différente section. 
 Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
 Nous avons éliminé la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
@@ -543,14 +545,18 @@ Pour ce faire, on commence par utiliser la commande `grep` pour récupérer les 
 Ensuite, on va utiliser la commande `awk` sur toutes les lignes retrouvées grace au résultat précédent. 
 Avec l'option `-F` et son délimiteur voulu `"` qui permettra de récupérer toutes les séquences qui content des `"`. 
 On va garder seulement la deuxième occurence soit via l'argument d ela même commande `'{print $2}'`. 
-Maintenant que nous avons les noms complèts des fichier, on va garder seulement le chemin et son nom de fichier, 
+Maintenant que nous avons les noms complets des fichier, on va garder seulement le chemin et le nom du fichier, 
 donc on aura besoin de la commande `sed` pour faire un traitement de nettoyage. 
 On va utiliser l'option `-s/regexp/remplacement/g` pour remplacer l'occurence trouvée par rien, donc on fera juste supprimer `href="file://`. 
 On va maintenant inverser la sélection pour avoir les fichiers les plus récents à la première ligne avec la commande `sort -r`. 
 La commande `head -n` est obligatoire mais tout ce qui peut varier sera le nombre de lignes affichées en fonction du choix passer au script, 
-préalablement. Le résultat affichera des caractères bizarre, car l'encodage n'a pas été prévu pour ce genre de caractères spéciaux. 
+préalablement. Le résultat affichera des caractères bizarre, si le chemin possède des espaces et / ou des accents. 
 Exemple pour les espaces, on va avoir `%20` et pour les accents dont le `é`, on va avoir `%C3%A9`.
-Pour corriger ces caractères innabituels, on devra faire appel à l'option `-c` du script.
+Pour corriger ces caractères innabituels, on devra faire appel à l'option `-c` du script. 
+Dans un premier temps, on va faire appel, à la commande `sed` pour faire le remplacement du caractère `%` par `\x`. Cette transformation dira à la prochaine commande que c'est des caractères hexadécimales et qu'on peut faire de quoi pour convertir.
+
+La commande finale `xargs` agira d'exécutante pour la commande `printf` qui agira ici à titre de convertisseur et formatage du résultat qui sera affiché. Ça va permettre d'afficher les espaces ou les autres caractères de type `spécial`, correctement.
+On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fichier est terminé par des caractères null.
 
 
 
