@@ -37,23 +37,19 @@ chemin_relatif="$(dirname $0)"
 # Lister les fichiers qui se termine par extension .db 
 for un_fichier in "$repertoire_cible"/*.db; do
 
-#    echo "Export de $un_fichier sous format SQL ..."
-    # Chemin relatif de / à la DB
-    # echo "$un_fichier"
+    echo "Export de $un_fichier sous format SQL ..."
+        
     # On récupère seulement le nom du fichier en excluant le suffixe (extension)
     renommage_fichier="$chemin_relatif/sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
     sqlite3 "$un_fichier" .dump > "$renommage_fichier"
-
-    #echo "$renommage_fichier"
 done
 
 # Création du nom de l'archive qu'on veut créer
 chemin_archive="$chemin_relatif/mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
-echo "$chemin_archive"
+
 # Lister les fichiers qui se termine par extension .sql
 for un_fichier in "$chemin_relatif/sql"/*.sql; do
 
-    echo "$un_fichier"
     # Archivage des fichiers...
     # Si archivage existe, on ajoute des fichiers à cette dernière
     if [ -f "$chemin_archive" ]; then
@@ -65,15 +61,12 @@ for un_fichier in "$chemin_relatif/sql"/*.sql; do
     fi    
 done
 
-# Compresser l'archive
+# Compresser l'archive, depuis le /home
 gzip "$chemin_archive"
 
-#echo "Archivage et compression dans $chemin_archive ..."
+echo "Archivage et compression dans $chemin_archive ..."
 
 # On fait le clean up des fichiers .SQL qui ne sont plus nécessaire vue le backup
 rm "$chemin_relatif/sql/"*.sql
 
-#echo "Supression des fichiers SQL de toutes les bases de données ..."
-
-
-# le CRON par du HOME, donc on doit donner les droit
+echo "Supression des fichiers SQL de toutes les bases de données ..."
