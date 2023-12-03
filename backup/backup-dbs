@@ -16,37 +16,57 @@ if [ $# -ne 1 ]; then
 fi
 
 # On récupère le répertoire où se trouve les fichiers DBs à exporter
-repertoire_ciblie="$1"
-
-# Étape 1 - Exporter chacune des bases de données sous format sql dans le répertoire, si possible
+repertoire_cible="$1"
 
 # On valide que le répertoire existe bien ou qui est valide
-if [ ! -d "$repertoire_ciblie" ]; then
-    message_erreur_exit "Le répertoire demandé « $repertoire_ciblie » est invalide ou inexistant !" 1
+if [ ! -d "$repertoire_cible" ]; then
+    message_erreur_exit "Le répertoire demandé « $repertoire_cible » est invalide ou inexistant !" 1
 fi
 
 # Maintenant que nous avons un répertoire valide, on va vérifier que nous avons bien, des DBs pour exportation et archivage.
-nb_db_existantes=$(find "$repertoire_ciblie" -name "*.db" -type f | wc -l)
+nb_db_existantes=$(find "$repertoire_cible" -name "*.db" -type f | wc -l)
 
 # Validation que nous avons bien des DBs à exporter
 if [ "$nb_db_existantes" -eq 0 ]; then
-    message_erreur_exit "Aucune base de données à sauvegarder dans le répertoire $repertoire_ciblie !" 1
+    message_erreur_exit "Aucune base de données à sauvegarder dans le répertoire $repertoire_cible !" 1
 fi
 
 # Lister les fichiers qui se termine par extension .db 
-for un_fichier in "$repertoire_ciblie"/*.db; do
+for un_fichier in "$repertoire_cible"/*.db; do
 
     echo "Export de $un_fichier sous format SQL ..."
+    
     # On récupert seulement le nom du fichier en excluant le suffixe (extension)
     renommage_fichier="./sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
     sqlite3 "$un_fichier" .dump > "$renommage_fichier"
 done
 
-# Archiver et compresser l'archive de l'ensemble des fichiers SQL
-nom_archive="./mybackups/mydbs-$(date +"%Y%m%d%H%M").tar.gz"
-tar -cvzf "$nom_archive" "$(ls ./sql/*.sql)"
+# Création du nom de l'archive qu'on veut créer
+nom_archive="./mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
 
-echo "Archivage et compression dans $nom_archive ... "
+# Lister les fichiers qui se termine par extension .sql
+for un_fichier in "./sql"/*.sql; do
 
-# On fait le clean up des fichiers .SQL non nécessaire
-#rm ./sql/*.sql
+    # Archivage des fichiers...
+    # Si archivage existe, on ajoute des fichiers à cette dernière
+    if [ -f "$nom_archive" ]; then
+        # Insertion de la prochaine DBs dans l'archivage + compression
+        tar -rf "$nom_archive" -C './sql' "$(basename $un_fichier)"
+    else
+        # Création de l'archivage pour y inclure la première DBs
+        tar -cf "$nom_archive" -C './sql' "$(basename $un_fichier)"
+    fi    
+done
+
+# Compresser l'archive
+gzip "$nom_archive"
+
+echo "Archivage et compression dans $nom_archive ..."
+
+# On fait le clean up des fichiers .SQL qui ne sont plus nécessaire vue le backup
+rm ./sql/*.sql
+
+echo "Supression des fichiers SQL de toutes les bases de données ..."
+
+
+# le CRON par du HOME, donc on doit donner les droit
