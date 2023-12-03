@@ -1,0 +1,72 @@
+#!/bin/sh
+
+# Elle sera utilisée à chaque fois qu'on aura un message d'erreur
+message_erreur_exit(){
+
+    echo "$1" >&2
+    exit $2
+}
+
+#####################################################################################
+# Début de l'exécution du script
+
+# Si le nombre d'arguments est différent de 1, on call la fonction de message d'erreur
+if [ $# -ne 1 ]; then
+    message_erreur_exit "Veuiller fournir un répertoire dans le but de faire un «back-up» des bases de données !" 1
+fi
+
+# On récupère le répertoire où se trouve les fichiers DBs à exporter
+repertoire_cible="$1"
+
+# On valide que le répertoire existe bien ou qui est valide
+if [ ! -d "$repertoire_cible" ]; then
+    message_erreur_exit "Le répertoire demandé « $repertoire_cible » est invalide ou inexistant !" 1
+fi
+
+# Maintenant que nous avons un répertoire valide, on va vérifier que nous avons bien, des DBs pour exportation et archivage.
+nb_db_existantes=$(find "$repertoire_cible" -name "*.db" -type f | wc -l)
+
+# Validation que nous avons bien des DBs à exporter
+if [ "$nb_db_existantes" -eq 0 ]; then
+    message_erreur_exit "Aucune base de données à sauvegarder dans le répertoire $repertoire_cible !" 1
+fi
+
+# Récupération du chemin relatif du script
+chemin_relatif="$(dirname $0)"
+
+# Lister les fichiers qui se termine par extension .db 
+for un_fichier in "$repertoire_cible"/*.db; do
+
+    echo "Export de $un_fichier sous format SQL ..."
+        
+    # On récupère seulement le nom du fichier en excluant le suffixe (extension)
+    renommage_fichier="$chemin_relatif/sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
+    sqlite3 "$un_fichier" .dump > "$renommage_fichier"
+done
+
+# Création du nom de l'archive qu'on veut créer
+chemin_archive="$chemin_relatif/mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
+
+# Lister les fichiers qui se termine par extension .sql
+for un_fichier in "$chemin_relatif/sql"/*.sql; do
+
+    # Archivage des fichiers...
+    # Si archivage existe, on ajoute des fichiers à cette dernière
+    if [ -f "$chemin_archive" ]; then
+        # Insertion de la prochaine DBs dans l'archivage + compression
+        tar -rf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
+    else
+        # Création de l'archivage pour y inclure la première DBs
+        tar -cf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
+    fi    
+done
+
+# Compresser l'archive, depuis le /home
+gzip "$chemin_archive"
+
+echo "Archivage et compression dans $chemin_archive ..."
+
+# On fait le clean up des fichiers .SQL qui ne sont plus nécessaire vue le backup
+rm "$chemin_relatif/sql/"*.sql
+
+echo "Supression des fichiers SQL de toutes les bases de données ..."

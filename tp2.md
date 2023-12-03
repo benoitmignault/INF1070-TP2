@@ -456,7 +456,7 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 
 ### État de l'exercice: résolu
 
-Le but de cet exercice est d'afficher les fichiers récament ouvert dans notre système de fichier `Ubuntu`.
+Le but de cet exercice est d'afficher les fichiers récamment ouverts dans notre système de fichier `Ubuntu`.
 
 La mécanique du script est séparé en différente section. 
 Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
@@ -561,7 +561,41 @@ On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fi
 
 ## Solution de l'exercice 6
 
-### État de l'exercice: résolu, partiellement résolu ou non résolu
+### État de l'exercice: résolu
 
-Décrire votre solution ici.
+Le but de cet exercice est d'archiver et de compresser des bases de données, via un répertoire passer en paramètre au script.
 
+Avant le début du script, il y a la fonction les 3 fonctions `message_erreur_exit` reprise du script 
+à l'exercice 5 pour faire l'affichage des messages d'erreurs. Cette fonction sera réutiliée plus tard, 
+e qui permet d'alléger le code. 
+
+On commence par faire une vérification du nombre argument passé en paramètre au script.
+Il ne peut pas en avoir plus d'un arguement, sinon un message d'erreur approprier sera affiché et une sortie de script se fera.
+On récupère le répertoire où se trouve normalement les bases de données à archiver. 
+Un nom de variable `repertoire_cible` est plus significatif que `$1`. 
+
+Ensuite, il faut valider que le répertoire est bien existant et valide. Après celà, une autre vérification simpose soit la présence de les bases de données, car sinon, ça ne sert à rien d'aller plus loin dans le script.
+
+Il est très important, à partir de maintenant de parler de notion de chemin relatif qui commence par la racine du système de fichier `/home`. Dans le répertoire ciblé, on va itéré sur chaque fichier avec la bonne extension. 
+Pour chaque DBs, on va créé un nouveau chemin qui ménera à la création d'un fichier de type `SQL`. 
+Dans le nouveau chemin, il va avoir le chemin relatif, suivi du répertoire `/sql`, 
+suivi du nom de fichier seulement sans son extension, sans son chemin relatif à lui et la date du moment pour la création du fichier.
+
+Ensuite, il est temps de faire l'archivage de toutes les DBs converties en fichier de type `SQL`. 
+On commence par valider si l'archive existe, si oui on rajout les autres fichiers de type `SQL`, à l'archive en cours.
+Sinon, on créé l'archive. On utilise la commande `tar` pour archiver, 
+avec l'option `-C` qui nous permet de se déplacer dans le répertoire où se trouvent les éléments à archiver. Un fois dans le répertoire, on ajout à archive le fichier en cours itération.
+
+Une fois archivage terminé, on va maintenant faire la compression de l'archivage via la commande `gzip`, ce qui va renommer automatiquement l'archive en extention `.tar.gz`.
+
+Pour finir, on fait le ménage dans nos bases de données, plus nécessaire d'avoir ces dernières vue les backup que nous avons fait.
+
+Les tâches de CRONJOB à faire pour l'exercice 6 :
+
+Les tâches s'exécutent, respectivement à chaque 15 minutes, chaque heure, chaque 4 heures et une fois par jour le soir à 23h59m.
+```
+*/15 * * * * /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/backup-dbs /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/mydbs
+0 * * * * /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/backup-dbs /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/mydbs
+0 */4 * * * /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/backup-dbs /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/mydbs
+59 23 * * * /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/backup-dbs /home/frantz256255/Documents/INF1070/TP2/INF1070-TP2/backup/mydbs
+```
