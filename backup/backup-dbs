@@ -31,42 +31,48 @@ if [ "$nb_db_existantes" -eq 0 ]; then
     message_erreur_exit "Aucune base de données à sauvegarder dans le répertoire $repertoire_cible !" 1
 fi
 
+# Récupération du chemin relatif du script
+chemin_relatif="$(dirname $0)"
+
 # Lister les fichiers qui se termine par extension .db 
 for un_fichier in "$repertoire_cible"/*.db; do
 
-    echo "Export de $un_fichier sous format SQL ..."
-    
-    # On récupert seulement le nom du fichier en excluant le suffixe (extension)
-    renommage_fichier="./sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
+#    echo "Export de $un_fichier sous format SQL ..."
+    # Chemin relatif de / à la DB
+    # echo "$un_fichier"
+    # On récupère seulement le nom du fichier en excluant le suffixe (extension)
+    renommage_fichier="$chemin_relatif/sql/$(basename "$un_fichier" .db)-$(date +"%Y%m%d%H%M").sql"
     sqlite3 "$un_fichier" .dump > "$renommage_fichier"
+
+    #echo "$renommage_fichier"
 done
 
 # Création du nom de l'archive qu'on veut créer
-nom_archive="./mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
+chemin_archive="$chemin_relatif/mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
 
 # Lister les fichiers qui se termine par extension .sql
 for un_fichier in "./sql"/*.sql; do
 
     # Archivage des fichiers...
     # Si archivage existe, on ajoute des fichiers à cette dernière
-    if [ -f "$nom_archive" ]; then
+    if [ -f "$chemin_archive" ]; then
         # Insertion de la prochaine DBs dans l'archivage + compression
-        tar -rf "$nom_archive" -C './sql' "$(basename $un_fichier)"
+        tar -rf "$chemin_archive" -C './sql' "$(basename $un_fichier)"
     else
         # Création de l'archivage pour y inclure la première DBs
-        tar -cf "$nom_archive" -C './sql' "$(basename $un_fichier)"
+        tar -cf "$chemin_archive" -C './sql' "$(basename $un_fichier)"
     fi    
 done
 
 # Compresser l'archive
-gzip "$nom_archive"
+gzip "$chemin_archive"
 
-echo "Archivage et compression dans $nom_archive ..."
+#echo "Archivage et compression dans $chemin_archive ..."
 
 # On fait le clean up des fichiers .SQL qui ne sont plus nécessaire vue le backup
 rm ./sql/*.sql
 
-echo "Supression des fichiers SQL de toutes les bases de données ..."
+#echo "Supression des fichiers SQL de toutes les bases de données ..."
 
 
 # le CRON par du HOME, donc on doit donner les droit
