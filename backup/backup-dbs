@@ -12,7 +12,7 @@ message_erreur_exit(){
 
 # Si le nombre d'arguments est différent de 1, on call la fonction de message d'erreur
 if [ $# -ne 1 ]; then
-    message_erreur_exit "Usage: $0 QLITE3_DBS_DIR !" 1
+    message_erreur_exit "Veuiller fournir un répertoire dans le but de faire un «back-up» des bases de données !" 1
 fi
 
 # On récupère le répertoire où se trouve les fichiers DBs à exporter
