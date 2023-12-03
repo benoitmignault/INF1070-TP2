@@ -49,18 +49,19 @@ done
 
 # Création du nom de l'archive qu'on veut créer
 chemin_archive="$chemin_relatif/mybackups/mydbs-$(date +"%Y%m%d%H%M").tar"
-
+echo "$chemin_archive"
 # Lister les fichiers qui se termine par extension .sql
-for un_fichier in "./sql"/*.sql; do
+for un_fichier in "$chemin_relatif/sql"/*.sql; do
 
+    echo "$un_fichier"
     # Archivage des fichiers...
     # Si archivage existe, on ajoute des fichiers à cette dernière
     if [ -f "$chemin_archive" ]; then
         # Insertion de la prochaine DBs dans l'archivage + compression
-        tar -rf "$chemin_archive" -C './sql' "$(basename $un_fichier)"
+        tar -rf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
     else
         # Création de l'archivage pour y inclure la première DBs
-        tar -cf "$chemin_archive" -C './sql' "$(basename $un_fichier)"
+        tar -cf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
     fi    
 done
 
@@ -70,7 +71,7 @@ gzip "$chemin_archive"
 #echo "Archivage et compression dans $chemin_archive ..."
 
 # On fait le clean up des fichiers .SQL qui ne sont plus nécessaire vue le backup
-rm ./sql/*.sql
+rm "$chemin_relatif/sql/"*.sql
 
 #echo "Supression des fichiers SQL de toutes les bases de données ..."
 
