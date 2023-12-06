@@ -35,16 +35,16 @@ Ensuite, il suffit de déposer le fichier `tp2.tgz` sur Moodle!
 #### Explication du script mystere/mystere.sh
 
 La premiere ligne du script permet d'utiliser le bon interpreteur de commande, ici on utilisera bash.
-Le script est diviser en deux parties. La première partie avec un bloc `if...fi`, suivi d'un 2e bloc `if...else...fi`.
+Le script est divisé en deux parties. La première partie avec un bloc `if...fi`, suivi d'un 2e bloc `if...else...fi`.
 
-Le premier bloc `if...fi` possède une condition `$# -ne 1`, qui valide si le nombre arguments passé en paramètre est différent de 1. 
+Le premier bloc `if...fi` possède une condition `$# -ne 1`, qui valide si le nombre d'arguments passés en paramètre est différent de 1. 
 Rappellons-nous que le nom du script ne figure pas dans la somme des paramètres. Si nous passons 0 paramètre ou 2 paramètres et plus, 
 la condition sera vraie donc le message `Fournir un nom en parametre` sera affiché via la commande `echo` 
-et un code de retour 1 sera associé à la sortie du script via la commande `exit`. Le code de retour 1 représente, généralement une erreur d'éxecution. 
+et un code de retour 1 sera associé à la sortie du script via la commande `exit`. Le code de retour 1 représente généralement une erreur d'exécution. 
 
-Si nous avons un paramètre, on passe au prochain bloc `if...else...fi`. On commence par valider si le paramètre `$1` est un répertoire avec l'option `-d`. 
+Si on a un paramètre, on passe au prochain bloc `if...else...fi`. On commence par valider si le paramètre `$1` est un répertoire avec l'option `-d`. 
 Ici, l'option est associé au test de la condition. Si le répertoire existe, on sortira du script avec un code de retour 0, qui veut dire `succès`. 
-Sinon, le répertoire n'existe pas et nous allons rentrer dans une récursivité.
+Sinon, le répertoire n'existe pas et on va rentrer dans une récursivité.
 
 Cette récursivité va rappeller le script ainsi que le paramètre `"$0" dirname $1`. 
 Le nombre de récursivités va être égale au nombre de répertoires parents + le répertoire qu'on veut créer.
@@ -52,7 +52,7 @@ Au moment de la dernière récursivité, la commande `"$0" dirname $1` va retire
 
 Biensûr, le répertoire courant `.` existe, donc la condition du 2e `if` sera vraie donc fera un exit avec un code de retour 0. 
 On remontera chacunes des autres récursivités en créant le répertoire désigné avec la commande `mkdir $1`, 
-sauf si le répertoire voulu existe déjà et dans ce cas, nous allons faire une sortie avec un code de succès (0) de la présente récursivité et passer à la prochaine.
+sauf si le répertoire voulu existe déjà et, dans ce cas, nous allons faire une sortie avec un code de succès (0) de la présente récursivité et passer à la prochaine.
 
 #### Exemples d'appels du script
 
@@ -77,7 +77,7 @@ Résultat de l'exécution du script :
 
 La première condition est fausse, car on a un paramètre. Le répertoire `dossier` sera vérifié dans le deuxième `if` qui n'existe pas, donc on passera à la condition du `else`. 
 On fait un appel à la récursivité grâce à `"$0" dirname $1` qui va trouver le répertoire courant du script `.` qui mettra fin à la récursivité.
-Comme le répertoire `.` existe, donc il y aura une sortie du sous script avec un code de retour de `succès`. En remonte ensuite vers le haut pour créer le répertoire `dossier`. 
+Comme le répertoire `.` existe, donc il y aura une sortie du sous script avec un code de retour de `succès`. On remonte ensuite vers le haut pour créer le répertoire `dossier`. 
 
 
 ##### Situation avec 1 paramètre qui contient encore une fois `dossier` comme paramètre mais le répertoire existe déjà :
@@ -89,7 +89,7 @@ mystere/mystere.sh dossier
 Résultat de l'exécution du script :
 
 La première condition est fausse, car on a un paramètre. 
-Le répertoire `dossier` sera vérifié dans le deuxième `if` qui existe cette fois ci. 
+Le répertoire `dossier` sera vérifié dans le deuxième `if` qui existe cette fois-ci. 
 On va sortir du script avec un code de retour 0.
 
 
@@ -111,9 +111,9 @@ La récursivité sera arrêtée, on va remonter la récursivité et créer le r�
 
 ### État de l'exercice: résolu
 
-* Nous allons utiliser le fichier `fichier` qui contient une quantité appréciable de lignes, fourni par le professeur Moussa Abdenbi, via  Mattermost. Cela devrait nous aider à trouver la plus part des cas de figures.
+* Nous allons utiliser le fichier `fichier` qui contient une quantité appréciable de lignes, fourni par le professeur Moussa Abdenbi, via  Mattermost. Cela devrait nous aider à trouver la plupart des cas de figures.
 
-* Toutes les expressions régulières vont utiliser la commande `grep` et de mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
+* Toutes les expressions régulières vont utiliser la commande `grep` et on doit mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
 
 #### Expression régulière 1 :
 
@@ -123,8 +123,8 @@ grep '^[aA]' fichier
 
 #### Explication régulière 1 :
 
-On nous demande de trouver les lignes qui commencent par `a` ou `A` via l'ensemble `[aA]`,
-il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, expliquer plus haut.
+On nous demande de trouver les lignes qui commencent par `a` ou `A` via l'ensemble `[aA]`.
+Il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, comme expliqué plus haut.
 On utilise le symbole `^` qui est un ancrage pour corresponde au début d'une ligne.
 
 
@@ -149,9 +149,9 @@ grep '^[A-Z].*[0-9]' fichier
 
 On commence par utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par une majuscule via l'interval `[A-Z]`.
 Ensuite, les lignes du fichiers doivent contenir au moins un chiffre via l'interval `[0-9]`. 
-Cependant, si nous utilisons seulement ces deux intervale, ça nous donnera rien car il manque une logique à notre expression. 
-Entre la majuscule du début et le chiffre, il n'est pas impossible de retrouver quelconque caractères entre les deux. 
-On va utiliser `.*` qui signifi qu'on peut avoir entre 0 et plusieurs caractères quelconques.
+Cependant, si on utilise seulement ces deux intervales, ça va rien donner car il manque une logique à notre expression. 
+Entre la majuscule du début et le chiffre, il n'est pas impossible de retrouver quelconques caractères entre les deux. 
+On va utiliser `.*` qui signifie qu'on peut avoir entre 0 et plusieurs caractères quelconques.
 
 
 #### Expression régulière 4 :
@@ -174,7 +174,7 @@ grep '[^.,;:?!]$' fichier
 #### Explication régulière 5 :
 
 On va utiliser le symbole `^` mais pas comme un ancrage mais comme une négation à l'intérieur de l'interval des ponctuations.
-Cet interval aura comme signes suivant `.`, `,`, `;`, `:`, `?` ou `!` via l'interval `[^.,;:?!]`. 
+Cet interval aura les signes suivants `.`, `,`, `;`, `:`, `?` ou `!` via l'interval `[^.,;:?!]`. 
 On va utiliser le symbole ancrage `$` pour déterminer la fin d'une ligne.
 
 
@@ -198,18 +198,18 @@ grep -E '^\+?([0-9]{1,2})?\s?\(?[0-9]{3}\)?[0-9]{3}[-. ]{1}[0-9]{4}$' fichier
 
 #### Explication régulière 7 :
 
-On utilise l'option `-E` pour utiliser des expressions régulières étendues (ERE).
-On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par un `+` au sens littérale mais il est optionnel grâce au `?` qui suit le `+`. 
+On utilise l'option `-E` pour trouver des expressions régulières étendues (ERE).
+On va utiliser le symbole ancrage `^` pour trouver les lignes qui commencent par un `+` au sens littéral, mais il est optionnel grâce au `?` qui suit le `+`. 
 Ensuite, on a notre premier groupe `([0-9]{1,2})` qui lui aussi pourrait être optionnel grâce au `?` 
-et dans ce groupe nous pouvons avoir entre 1 et 2 chiffres qui correspond au code interrurbain du pays que nous tantons de rejoindre.
+et dans ce groupe, on va avoir entre 1 et 2 chiffres qui correspond au code interrurbain du pays qu'on tente de rejoindre.
 Ensuite, dans certaines situation, il pourrait y avoir un espace entre le code interrurbain et le reste du numéro. 
-On va utiliser la notion `\s` pour représenter l'espace avec l'option d'être optionnel grâce au `?`. 
+On va utiliser la notion `\s` pour représenter l'espace avec l'option qui pourra être optionnel grâce au `?`. 
 Ensuite, il pourrait y avoir une paranthèse ouvrante `(` tout en étant optionnel grâce au `?`. 
-Ensuite, nous avons 3 chiffres qui se suit consécutivement `[0-9]{3}`. 
-Si nous avions une paranthèse ouvrante, on pourrait forcément avoir une paranthèse fermante `)` tout en étant optionnel grâce au `?`.
-Ensuite, nous avons 3 chiffres qui se suit consécutivement `[0-9]{3}`. 
+Ensuite, on a 3 chiffres qui se suivent consécutivement `[0-9]{3}`. 
+Si on a une paranthèse ouvrante, on pourrait forcément avoir une paranthèse fermante `)` tout en étant optionnel grâce au `?`.
+Ensuite, on a 3 chiffres qui se suit consécutivement `[0-9]{3}`. 
 Ensuite, vient obligatoirement un signe de ponctuation `.`, `-` ou ` ` dans l'ensemble suivant : `[-. ]{1}`
-pour séparer les 3 chiffres avec les 4 derniers que nous allons retrouver via la dernière partie de l'expression soit `[0-9]{4}$`.
+pour séparer les 3 chiffres avec les 4 derniers que on va retrouver via la dernière partie de l'expression soit `[0-9]{4}$`.
 
 
 #### Expression régulière 8 :
