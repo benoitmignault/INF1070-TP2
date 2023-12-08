@@ -38,7 +38,7 @@ La premiere ligne du script permet d'utiliser le bon interpreteur de commande, i
 Le script est divisé en deux parties. La première partie avec un bloc `if...fi`, suivi d'un 2e bloc `if...else...fi`.
 
 Le premier bloc `if...fi` possède une condition `$# -ne 1`, qui valide si le nombre d'arguments passés en paramètre est différent de 1. 
-Rappellons-nous que le nom du script ne figure pas dans la somme des paramètres. Si nous passons 0 paramètre ou 2 paramètres et plus, 
+On rappel que le nom du script ne figure pas dans la somme des paramètres. Si on passe 0 paramètre ou 2 paramètres et plus, 
 la condition sera vraie donc le message `Fournir un nom en parametre` sera affiché via la commande `echo` 
 et un code de retour 1 sera associé à la sortie du script via la commande `exit`. Le code de retour 1 représente généralement une erreur d'exécution. 
 
@@ -52,7 +52,7 @@ Au moment de la dernière récursivité, la commande `"$0" dirname $1` va retire
 
 Biensûr, le répertoire courant `.` existe, donc la condition du 2e `if` sera vraie donc fera un exit avec un code de retour 0. 
 On remontera chacunes des autres récursivités en créant le répertoire désigné avec la commande `mkdir $1`, 
-sauf si le répertoire voulu existe déjà et, dans ce cas, nous allons faire une sortie avec un code de succès (0) de la présente récursivité et passer à la prochaine.
+sauf si le répertoire voulu existe déjà et, dans ce cas, on fera une sortie avec un code de succès (0) de la présente récursivité et passer à la prochaine.
 
 #### Exemples d'appels du script
 
@@ -111,9 +111,9 @@ La récursivité sera arrêtée, on va remonter la récursivité et créer le r�
 
 ### État de l'exercice: résolu
 
-* Nous allons utiliser le fichier `fichier` qui contient une quantité appréciable de lignes, fourni par le professeur Moussa Abdenbi, via  Mattermost. Cela devrait nous aider à trouver la plupart des cas de figures.
+* Durant la conception, le fichier `fichier` a été offert par le professeur Moussa Abdenbi, via  Mattermost. Ce fichier contient une quantité appréciable de lignes dans le but de tester la plupart des cas de figures.
 
-* Toutes les expressions régulières vont utiliser la commande `grep` et on doit mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
+* Toutes les expressions régulières utilisent la commande `grep` et on doit mettre notre `regex` entre apostrophe pour éviter que le shell interprète les signes de notre expression.
 
 #### Expression régulière 1 :
 
@@ -123,7 +123,7 @@ grep '^[aA]' fichier
 
 #### Explication régulière 1 :
 
-On nous demande de trouver les lignes qui commencent par `a` ou `A` via l'ensemble `[aA]`.
+Il faut trouver les lignes qui commencent par `a` ou `A` via l'ensemble `[aA]`.
 Il y a plusieurs moyens d'y arriver mais on va y aller avec un ensemble à choisir, comme expliqué plus haut.
 On utilise le symbole `^` qui est un ancrage pour corresponde au début d'une ligne.
 
@@ -245,7 +245,7 @@ Pour la section jour, on va ajouter une paire de parenthèses `(....)`,
 comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?`
-suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`.
+suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
 Deuxième scénario, les mois entre `10` et `19` jours en utilisant cette combinaison `1[0-9]`. 
 Troisième scénario, les mois entre `20` et `28` jours en utilisant cette combinaison `2[0-8]`. 
 Ce qui met fin au scénario de février.
@@ -262,7 +262,7 @@ Pour la section jour, on va ajouter une paire de parenthèses `(....)`,
 comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?`
-suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`.
+suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
 Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
 Troisième scénario, le mois avec `30` jours.
 Ce qui met fin au scénario des mois de 30 jours.
@@ -279,7 +279,7 @@ Pour la section jour, on va ajouter une paire de parenthèses `(....)`,
 comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?` 
-suivi de l'intervale `[1-9]` qui signifi que nous avons un seul chiffre pour la date qui variera entre `1` et `9`. 
+suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`. 
 Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
 Troisième scénario, les mois avec `30` et `31` jours en utilisant cette combinaison `3[0-1]`. 
 Ce qui met fin au scénario des mois de 31 jours.
@@ -297,13 +297,13 @@ On utilise l'option `-i` pour ignore la différence entre majuscule et minuscule
 On utilise aussi l'option `-P` pour utiliser la notion d'assertion. L'assertion permet de ne pas consommer les caractères trouvés.
 
 On va utiliser le symbole ancrage `^` pour trouver un des schémas valides dans le groupe `(https|ftp)`. Seulement le schémas sera capturé au final.
-Nous avons besoin d'une adresse web valide mais ne doit pas être capturer, donc nous allons utiliser une assertion de type `positive en avant (lookahead)`.
+On a besoin d'une adresse web valide mais elle ne doit pas être capturée, on utilisera une assertion de type `positive en avant (lookahead)`.
 Tous ce qui est à l'intéreiur de l'assertion sera valider comme d'habitude avec la commande `grep`.
 Entre le schéma et l'adresse web, il y a toujours ces 3 caractères important qui doivent être présent `://`.
 On a besoin de trouver les 3 caractères pareils, du début de l'adresse web. 
-On va créer un deuxième groupe qui contient un caractère `([a-z])` et en utilisant deux fois le terme `\2`,
-ça nous permet de réperter deux fois le caractère du deuxième groupe. Le groupe `([a-z])` est le deuxième, car c'est la deuxième parenthèse depuis le début de l'assertion.
-Après on valide que nous avons bien un `.` entre les 3 caractères pareils et le nom de domaine, qui d'ailleurs remplace l'adresse IP.
+On va créer un deuxième groupe qui contient un caractère `([a-z])` et en utilisant deux fois le terme `\2`.
+Avec ça, on pourra réperter deux fois le caractère du deuxième groupe. Le groupe `([a-z])` est le deuxième, car c'est la deuxième parenthèse depuis le début de l'assertion.
+Après on valide qu'on a bien un `.` entre les 3 caractères pareils et le nom de domaine, qui d'ailleurs remplace l'adresse IP.
 Le nom de domaine est représenté par `[a-z0-9]` des caractères alphanumériques suivi d'un autre `.`.
 On termine la validation par les 2 ou 3 caractères qui termine une adresse web soit `[a-z]{2,3}`.
 
@@ -321,7 +321,7 @@ On commence à itérer à travers la première boucle `for` de chaque répertoir
 Pour chaque répertoire, on va itérer à nouveau via la deuxième boucle `for` sur chaque fichier possèdant le répertoire.
 Dans la deuxième boucle `for chemin_fichier in "$liste_repertoires"/*; do`, le terme `/*` est très important, 
 car grâce à lui, il permet au script de passer **vraiment** à travers chaque dossier pour lister chaque fichier.
-On doit déterminer, si nous avons un fichier normal et qui est un exécutable et ça inclut les liens symboliques.
+On doit déterminer, que le fichier est normal et qu'il est un exécutable et ça inclut les liens symboliques.
 Si c'est trois conditions sont rempli, on affiche le fichier et son chemin relatif de la racine au fichier.
 On passera au prochain fichier dans la deuxième boucle. Une fois tous les fichiers du répertoire en cours d'itération,
 on va revenir à la première boucle pour itérer sur le répertoire suivant.
@@ -353,16 +353,16 @@ Ensuite, on demande à `docker` via la commande suivante `docker images` d'affic
 Avec ces images, on va pouvoir créer des conteneurs et faire des utilisations d'Ubuntu en parallèle de notre distribution Ubuntu déjà installé sur notre ordinateur. 
 
 
-3. Création d'un conteneur avec l'image de bbase que nous avons récupére du dépot des images `Ubuntu`.
+3. Création d'un conteneur avec l'image de base qu'on a récupére du dépot des images `Ubuntu`.
 
 #### Explication de l'étape 3 :
 
 On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
 Ensuite, on demande à `docker` via la commande suivante `docker run` de créer et de démarrer l'instance du conteneur.
 On utilise aussi deux options pour faciliter l'utilisateur de ce dernier soit l'option `-i` pour avoir le droit à l'entrée standard même si aucun processus est attaché au terminal. 
-Il y a aussi l'option `-t` qui nous permet d'avoir un terminal, à notre disposition. 
+Il y a aussi l'option `-t` qui donne la chance d'avoir un terminal, à notre disposition. 
 Il fallait donner un nom `containers-admin` à notre conteneur grâce à l'option longue `--name`. 
-Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible dans la liste d'images que nous avons importé de `DockerHub`, nous avons prit `ubuntu`. 
+Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible dans la liste d'images récament importé de `DockerHub`, on doit prendre `ubuntu`. 
 Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notr eutilisation de notre conteneur.
 
 
@@ -435,7 +435,8 @@ Ensuite, on demande à `docker` via la commande suivante `docker tag` qui permet
 #### Sous-Explication :
 
 On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker login` pour ouvrir un canal de communication avec notre compte sur DockerHub. ON nous demande de saisir notre nom d'utilisateur et mot de passe.
+Ensuite, on demande à `docker` via la commande suivante `docker login` pour ouvrir un canal de communication avec notre compte sur DockerHub.
+On doit saisir notre nom d'utilisateur et mot de passe.
 
 
 + Exportation de notre image à notre compte Docker Hub.
@@ -460,7 +461,7 @@ Le but de cet exercice est d'afficher les fichiers récamment ouverts dans notre
 
 La mécanique du script est séparé en différente section. 
 Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
-Nous avons éliminé la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
+On pourra éliminer la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
 
 Pour le bon fonctionnement du script, j'ai conçu des tests valides à la hauteur de `10` et d'autres tests invalides à la hauteur de `23` qui donneront des messages d'erreur et ainsi qu'un code d'erreur de sortie.
 
@@ -526,26 +527,33 @@ Ici, on va tester toutes les combinaisons possibles des options.
 ```
 
 Ces tests seront déclanchés à différent moment pendant le script. 
-Si nous avons un nombre argument valide, on va initier plusieurs variables qui seront utilisées dans le script.
+Avec un nombre argument valide, on va initier plusieurs variables qui seront utilisées dans le script.
 
-On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles, on va travailler. Ici, je parle de l'argument précédent qui sera affectué à l'argument actuel, qui est à null pour le premier argument, comme il n'y a pas d'argument précédent, vue qu'on commence à itérer.
+On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles,
+on va travailler. Ici, je parle de l'argument précédent qui sera affectué à l'argument actuel, 
+qui est à null pour le premier argument, comme il n'y a pas d'argument précédent, vue qu'on commence à itérer.
 
-On va utliser une mécanique de `switch / case` qui permet alléger le code en éliminant, la redondance des `if then else...`. Les choix possibles du `switch / case` seront dans un premier temps les options `-f, -n & -c`, et la dernière situation sera tout le restant qui n'est pas une option valide.
+On va utliser une mécanique de `switch / case` qui permet alléger le code en éliminant, la redondance des `if then else...`.
+Les choix possibles du `switch / case` seront dans un premier temps les options `-f, -n & -c`, et la dernière situation sera tout le restant qui n'est pas une option valide.
 
-Il faut dire qu'après une option valide, vient son argument propre à lui, sauf pour l'option `-c` qui viendra seul. Sinon, il faudra gérer des situations d'erreurs, tel mentionné plus haut.
+Il faut dire qu'après une option valide, vient son argument propre à lui, sauf pour l'option `-c` qui viendra seul. 
+Sinon, il faudra gérer des situations d'erreurs, tel mentionné plus haut.
 
-Exemple de situation d'erreur possible, un nom de fichier qui ne vient pas après l'option `-f` mais remplacer par l'option `-n` et vise versa. Un nombre de lignes `valides` qui seront utilisées pour l'affichage du contenu du fichier récupérer via l'option `-f`. 
+Exemple de situation d'erreur possible, un nom de fichier qui ne vient pas après l'option `-f` mais remplacer 
+par l'option `-n` et vise versa. Un nombre de lignes `valides` qui seront utilisées pour l'affichage du contenu du fichier récupérer via l'option `-f`. 
 
-Lorsqu'une erreur survient, nous allons envoyer un message ainsi qu'un code de sortie à la fonction `message_erreur_exit`. Il y a aussi l'utilisation de la fonction `validation_option_utilise` qui sera pour vérifier si on ne reçoit pas deux fois la même option. On a utilisé des variables de contrôles de style `booléen`, une variable pour récupérer une valeur numérique et une variable qui contiendra le nom du fichier.
+Lorsqu'une erreur survient, on doit envoyer un message ainsi qu'un code de sortie à la fonction `message_erreur_exit`. 
+Il y a aussi l'utilisation de la fonction `validation_option_utilise` qui sera pour vérifier si on ne reçoit pas deux fois la même option.
+On a utilisé des variables de contrôles de style `booléen`, une variable pour récupérer une valeur numérique et une variable qui contiendra le nom du fichier.
 
 Une fois le `switch / case` terminé, on va finaliser certaines situations d'erreurs qui pourraient survenir à ce moment là.
 
-Nous sommes maintenant, rendu à exécuter notre commande pour récupérer les fichiers les plus récents ouvert dans notre système de fichiers `Ubuntu`. 
+Maintenant, on doit exécuter notre commande pour récupérer les fichiers les plus récents ouvert dans notre système de fichiers `Ubuntu`. 
 Pour ce faire, on commence par utiliser la commande `grep` pour récupérer les lignes qui possède la mention de `href="file://`. 
 Ensuite, on va utiliser la commande `awk` sur toutes les lignes retrouvées grace au résultat précédent. 
 Avec l'option `-F` et son délimiteur voulu `"` qui permettra de récupérer toutes les séquences qui content des `"`. 
 On va garder seulement la deuxième occurence soit via l'argument d ela même commande `'{print $2}'`. 
-Maintenant que nous avons les noms complets des fichier, on va garder seulement le chemin et le nom du fichier, 
+Maintenant qu'on a les noms complèts des fichiers, on va garder seulement le chemin et le nom du fichier, 
 donc on aura besoin de la commande `sed` pour faire un traitement de nettoyage. 
 On va utiliser l'option `-s/regexp/remplacement/g` pour remplacer l'occurence trouvée par rien, donc on fera juste supprimer `href="file://`. 
 On va maintenant inverser la sélection pour avoir les fichiers les plus récents à la première ligne avec la commande `sort -r`. 
@@ -583,12 +591,12 @@ suivi du nom de fichier seulement sans son extension, sans son chemin relatif à
 
 Ensuite, il est temps de faire l'archivage de toutes les DBs converties en fichier de type `SQL`. 
 On commence par valider si l'archive existe, si oui on rajout les autres fichiers de type `SQL`, à l'archive en cours.
-Sinon, on créé l'archive. On utilise la commande `tar` pour archiver, 
-avec l'option `-C` qui nous permet de se déplacer dans le répertoire où se trouvent les éléments à archiver. Un fois dans le répertoire, on ajout à archive le fichier en cours itération.
+Sinon, on créé l'archive. On utilise la commande `tar` pour archiver, avec l'option `-C` qu'on utilise pour se déplacer 
+dans le répertoire où se trouvent les éléments à archiver. Un fois dans le répertoire, on ajout à archive le fichier en cours itération.
 
 Une fois archivage terminé, on va maintenant faire la compression de l'archivage via la commande `gzip`, ce qui va renommer automatiquement l'archive en extention `.tar.gz`.
 
-Pour finir, on fait le ménage dans nos bases de données, plus nécessaire d'avoir ces dernières vue les backup que nous avons fait.
+Pour finir, on fait le ménage dans nos bases de données, plus nécessaire d'avoir ces dernières vue la création du backup fait.
 
 Les tâches de CRONJOB à faire pour l'exercice 6 :
 
