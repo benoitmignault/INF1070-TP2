@@ -220,19 +220,19 @@ grep -E '^[1-9][0-9]{3}-((0?2-(0?[1-9]|1[0-9]|2[0-8]))|((0?[13578]|1[02])-(0?[1-
 
 #### Explication régulière 8 :
 
-On utilise l'option `-E` pour utiliser des expressions régulières étendues (ERE).
+On utilise l'option `-E` dans le cadre des expressions régulières étendues (ERE).
 On va commencer par résumer mon expression de 135 caractères de long...
-Une chose qui est simple c'est le début, les années peuvent variées entre `1000` et `9999` donc on va utiliser `[1-9][0-9]{3}` 
-mais précédé du symbole ancrage `^` pour dire que les lignes du fichiers commencent par un chiffre entre `1` et `9` et suivi d'un `-` pour séparer les années du reste...
+Une chose qui est simple c'est le début; les années peuvent variées entre `1000` et `9999` donc on va utiliser `[1-9][0-9]{3}` 
+mais précédé du symbole ancrage `^` pour dire que les lignes du fichier commencent par un chiffre entre `1` et `9` et suivi d'un `-` pour séparer les années du reste...
 
-Il y a 3 situation qui peut arriver selon les exigences :
+Il y a 3 situations qui peuvent arriver selon les exigences :
 
 * Le mois de févier (peu importe l'année) compte 28 jours.
 * Les mois de janvier, mars, mai, juillet, août, octobre, décembre comptent 31 jours.
 * Les mois d'avril, juin, septembre, novembre comptent 30 jours.
 
 On va ajouter notre première paire de parenthèses qui va contenir nos 3 scénarios. 
-Comme les trois scénarios peuvent arrivés, on va utiliser le symbole `|`, pour le sséparer et qui va représenter un `OU`.
+Comme les trois scénarios peuvent arriver, on va utiliser le symbole `|`, qui représente la signification d'un `OU` logique.
 Pour chaque scénario, on va ajouter une autre paire de parenthèses `(....)` pour bien les isoler.
 
 
@@ -242,10 +242,10 @@ On peut écrire le mois avec le `0` qui est optionel en raison du caractère `?`
 Ensuite, vient le tiret `-` pour séparer les mois des jours.
 
 Pour la section jour, on va ajouter une paire de parenthèses `(....)`,
-comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
+comme il va y avoir 3 scénarios qui peuvent arriver, on va les séparer par le symbole `|` qui représente un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?`
-suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
+suivi de l'intervale `[1-9]` qui signifie qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
 Deuxième scénario, les mois entre `10` et `19` jours en utilisant cette combinaison `1[0-9]`. 
 Troisième scénario, les mois entre `20` et `28` jours en utilisant cette combinaison `2[0-8]`. 
 Ce qui met fin au scénario de février.
@@ -262,7 +262,7 @@ Pour la section jour, on va ajouter une paire de parenthèses `(....)`,
 comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?`
-suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
+suivi de l'intervale `[1-9]` qui signifie qu'on a un seul chiffre pour la date qui variera entre `1` et `9`.
 Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
 Troisième scénario, le mois avec `30` jours.
 Ce qui met fin au scénario des mois de 30 jours.
@@ -276,10 +276,10 @@ Pour les mois d'octobre et décembre, on va utiliser cette manière dans le `reg
 Ensuite, vient le tiret `-` pour séparer les mois des jours.
 
 Pour la section jour, on va ajouter une paire de parenthèses `(....)`, 
-comme il va y avoir 3 scénarios, séparer par le symbole `|` qui va représenter un `OU`.
+comme il va y avoir 3 scénarios, ils seront séparés par le symbole `|` qui va représenter un `OU`.
 
 Premier scénario, comme pour le mois, le `0` pour les jours est optionel en raison du caractère `?` 
-suivi de l'intervale `[1-9]` qui signifi qu'on a un seul chiffre pour la date qui variera entre `1` et `9`. 
+suivi de l'intervale `[1-9]` qui signifie qu'on a un seul chiffre pour la date qui variera entre `1` et `9`. 
 Deuxième scénario, les mois entre `10` et `29` jours en utilisant cette combinaison `[1-2][0-9]`. 
 Troisième scénario, les mois avec `30` et `31` jours en utilisant cette combinaison `3[0-1]`. 
 Ce qui met fin au scénario des mois de 31 jours.
@@ -293,19 +293,19 @@ grep -iP '^(https|ftp)(?=://([a-z])\2\2\.[a-z0-9]+\.[a-z]{2,3})' fichier
 
 #### Explication régulière 9 :
 
-On utilise l'option `-i` pour ignore la différence entre majuscule et minusculecasepour utiliser des expressions régulières étendues (ERE). 
-On utilise aussi l'option `-P` pour utiliser la notion d'assertion. L'assertion permet de ne pas consommer les caractères trouvés.
+On utilise l'option `-i` pour ignorer la différence entre majuscule et minuscule lors de l'utilisation des expressions régulières étendues (ERE). 
+On utilise aussi l'option `-P` dans le cadre de la notion d'assertion. Cette dernière permet de ne pas consommer les caractères trouvés.
 
-On va utiliser le symbole ancrage `^` pour trouver un des schémas valides dans le groupe `(https|ftp)`. Seulement le schémas sera capturé au final.
+On va utiliser le symbole ancrage `^` pour trouver un des schémas valides dans le groupe `(https|ftp)`. Seulement le schéma sera capturé au final.
 On a besoin d'une adresse web valide mais elle ne doit pas être capturée, on utilisera une assertion de type `positive en avant (lookahead)`.
-Tous ce qui est à l'intéreiur de l'assertion sera valider comme d'habitude avec la commande `grep`.
+Tous ce qui est à l'intérieur de l'assertion sera validé comme d'habitude avec la commande `grep`.
 Entre le schéma et l'adresse web, il y a toujours ces 3 caractères important qui doivent être présent `://`.
-On a besoin de trouver les 3 caractères pareils, du début de l'adresse web. 
+On a besoin de trouver les 3 caractères pareils au début de l'adresse web. 
 On va créer un deuxième groupe qui contient un caractère `([a-z])` et en utilisant deux fois le terme `\2`.
-Avec ça, on pourra réperter deux fois le caractère du deuxième groupe. Le groupe `([a-z])` est le deuxième, car c'est la deuxième parenthèse depuis le début de l'assertion.
+Avec ça, on va pouvoir répéter deux fois le caractère du deuxième groupe. Le groupe `([a-z])` est le deuxième, car c'est la deuxième parenthèse depuis le début de l'assertion.
 Après on valide qu'on a bien un `.` entre les 3 caractères pareils et le nom de domaine, qui d'ailleurs remplace l'adresse IP.
 Le nom de domaine est représenté par `[a-z0-9]` des caractères alphanumériques suivi d'un autre `.`.
-On termine la validation par les 2 ou 3 caractères qui termine une adresse web soit `[a-z]{2,3}`.
+On termine la validation par les 2 ou 3 caractères qui terminent une adresse web soit `[a-z]{2,3}`.
 
 
 ## Solution de l'exercice 3
@@ -314,15 +314,15 @@ On termine la validation par les 2 ou 3 caractères qui termine une adresse web 
 
 #### Explication du script lsexec/lsexec
 
-On utilise le shebang `#!/bin/sh` pour bien interpreter le script.
-Tous les dossiers sont séparés d'un `:` dans la variable Environnement `PATH`, donc on va associer le deux point à la variable `IFS`. 
-Communément appeler `Internal Field Separator` permet d'interpreter comme on veut le séparateur utilisé par `PATH`.
-On commence à itérer à travers la première boucle `for` de chaque répertoires de la variable `PATH`.
+On utilise le shebang `#!/bin/sh` pour bien interpréter le script.
+Tous les dossiers sont séparés d'un `:` dans la variable Environnement `PATH`, donc on va associer le deux points à la variable `IFS`. 
+Communément appelé `Internal Field Separator` permet d'interpréter comme on veut le séparateur utilisé par `PATH`.
+On commence à itérer à travers la première boucle `for` de chaque répertoire de la variable `PATH`.
 Pour chaque répertoire, on va itérer à nouveau via la deuxième boucle `for` sur chaque fichier possèdant le répertoire.
 Dans la deuxième boucle `for chemin_fichier in "$liste_repertoires"/*; do`, le terme `/*` est très important, 
 car grâce à lui, il permet au script de passer **vraiment** à travers chaque dossier pour lister chaque fichier.
 On doit déterminer, que le fichier est normal et qu'il est un exécutable et ça inclut les liens symboliques.
-Si c'est trois conditions sont rempli, on affiche le fichier et son chemin relatif de la racine au fichier.
+Si c'est trois conditions sont remplies, on affiche le fichier et son chemin relatif de la racine au fichier.
 On passera au prochain fichier dans la deuxième boucle. Une fois tous les fichiers du répertoire en cours d'itération,
 on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
@@ -331,7 +331,7 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 ### État de l'exercice: résolu
 
-**Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prier d'aller consulter le fichier `docker/docker.md`.**
+**Pour voir la liste des commandes exécutées durant l'exercice 4 et leur résultat, je vous prie d'aller consulter le fichier `docker/docker.md`.**
 
 #### Étape dans la création de docker
 
@@ -339,8 +339,8 @@ on va revenir à la première boucle pour itérer sur le répertoire suivant.
 
 #### Explication de l'étape 1 :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker pull` de récupérer du registre des images, 
+On utilise la commande `sudo` pour définir le temps d'exécution la commande comme `superutilisateur`.
+Ensuite, on demande à `docker` via la commande `docker pull` de récupérer du registre des images, 
 l'image la plus récente de la distribution Linux `Ubuntu`. C'est une manière d'installer une image de base `Ubuntu`, sans utiliser la commande `docker build` qui est plus complexe, car elle demande le fichier de configuration `Dockerfile` qui permet l'installation d'une ou plusieurs images avec des spécificités différentes.
 
 
@@ -348,31 +348,31 @@ l'image la plus récente de la distribution Linux `Ubuntu`. C'est une manière d
 
 #### Explication de l'étape 2 :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker images` d'afficher les images disponbibles. 
-Avec ces images, on va pouvoir créer des conteneurs et faire des utilisations d'Ubuntu en parallèle de notre distribution Ubuntu déjà installé sur notre ordinateur. 
+On utilise la commande `sudo` pour définir le temps d'exécuter la commande comme `superutilisateur`.
+Ensuite, on demande à `docker` via la commande `docker images` d'afficher les images disponbibles. 
+Avec ces images, on va pouvoir créer des conteneurs et faire des utilisations d'Ubuntu en parallèle de notre distribution Ubuntu déjà installée sur notre ordinateur. 
 
 
-3. Création d'un conteneur avec l'image de base qu'on a récupére du dépot des images `Ubuntu`.
+3. Création d'un conteneur avec l'image de base qu'on a récupérée du dépot des images `Ubuntu`.
 
 #### Explication de l'étape 3 :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker run` de créer et de démarrer l'instance du conteneur.
-On utilise aussi deux options pour faciliter l'utilisateur de ce dernier soit l'option `-i` pour avoir le droit à l'entrée standard même si aucun processus est attaché au terminal. 
-Il y a aussi l'option `-t` qui donne la chance d'avoir un terminal, à notre disposition. 
+On utilise la commande `sudo` pour définir le temps d'exécuter la commande comme `superutilisateur`.
+Ensuite, on demande à `docker` via la commande `docker run` de créer et de démarrer l'instance du conteneur.
+On utilise aussi deux options pour faciliter l'utilisation de ce dernier soit l'option `-i` pour avoir le droit à l'entrée standard même si aucun processus est attaché au terminal. 
+Il y a aussi l'option `-t` qui donne la chance d'avoir un terminal à notre disposition. 
 Il fallait donner un nom `containers-admin` à notre conteneur grâce à l'option longue `--name`. 
-Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible dans la liste d'images récament importé de `DockerHub`, on doit prendre `ubuntu`. 
-Pour finir, on a utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notr eutilisation de notre conteneur.
+Ensuite, il fallait associer notre conteneur à une image `Ubuntu` disponible dans la liste d'images récemment importées de `DockerHub`. 
+Pour finir, on va utiliser `/bin/bash` qui sera notre type de shell disponible, tout le long de notre utilisation de notre conteneur.
 
 
-4. Installer les outils suivants dans le conteneur containers-admin et afficher leurs localisations dans le système de fichiers.
+4. Installer les outils suivants dans le conteneur `containers-admin` et afficher leurs localisations dans le système de fichiers.
 
 #### Explication de l'étape 4 :
 
 Avant de faire l'installation des packages, il est important de faire la commande `apt update`. Ça permet de mettre notre conteneur à jour pour la réception des futurs packages qu'on pourrait avoir besoin.
 
-Pour faire l'installation, tous les packages dont on aura besoin, on fait simplement `apt install` avec les packages qu'on veut installer un à la suite de l'autre, après le mot `install`.
+Pour faire l'installation de tous les packages dont on aura besoin, on fait simplement `apt install` avec les packages qu'on veut installer un à la suite de l'autre, après le mot `install`.
 
 On utilise la commande `dpkg` qui est le gestionnaire de packages pour la distribution de Linux `Debian`.
 L'option `-L` permet de montrer pour chacun des packages listés après l'option, les endroits où ils se situent dans le système de fichiers.
@@ -386,7 +386,7 @@ L'option `-L` permet de montrer pour chacun des packages listés après l'option
 
 #### Sous-Explication :
 
-La commande `curl` est utilisé pour télécharger le package `redis-stable.tar.gz`.
+La commande `curl` est utilisée pour télécharger le package `redis-stable.tar.gz`.
 On utilise l'option `-o` pour spécifier le nom du fichier qui sera téléchargé. Après le nom qu'on donnera à notre fichier récupéré, on indique le lien `URL`.
 
 
@@ -394,9 +394,9 @@ On utilise l'option `-o` pour spécifier le nom du fichier qui sera télécharg�
 
 #### Sous-Explication :
 
-On utilise la commande `tar` pour désarchiver et décompresser un ensemble de fichiers. Il y a plusieurs options utilisés pour extraire le contenu. 
-L'option `-x` permet d'extraitre les fichiers de l'archive. L'option `z` va utiliser la commande `gzip` pour décompresser le fichier. 
-L'option `-f` indique quel fichier à d'archiver et décompresser, s'il y a lieu.
+On utilise la commande `tar` pour désarchiver et décompresser un ensemble de fichiers. Il y a plusieurs options utilisées pour extraire le contenu. 
+L'option `-x` permet d'extraire les fichiers de l'archive. L'option `z` va utiliser la commande `gzip` pour décompresser le fichier. 
+L'option `-f` indique quel fichier doit être désarchivé et décompressé, s'il y a lieu.
 
 
 + Complier le code source, à l'intérieur du répertoire `/tmp/redis-stable`
