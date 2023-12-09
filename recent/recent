@@ -20,7 +20,7 @@ function validation_option_utilise(){
 function validation_nom_fichier_vide(){
 
     # Le nom du fichier est absent
-    if [ ! -n "$1" ]; then
+    if [ -z "$1" ]; then
 
         message_erreur_exit "Vous avez omis le nom du fichier en utilisant l'option -f..." 2
     fi 
@@ -116,7 +116,7 @@ for argument in "$@"; do
                     fi
                 else
                     # Il faut protéger cette situation, en rajoutant que le fichier n'a pas encore été enregistrer
-                    if [ -f "$argument_actuel" ] && [ ! -n "$nom_fichier" ]; then
+                    if [ -f "$argument_actuel" ] && [ -z "$nom_fichier" ]; then
 
                         message_erreur_exit "Vous avez omis de saisir l'option -f avec le fichier « $argument_actuel »..." 2
                     else                    
