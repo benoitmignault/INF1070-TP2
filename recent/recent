@@ -45,7 +45,7 @@ option_fichier=false
 option_nbligne=false
 option_charHex=false 
 
-# Les variables utilisables 
+# Les variables utilisables
 nom_fichier=""  # Nom du fichier
 nb_lignes=0     # Par défaut à 0 
 
@@ -63,17 +63,17 @@ for argument in "$@"; do
     # Maintenant, on doit trouver notre option qui a été validée
     case "$argument_actuel" in
         "-f")
-            # On doit valider que nous n'avons pas déjà saisie l'optionune option
+            # On doit valider que nous n'avons pas déjà saisie l'option en question
             validation_option_utilise "$option_fichier" "$argument_actuel"
             option_fichier=true
             ;;
         "-n")
-            # On doit valider que nous n'avons pas déjà saisie une option
+            # On doit valider que nous n'avons pas déjà saisie l'option en question
             validation_option_utilise "$option_nbligne" "$argument_actuel"
             option_nbligne=true
             ;;
         "-c")
-            # On doit valider que nous n'avons pas déjà saisie une option
+            # On doit valider que nous n'avons pas déjà saisie l'option en question
             validation_option_utilise "$option_charHex" "$argument_actuel"
             option_charHex=true
             ;;
@@ -145,7 +145,7 @@ if [ "$option_nbligne" = true ]; then
     # Le nom du fichier est absent
     validation_nom_fichier_vide "$nom_fichier"     
 else
-    # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeure par défaut.
+    # Comme l'option du nombre de ligne n'a pas été choisie, on va attribuer une valeur par défaut.
     nb_lignes=10
 
     # C'est automatique, l'option -f a été déclaré
