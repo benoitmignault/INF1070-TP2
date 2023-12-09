@@ -399,7 +399,7 @@ L'option `-x` permet d'extraire les fichiers de l'archive. L'option `z` va utili
 L'option `-f` indique quel fichier doit être désarchivé et décompressé, s'il y a lieu.
 
 
-+ Complier le code source, à l'intérieur du répertoire `/tmp/redis-stable`
++ Compiler le code source à l'intérieur du répertoire `/tmp/redis-stable`
 
 #### Sous-Explication :
 
@@ -410,7 +410,7 @@ On utilise simplement la commande `make` à l'intérieur du répertoire dont l'a
 
 #### Sous-Explication :
 
-Pour utiliser le package partout dans le conteneur, on devrait en faire une copie dans le répertoire `/usr/local/bin`.
+Pour utiliser le package partout dans le conteneur, on devra en faire une copie dans le répertoire `/usr/local/bin`.
 
 
 + Afficher la version de la commande`redis-cli`
@@ -420,32 +420,33 @@ Pour utiliser le package partout dans le conteneur, on devrait en faire une copi
 On va utiliser l'option qui est standard à pas mal toutes les commandes / pacakges soit l'option longue `--version`.
 
 
-6. Exporter la nouvelle image de notre conteneur dans le compte DockerHub.
+6. Exporter la nouvelle image de notre conteneur dans le compte `DockerHub`.
 
 + Attribuer un nom à la nouvelle version de notre image.
 
 #### Sous-Explication :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker tag` qui permet de créer une nouvelle référence pour l'image utilisée par un conteneur. ÇA va servir, lorsqu'il sera le tmeps d'envoyer notre image sur le dépôt DockerHub.
+On utilise la commande `sudo` pour définir le temps d'exécution de la commande `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker tag` de créer une nouvelle référence pour l'image utilisée par un conteneur. 
+Ça va servir, lorsqu'il sera le temps d'envoyer notre image sur le dépôt `DockerHub`.
 
 
-+ Connexion à notre compte Docker-Hub.
++ Connexion à notre compte `DockerHub`.
 
 #### Sous-Explication :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker login` pour ouvrir un canal de communication avec notre compte sur DockerHub.
+On utilise la commande `sudo` pour définir le temps d'exécution de la commande `superutilisateur`.
+Ensuite, on demande à `docker` via la commande suivante `docker login` d'ouvrir un canal de communication avec notre compte sur `DockerHub`.
 On doit saisir notre nom d'utilisateur et mot de passe.
 
 
-+ Exportation de notre image à notre compte Docker Hub.
++ Exportation de notre image à notre compte `DockerHub`.
 
 #### Sous-Explication :
 
-On utilise la commande `sudo` pour se définir le temps d'exécuter la commande comme un `superutilisateur`.
-Ensuite, on demande à `docker` via la commande suivante `docker push` pour exporter finalement notre nouvelle version de notre image.
-On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle version de notre image.
+On utilise la commande `sudo` pour définir le temps d'exécution de la commande `superutilisateur`.
+Ensuite, on demande à `docker` via la commande `docker push` d'exporter notre nouvelle version de notre image.
+On va utliser notre nom d'utilisateur, suivi d'une `/` et du nom de la nouvelle version de notre image.
 
 
 7. Finalement, notre lien URL pour l'importation de notre image.
@@ -457,11 +458,11 @@ On va utliser notre nom d'utilisateur, suivi d'un `/` et du nom de la nouvelle v
 
 ### État de l'exercice: résolu
 
-Le but de cet exercice est d'afficher les fichiers récamment ouverts dans notre système de fichier `Ubuntu`.
+Le but de cet exercice est d'afficher les fichiers récemment ouverts dans notre système de fichier `Ubuntu`.
 
-La mécanique du script est séparé en différente section. 
-Avant le début du script, il y a les 3 fonctions qui seront réutiliées plus tard, ce qui permet d'alléger le code. 
-On pourra éliminer la notion de `ìf then else`, dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
+La mécanique du script est séparé en différentes sections. 
+Avant le début du script, il y a les 3 fonctions qui seront réutilisées plus tard, ce qui permettra d'alléger le code. 
+On pourra éliminer la notion de `ìf then else` dans les situations où il y a une erreur et qu'on devait sortir du cript en exécution. Une mécanique de `if then` sera utilise.
 
 Pour le bon fonctionnement du script, j'ai conçu des tests valides à la hauteur de `10` et d'autres tests invalides à la hauteur de `23` qui donneront des messages d'erreur et ainsi qu'un code d'erreur de sortie.
 
@@ -526,45 +527,45 @@ Ici, on va tester toutes les combinaisons possibles des options.
 ./recent -f recently-used.xbel recently-used.xbel >>> argument inconnu
 ```
 
-Ces tests seront déclanchés à différent moment pendant le script. 
-Avec un nombre argument valide, on va initier plusieurs variables qui seront utilisées dans le script.
+Ces tests seront déclenchés à différents moments pendant l'exécution du script. 
+Avec un nombre d'argument valide, on va initier plusieurs variables qui seront utilisées dans le script.
 
-On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquelles,
+On va utiliser un `forEach` pour itérer à travers tous les arguments. Je vais utiliser deux variables pour stocker les deux arguments sur lesquels,
 on va travailler. Ici, je parle de l'argument précédent qui sera affectué à l'argument actuel, 
-qui est à null pour le premier argument, comme il n'y a pas d'argument précédent, vue qu'on commence à itérer.
+qui est à nul pour le premier argument, comme il n'y a pas d'argument précédent, étant donné qu'on commence à itérer.
 
-On va utliser une mécanique de `switch / case` qui permet alléger le code en éliminant, la redondance des `if then else...`.
+On va utliser une mécanique de `switch / case` qui permet alléger le code en éliminant la redondance des `if then else...`.
 Les choix possibles du `switch / case` seront dans un premier temps les options `-f, -n & -c`, et la dernière situation sera tout le restant qui n'est pas une option valide.
 
 Il faut dire qu'après une option valide, vient son argument propre à lui, sauf pour l'option `-c` qui viendra seul. 
-Sinon, il faudra gérer des situations d'erreurs, tel mentionné plus haut.
+Sinon, il faudra gérer des situations d'erreurs, tel que mentionné plus haut.
 
-Exemple de situation d'erreur possible, un nom de fichier qui ne vient pas après l'option `-f` mais remplacer 
-par l'option `-n` et vise versa. Un nombre de lignes `valides` qui seront utilisées pour l'affichage du contenu du fichier récupérer via l'option `-f`. 
+Exemple de situation d'erreur possible; un nom de fichier qui ne vient pas après l'option `-f` mais remplacé 
+par l'option `-n` et vise versa. Un nombre de lignes `valides` qui seront utilisées pour l'affichage du contenu du fichier récupéré via l'option `-f`. 
 
 Lorsqu'une erreur survient, on doit envoyer un message ainsi qu'un code de sortie à la fonction `message_erreur_exit`. 
 Il y a aussi l'utilisation de la fonction `validation_option_utilise` qui sera pour vérifier si on ne reçoit pas deux fois la même option.
-On a utilisé des variables de contrôles de style `booléen`, une variable pour récupérer une valeur numérique et une variable qui contiendra le nom du fichier.
+On a utilisé des variables de contrôle de style `booléen`, une variable pour récupérer une valeur numérique et une variable qui contiendra le nom du fichier.
 
-Une fois le `switch / case` terminé, on va finaliser certaines situations d'erreurs qui pourraient survenir à ce moment là.
+Une fois le `switch / case` terminé, on va finaliser certaines situations d'erreurs qui pourraient survenir à ce moment-là.
 
-Maintenant, on doit exécuter notre commande pour récupérer les fichiers les plus récents ouvert dans notre système de fichiers `Ubuntu`. 
-Pour ce faire, on commence par utiliser la commande `grep` pour récupérer les lignes qui possède la mention de `href="file://`. 
-Ensuite, on va utiliser la commande `awk` sur toutes les lignes retrouvées grace au résultat précédent. 
-Avec l'option `-F` et son délimiteur voulu `"` qui permettra de récupérer toutes les séquences qui content des `"`. 
-On va garder seulement la deuxième occurence soit via l'argument d ela même commande `'{print $2}'`. 
-Maintenant qu'on a les noms complèts des fichiers, on va garder seulement le chemin et le nom du fichier, 
+Maintenant, on doit exécuter notre commande pour récupérer les fichiers les plus récents ouverts dans notre système de fichiers `Ubuntu`. 
+Pour ce faire, on commence par utiliser la commande `grep` pour récupérer les lignes qui possèdent la mention de `href="file://`. 
+Ensuite, on va utiliser la commande `awk` sur toutes les lignes retrouvées grâce au résultat précédent. 
+L'option `-F` et son délimiteur voulu `"` permettront de récupérer toutes les séquences qui contiennent des `"`. 
+On va garder seulement la deuxième occurence des séquences trouvés via les `"` grâce à la commande `'{print $2}'`. 
+Maintenant qu'on a les noms complets des fichiers, on va garder seulement le chemin et le nom du fichier, 
 donc on aura besoin de la commande `sed` pour faire un traitement de nettoyage. 
-On va utiliser l'option `-s/regexp/remplacement/g` pour remplacer l'occurence trouvée par rien, donc on fera juste supprimer `href="file://`. 
+On va utiliser l'option `-s/regexp/remplacement/g` pour remplacer l'occurence trouvée par un vide, donc on fera juste supprimer `href="file://`. 
 On va maintenant inverser la sélection pour avoir les fichiers les plus récents à la première ligne avec la commande `sort -r`. 
-La commande `head -n` est obligatoire mais tout ce qui peut varier sera le nombre de lignes affichées en fonction du choix passer au script, 
-préalablement. Le résultat affichera des caractères bizarre, si le chemin possède des espaces et / ou des accents. 
+La commande `head -n` est obligatoire mais tout ce qui peut varier sera le nombre de lignes affichées en fonction du choix passé au script, 
+préalablement. Le résultat affichera des caractères bizarres, si le chemin possède des espaces et / ou des accents. 
 Exemple pour les espaces, on va avoir `%20` et pour les accents dont le `é`, on va avoir `%C3%A9`.
 Pour corriger ces caractères innabituels, on devra faire appel à l'option `-c` du script. 
 Dans un premier temps, on va faire appel, à la commande `sed` pour faire le remplacement du caractère `%` par `\x`. Cette transformation dira à la prochaine commande que c'est des caractères hexadécimales et qu'on peut faire de quoi pour convertir.
 
 La commande finale `xargs` agira d'exécutante pour la commande `printf` qui agira ici à titre de convertisseur et formatage du résultat qui sera affiché. Ça va permettre d'afficher les espaces ou les autres caractères de type `spécial`, correctement.
-On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fichier est terminé par des caractères null.
+On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fichier est terminé par des caractères nuls.
 
 
 ## Solution de l'exercice 6
@@ -573,30 +574,30 @@ On doit utiliser l'option `-0` avec la commande `xargs`, car la fin de chaque fi
 
 Le but de cet exercice est d'archiver et de compresser des bases de données, via un répertoire passer en paramètre au script.
 
-Avant le début du script, il y a la fonction les 3 fonctions `message_erreur_exit` reprise du script 
-à l'exercice 5 pour faire l'affichage des messages d'erreurs. Cette fonction sera réutiliée plus tard, 
-e qui permet d'alléger le code. 
+Avant le début du script, il y a les 3 fonctions qui seront réutilisées plus tard, pendant l'exécution du script. 
+Ces dernières ont été reprises du script de l'exercice 5 pour faire l'affichage des messages d'erreurs, ce qui permet d'alléger le code.
 
-On commence par faire une vérification du nombre argument passé en paramètre au script.
-Il ne peut pas en avoir plus d'un arguement, sinon un message d'erreur approprier sera affiché et une sortie de script se fera.
+On commence par faire une vérification du nombre d'arguments passés en paramètre au script.
+Il ne peut pas avoir plus d'un arguement, sinon un message d'erreur approprié sera affiché et et le script se terminera à ce moment de l'exécution.
 On récupère le répertoire où se trouve normalement les bases de données à archiver. 
 Un nom de variable `repertoire_cible` est plus significatif que `$1`. 
 
-Ensuite, il faut valider que le répertoire est bien existant et valide. Après celà, une autre vérification simpose soit la présence de les bases de données, car sinon, ça ne sert à rien d'aller plus loin dans le script.
+Ensuite, il faut valider que le répertoire est bien existant et valide. Après celà, une autre vérification s'impose soit la présence des bases de données, 
+car sinon, ça ne sert à rien d'aller plus loin dans le script.
 
-Il est très important, à partir de maintenant de parler de notion de chemin relatif qui commence par la racine du système de fichier `/home`. Dans le répertoire ciblé, on va itéré sur chaque fichier avec la bonne extension. 
-Pour chaque DBs, on va créé un nouveau chemin qui ménera à la création d'un fichier de type `SQL`. 
-Dans le nouveau chemin, il va avoir le chemin relatif, suivi du répertoire `/sql`, 
+Il est très important à partir de maintenant de parler de notion de chemin relatif qui commence par la racine du système de fichier `/home`. Dans le répertoire ciblé, on va itérer sur chaque fichier avec la bonne extension. 
+Pour chaque DBs, on va créer un nouveau chemin qui mènera à la création d'un fichier de type `SQL`. 
+Dans le nouveau chemin, il va y avoir le chemin relatif, suivi du répertoire `/sql`, 
 suivi du nom de fichier seulement sans son extension, sans son chemin relatif à lui et la date du moment pour la création du fichier.
 
 Ensuite, il est temps de faire l'archivage de toutes les DBs converties en fichier de type `SQL`. 
-On commence par valider si l'archive existe, si oui on rajout les autres fichiers de type `SQL`, à l'archive en cours.
-Sinon, on créé l'archive. On utilise la commande `tar` pour archiver, avec l'option `-C` qu'on utilise pour se déplacer 
-dans le répertoire où se trouvent les éléments à archiver. Un fois dans le répertoire, on ajout à archive le fichier en cours itération.
+On commence par valider si l'archive existe, si oui, on rajoute les autres fichiers de type `SQL` à l'archive en cours.
+Sinon, on crée l'archive. On utilise la commande `tar` pour archiver, avec l'option `-C` qu'on utilise pour se déplacer 
+dans le répertoire où se trouvent les éléments à archiver. Un fois dans le répertoire, on ajoute à archive le fichier en cours d'itération.
 
-Une fois archivage terminé, on va maintenant faire la compression de l'archivage via la commande `gzip`, ce qui va renommer automatiquement l'archive en extention `.tar.gz`.
+Une fois l'archivage terminé, on va maintenant faire la compression de l'archivage via la commande `gzip`, ce qui va renommer automatiquement l'archive en extention `.tar.gz`.
 
-Pour finir, on fait le ménage dans nos bases de données, plus nécessaire d'avoir ces dernières vue la création du backup fait.
+Pour finir, on fait le ménage dans nos bases de données, car il n'est plus nécessaire d'avoir ces dernières vue la création du backup fait.
 
 Les tâches de CRONJOB à faire pour l'exercice 6 :
 
