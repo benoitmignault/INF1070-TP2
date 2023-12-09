@@ -32,7 +32,7 @@ if [ "$nb_db_existantes" -eq 0 ]; then
 fi
 
 # Récupération du chemin relatif du script
-chemin_relatif="$(dirname $0)"
+chemin_relatif="$(dirname "$0")"
 
 # Lister les fichiers qui se termine par extension .db 
 for un_fichier in "$repertoire_cible"/*.db; do
@@ -54,10 +54,10 @@ for un_fichier in "$chemin_relatif/sql"/*.sql; do
     # Si archivage existe, on ajoute des fichiers à cette dernière
     if [ -f "$chemin_archive" ]; then
         # Insertion de la prochaine DBs dans l'archivage + compression
-        tar -rf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
+        tar -rf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename "$un_fichier")"
     else
         # Création de l'archivage pour y inclure la première DBs
-        tar -cf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename $un_fichier)"
+        tar -cf "$chemin_archive" -C "$chemin_relatif/sql" "$(basename "$un_fichier")"
     fi    
 done
 
